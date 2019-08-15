@@ -28,12 +28,12 @@
 \newcommand{\R}{\field{R}}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\argmin}{\operatornamewithlimits{argmin}}
-\newcommand{\abs}[1]{\lvert#1\rvert}
-\newcommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
 
 % Bibliography
 \usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp]{biblatex}
-\bibliography{references}
+\bibliography{lectures/references}
 
 \setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
 
@@ -67,12 +67,6 @@ At the end of this lecture you will:
 Topics covered in this lecture:
     \tableofcontents
 \end{frame}
-
-\begin{frame}
-\frametitle{Acknowledgements}
-Some of the slides are based on the accompanying lectures of \cite{deeplearning}
-\end{frame}
-
 
 \section{Linear algebra}
 
@@ -112,10 +106,12 @@ Materials:
 \frametitle{Matrices}
 \begin{itemize}
     \item A matrix is a 2-D array of numbers \\
+    $$
     \begin{bmatrix}
     a_{1,1} & a_{1,2} \\
     a_{2,1} & a_{2,2}
     \end{bmatrix}
+    $$
     \item Example notation for type and shape \\
     $\mathbf{A} \in \R^{m \times n}$
 \end{itemize}
@@ -291,7 +287,7 @@ Materials:
 \frametitle{Norms}
     \begin{itemize}
         \item $L^p$- norm
-        $$\norm{\vect{x}}_p = \lscale{(} \sum_i |x_i|^p \rscale{)}^{\frac{1}{p}}$$
+        $$\norm{\vect{x}}_p = \left( \sum_i |x_i|^p  \right) ^{\frac{1}{p}}$$
         \begin{itemize}
             \item Most popular $L^2$-norm (for $p=2$)
             \item $L_1$-norm (for $p = 1$): $\norm{\vect{x}}_1 = \sum_i |x_i|$
@@ -623,7 +619,7 @@ Materials:
         \item If $\vect{x}$ is extended with constant $1$ then the hyperplane includes the origin and it forms a {\bf subspace}.
         \item If $1$ is not included then the hyperplane is an {\bf affine} set and it cuts the $y$-axis at the point $(\vect{0}, \hat{w_0})$, where the vector $\vect{0}$ has all $x_i$ coordinates equal to $0$.
         \item Reminder: from now on we assume that $1$ is included in $\vect{x}$ and $\hat{w_0}$ in $\hat{\vect{w}}$
-        \ietm function $f(\vect{x}) =  \vect{w}^T \vect{x}$ defined on the $p$-dimensional (input) space is a {\bf linear} function (we omit the hats over the $w$s since now we consider them as free variables)
+        \item The function $f(\vect{x}) =  \vect{w}^T \vect{x}$ defined on the $p$-dimensional (input) space is a {\bf linear} function (we omit the hats over the $w$s since now we consider them as free variables)
         \item The gradient $\nabla f(\vect{x})$ is a vector pointing along the direction of maximal change.
     \end{itemize}
 
@@ -981,7 +977,7 @@ Materials:
 \frametitle{Gaussian distribution}
 \begin{itemize}
     \item The most commonly used distribution, also called {\bf normal distribution}.
-    \item Controlled by two parameters $\mu \in \R$ (gives the position of the peak value) and $\sigma \in (0, \ifty)$, the {\bf standard deviation} which gives the spread of the distribution
+    \item Controlled by two parameters $\mu \in \R$ (the {\bf mean}) and $\sigma \in (0, \infty)$, (the {\bf standard deviation})
 
     $$
     {\cal N}(x ; \mu, \sigma^2) = \sqrt{\frac{1}{2 \pi \sigma^2}} \mbox{exp} \left (-\frac{1}{2 \sigma^2}(x - \mu)^2 \right )
@@ -1030,6 +1026,22 @@ Materials:
     \item It can be straightforwardly derived from the conditional probability formula.
     \item It could have be named also after Laplace who independently found it, generalized it, and introduced it in practice.
 \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Acknowledgements}
+
+The slides for this lecture were prepared by Mitko Veta and Dragan Bo{\v s}nacki. 
+
+Some of the slides are based on the accompanying lectures of \cite{deeplearning}.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{References}
+\printbibliography
 \end{frame}
 
 \end{document}
