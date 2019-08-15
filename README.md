@@ -64,7 +64,7 @@ The students will receive instruction in the following ways:
 
 Course instructors:
 * Mitko Veta
-* Federica Eduatti 
+* Federica Eduati 
 
 ## Recommended preliminary knowledge
 
