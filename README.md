@@ -4,4 +4,4 @@
 
 Machine Learning Fundamentals I
 * [Lecture slides]
-* [Practical work]
+* [Practical work](practicals/week_1.ipynb)
