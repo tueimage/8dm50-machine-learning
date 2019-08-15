@@ -20,6 +20,7 @@
 \usepackage{subfig}
 \usepackage{bm}
 
+% Mainly math commands
 \newcommand{\vect}[1]{\bm{#1}}
 \usepackage{amsfonts}% to get the \mathbb alphabet
 \newcommand{\field}[1]{\mathbb{#1}}
@@ -27,10 +28,8 @@
 \newcommand{\R}{\field{R}}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\argmin}{\operatornamewithlimits{argmin}}
-\providecommand{\abs}[1]{\lvert#1\rvert}
-\providecommand{\norm}[1]{\lVert#1\rVert}
-
-
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\norm}[1]{\lVert#1\rVert}
 
 % Bibliography
 \usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp]{biblatex}
@@ -514,70 +513,6 @@ Materials:
 
 
 \end{itemize}
-\end{frame}
-
-\subsection{Stochastic Gradient Descent}
-
-\begin{frame}
-\frametitle{Stochastic Gradient Descent}
-    \begin{itemize}
-        \item Stochastic Gradient Descent(SGD) is used by nearly all deep learning techniques.
-        \item Recurring problem in machine learning
-            \begin{itemize}
-                \item large training sets are needed to produce a good model, but ...
-                \item training with large sets is also computationally expensive.
-            \end{itemize}
-        \item The loss functions used in machine learning often decompose as a sum of per-example loss function.
-    \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Stochastic Gradient Descent}
-        \begin{itemize}
-                \item Example:The negative conditional log-likelihood of the training data can be written as
-                $$J(\vect{\theta}) = \field{E}_{\vect{x},y \sim \hat{p}_{\mbox{data}}} = L(\vect{x},y,\vect{\theta}) = \frac{1}{m}\sum_{i=1}^{m}L(\vect{x}_i,y_i,\vect{\theta})$$
-                where $L(\vect{x}_i,y_i,\vect{\theta}) = -\log p(y \mid \vect{x};\vect{\theta})$
-                \item For such additive cost functions gradient descent requires computing the gradient
-            $$\nabla J(\vect{\theta}) = \frac{1}{m}\sum_{i=1}^{m} \nabla_{\vect{\theta}}L(\vect{x}_i,y_i,\vect{\theta})$$
-                \item The computational costs of this operation is $O(m)$.
-        \end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Stochastic Gradient Descent}
-    \begin{itemize}
-        \item The crucial idea behind the Stochastic Gradient Descent is that
-            the gradient is an expectation.
-        \item Thus, it can be approximated using a small sample set.
-        \item In each step a {\bf minibatch} of examples $\field{B} = \{\vect{x}_1, \dots, \vect{x}_{m'}\}$ is assembled.
-        \item The size of the minibatch $m'$ is relatively small, between 1 and few hundred.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Stochastic Gradient Descent}
-    \begin{itemize}
-         \item $m'$ can be held fixed despite the increase of the training set size
-        \begin{itemize}
-            \item billions of examples can be fit with batch samples consisting of only a hundred examples.
-        \end{itemize}
-        \item Using examples from the minibatch $\field{B}$ an estimate of the gradient can be computed as $$\vect{g} = \frac{1}{m'}\sum_{i=1}^{m'}\nabla_{\vect{\theta}}L(\vect{x}_i,y_i,\vect{\theta})$$
-        \item  The stochastic gradient descent algorithm follows the gradient "downhill"
-        $$\vect{\theta} \leftarrow \vect{\theta} - \epsilon \vect{g}$$ where $\epsilon$ is the learning rate.
-
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Stochastic Gradient Descent}
-    \begin{itemize}
-        \item Despite the scepticism about its efficiency expressed in the past, now we know that the SGD algorithm works very well for a broad class of machine learning methods.
-        \item SGD is a main method to train large models on very large linear datasets.
-        \item In general the computational costs of the algorithm per update/iteration does not increase with the increase of the training data size.
-        \item The number of iterations (updates) increases with the increase of the data size.
-        \item However, in practice the method will converge to the best model before the training set is exhausted, so for big $m$ the number of iterations needed becomes constant.
-    \end{itemize}
 \end{frame}
 
 
@@ -1069,30 +1004,6 @@ Materials:
 \includegraphics[width=0.5\textwidth]{figures/week_1/gaussian_2d.pdf}
 \end{center}
 \end{frame}
-
-\begin{frame}
-\frametitle{More distributions}
-\begin{itemize}
-    \item Exponential
-    $$
-    p(x; \lambda) = \lambda \vect{1}_{x \geq 0} \exp{(-\lambda x)}
-    $$
-    \item Laplace
-    $$
-    p(x; \mu, \gamma) = \frac{1}{2 \gamma} \exp{\left (- \frac{\abs{x - \mu}}{\gamma}\right )}
-    $$
-    \item Dirac
-    $$
-    p(x) = \delta(x - \mu), \quad \text{where $\delta$ is the {\bf Dirac delta function}}
-    $$
-    \item Empirical distribution
-    $$
-    p(\hat{\vect{x}}) = \frac{1}{m} \sum_{i=1}^{m} \delta(\vect{x} - \vect{x}^{(i)})
-    $$
-    assigns probability $1/m$ to each of the $m$ points $\vect{x}^{(1)}, \dots , x^{(m)}$, of a given data set or collection of samples
-\end{itemize}
-\end{frame}
-
 
 \begin{frame}
 \frametitle{Logistic sigmoid}
