@@ -6,7 +6,33 @@
 * [Lecture slides]
 * [Practical work](practicals/week_1.ipynb)
 
-# Learning objectives
+### Machine Learning Fundamentals II
+* [Lecture slides]
+* [Practical work]
+
+### Linear models
+* [Lecture slides]
+* [Practical work]
+
+### Deep learning I
+* [Lecture slides]
+* [Practical work]
+
+### Deep learning II
+* [Lecture slides]
+* [Practical work]
+
+### Support vector machines, random forests
+* [Lecture slides]
+* [Practical work]
+
+### Unsupervised machine learning
+* [Lecture slides]
+* [Practical work]
+
+# Course informatiom
+
+## Learning objectives
 
 After completing the course, the student will be able to:
 * Recognize how machine learning methods can be used to solve problems in medical imaging and computational biology.
