@@ -41,6 +41,17 @@ After completing the course, the student will be able to:
 * Design experimental setups for training and evaluation of machine learning models.
 * Analyze and critically evaluate the results of experiments with machine learning models.
 
+## Assessment
+
+The assessment will be performed in the following way:
+
+* Work on the practical assignments: 30% of the final grade (each assignment has equal contribution);
+* Final exam: 70% of the final grade.
+
+Intermediate feedback will be provided as grades to the submitted assignments.
+
+The grading of the assignments will be done per groups, however, it is possible that individual students get separate grade from the rest of the group (e.g. if they did not sufficiently participate in the work of the group).
+
 ## Instruction
 
 The students will receive instruction in the following ways:
