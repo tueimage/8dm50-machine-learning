@@ -2,7 +2,7 @@
 
 # Materials
 
-Machine Learning Fundamentals I
+### Machine Learning Fundamentals I
 * [Lecture slides]
 * [Practical work](practicals/week_1.ipynb)
 
