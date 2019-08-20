@@ -3,6 +3,14 @@ The course covers a number of machine learning methods and concepts, including s
 
 # Materials
 
+## Books
+The lectures are based on the following two books that are freely available online:
+
+* [Deep Learning, Ian Goodfellow and Yoshua Bengio and Aaron Courville](https://www.deeplearningbook.org/)
+* [Elements of Statistical Learning, Trevor Hastie, Robert Tibshirani, Jerome Friedman](https://web.stanford.edu/~hastie/ElemStatLearn/)
+
+## Lectures
+
 ### Machine Learning Fundamentals I
 * [Lecture slides]
 * [Practical work](practicals/week_1.ipynb)
