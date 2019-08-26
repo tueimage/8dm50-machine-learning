@@ -38,8 +38,7 @@ Additional reading materials such as journal articles are listed within the lect
 * [Practical work]
 
 ### Unsupervised machine learning
-* [Lecture slides]
-* [Practical work]
+* [Reading list]
 
 # Course informatiom
 
