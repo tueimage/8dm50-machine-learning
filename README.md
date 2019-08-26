@@ -55,8 +55,8 @@ After completing the course, the student will be able to:
 
 The assessment will be performed in the following way:
 
-* Work on the practical assignments: 30% of the final grade (each assignment has equal contribution);
-* Final exam: 70% of the final grade.
+* Work on the practical assignments: 25% of the final grade (each assignment has equal contribution);
+* Final exam: 65% of the final grade.
 
 Intermediate feedback will be provided as grades to the submitted assignments.
 
