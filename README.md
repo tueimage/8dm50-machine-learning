@@ -56,6 +56,7 @@ After completing the course, the student will be able to:
 The assessment will be performed in the following way:
 
 * Work on the practical assignments: 25% of the final grade (each assignment has equal contribution);
+* Unuspervised learning presentations: 10% of the final grade;
 * Final exam: 65% of the final grade.
 
 Intermediate feedback will be provided as grades to the submitted assignments.
