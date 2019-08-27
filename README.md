@@ -88,3 +88,6 @@ The practical assignments for this course will be done in Python. We recommend t
 
 The [course page in Canvas] will be used for submission of the assignments, scheduling of the lectures and contact hours and announcements. The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section in Canvas and not asked during the contact hours.
 
+
+
+*This page is carefully filled with all necessary information about the course. When unexpected differences occur between this page and Osiris, the information provided in Osiris is leading.*
