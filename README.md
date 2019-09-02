@@ -13,6 +13,8 @@ Additional reading materials such as journal articles are listed within the lect
 
 ## Lectures
 
+* [Introduction slides](lectures/intro_2019.pdf)
+
 ### Machine learning fundamentals I
 * [Lecture slides](lectures/week_1.pdf)
 * [Practical work](practicals/week_1.ipynb)
