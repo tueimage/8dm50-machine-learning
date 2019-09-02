@@ -13,11 +13,11 @@ Additional reading materials such as journal articles are listed within the lect
 
 ## Lectures
 
-### Machine Learning Fundamentals I
+### Machine learning fundamentals I
 * [Lecture slides](lectures/week_1.pdf)
 * [Practical work](practicals/week_1.ipynb)
 
-### Machine Learning Fundamentals II
+### Machine learning fundamentals II
 * [Lecture slides]
 * [Practical work]
 
