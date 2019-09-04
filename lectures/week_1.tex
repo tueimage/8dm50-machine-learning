@@ -31,6 +31,11 @@
 \providecommand{\abs}[1]{\lvert#1\rvert}
 \providecommand{\norm}[1]{\lVert#1\rVert}
 
+% A variable used to exclude slides from the lecture version
+\newif\iffull
+%\fullfalse
+\fulltrue
+
 % Bibliography
 \usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp]{biblatex}
 \bibliography{lectures/references}
@@ -52,7 +57,6 @@ Department of Biomedical Engineering}
 
 \frame{\titlepage}
 
-
 \begin{frame}
 \frametitle{Learning goals}
 
@@ -68,6 +72,7 @@ Topics covered in this lecture:
     \tableofcontents
 \end{frame}
 
+
 \section{Linear algebra}
 
 \begin{frame}
@@ -80,6 +85,7 @@ Materials:
 
 \end{frame}
 
+\iffull
 \begin{frame}
 \frametitle{Scalars}
 \begin{itemize}
@@ -88,7 +94,9 @@ Materials:
 
 \end{itemize}
 \end{frame}
+\fi
 
+\iffull
 \begin{frame}
 \frametitle{Vectors}
 \begin{itemize}
@@ -100,7 +108,7 @@ Materials:
     $\vect{x} \in \R^n$
  \end{itemize}
 \end{frame}
-
+\fi
 
 \begin{frame}
 \frametitle{Matrices}
@@ -154,6 +162,7 @@ Materials:
 
 \end{frame}
 
+\iffull
 \begin{frame}
 \frametitle{Identity matrix}
     \begin{itemize}
@@ -169,6 +178,7 @@ Materials:
     \end{itemize}
 
 \end{frame}
+\fi
 
 \begin{frame}
 \frametitle{Matrix (dot) product}
@@ -407,6 +417,7 @@ Materials:
 
 \end{frame}
 
+\iffull
 \begin{frame}
 \frametitle{Trace}
     \begin{itemize}
@@ -417,6 +428,7 @@ Materials:
     \end{itemize}
 
 \end{frame}
+\fi
 
 \section{Gradient-based optimization}
 
