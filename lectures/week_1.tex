@@ -33,8 +33,8 @@
 
 % A variable used to exclude slides from the lecture version
 \newif\iffull
-%\fullfalse
-\fulltrue
+\fullfalse
+%\fulltrue
 
 % Bibliography
 \usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp]{biblatex}
@@ -322,8 +322,8 @@ Materials:
     \begin{itemize}
         \item Eigenvector and eigenvalue
         $$ \vect{A}\vect{x} = \lambda \vect{x}$$
-        \item Eigendomdecomposition of a diagonazible matrix
-        $$ \vect{A} = \vect{A} \mbox{diag}(\lambda) \vect{A}^{-1}$$
+        \item Eigendomdecomposition of a matrix
+        $$ \vect{A} = \vect{V} \mbox{diag}(\lambda) \vect{A}^{-1}$$
         where $\mbox{diag}(\lambda)$ is a diagonal matrix having the (scalar) eigenvalues $\lambda$ as diagonal elements.
     \end{itemize}
 
@@ -342,18 +342,6 @@ Materials:
 \end{frame}
 
 \begin{frame}
-\frametitle{Eigendecomposition}
-    \begin{itemize}
-        \item From the eigendecomposition we learn useful properties of the matrix.
-        \item The eigendecomposition of a real symmetric matrix is used in optimization of quadratic expressions of the form $f(\vect{x}) = \vect{x}^T \vect{A} \vect{x}$ under the constraint $\norm{\vect{x}}_2 = 1$.
-        \item For instance, if $\vect{x}=\vect{v}^{(i)}$, then $f(\vect{x}) = \lambda_i$, when $\vect{v}^{(i)}$ is an eigenvector of $A$ and $\lambda_i$ is its corresponding eigenvalue.
-        \item The maximal (minimal) value of $f$ within the constraint region is equal to the maximal (minimal) eigenvalue.
-    \end{itemize}
-
-\end{frame}
-
-
-\begin{frame}
 \frametitle{Effect of eigenvalues}
 
 \begin{center}
@@ -363,6 +351,20 @@ Materials:
 \end{center}
 
 \end{frame}
+
+
+\iffull
+\begin{frame}
+\frametitle{Eigendecomposition}
+    \begin{itemize}
+        \item From the eigendecomposition we learn useful properties of the matrix.
+        \item The eigendecomposition of a real symmetric matrix is used in optimization of quadratic expressions of the form $f(\vect{x}) = \vect{x}^T \vect{A} \vect{x}$ under the constraint $\norm{\vect{x}}_2 = 1$.
+        \item For instance, if $\vect{x}=\vect{v}^{(i)}$, then $f(\vect{x}) = \lambda_i$, when $\vect{v}^{(i)}$ is an eigenvector of $A$ and $\lambda_i$ is its corresponding eigenvalue.
+        \item The maximal (minimal) value of $f$ within the constraint region is equal to the maximal (minimal) eigenvalue.
+    \end{itemize}
+
+\end{frame}
+\fi
 
 
 \begin{frame}
@@ -411,7 +413,7 @@ Materials:
         $$
         \vect{A}^{+} = \vect{V}\vect{D}^{+}\vect{U}^T
         $$
-        \item $\vect{U},\vect{D},\vect{V}$ are from the singular value decomposition.
+        \item $\vect{U},\vect{D},\vect{V}$ are from the singular value decomposition of $\vect{A}$.
         \item The pseudoinverse $\vect{D}^{+}$ of $\vect{D}$ is obtained by taking the reciprocal non-zero elements and after that taking the transpose of the resulting matrix.
     \end{itemize}
 
@@ -536,6 +538,7 @@ Materials:
 
 \end{frame}
 
+\iffull
 \begin{frame}
 \frametitle{Some notations}
     \begin{itemize}
@@ -548,6 +551,7 @@ Materials:
         \item Since by default vectors are assumed to be column vectors, the rows of $\vect{X}$ are the transposes $\vect{x}_i^T$.
     \end{itemize}
 \end{frame}
+\fi
 
 \begin{frame}
 \frametitle{The learning task}
@@ -611,7 +615,7 @@ Materials:
             \begin{center}
             $\hat{y} = \hat{\vect{w}}^T\vect{x} = \vect{x}^T \hat{\vect{w}}$
             \end{center}
-            using the fact that the scalar (inner) product of two vectors is a commutative operation
+            using the fact that the scalar (inner) product of two vectors is a commutative operation.
     \end{itemize}
 \end{frame}
 
@@ -623,6 +627,7 @@ Materials:
     \end{itemize}
 \end{frame}
 
+\iffull
 \begin{frame}
 \frametitle{Linear model fit by least squares}
     Some hyper(space) terminology:
@@ -630,13 +635,12 @@ Materials:
         \item Points $\vect{x},\hat{y}$ form a {\bf hyperplane} in the $(p+1)$-dimensional input-output hyperspace.
         \item If $\vect{x}$ is extended with constant $1$ then the hyperplane includes the origin and it forms a {\bf subspace}.
         \item If $1$ is not included then the hyperplane is an {\bf affine} set and it cuts the $y$-axis at the point $(\vect{0}, \hat{w_0})$, where the vector $\vect{0}$ has all $x_i$ coordinates equal to $0$.
-        \item Reminder: from now on we assume that $1$ is included in $\vect{x}$ and $\hat{w_0}$ in $\hat{\vect{w}}$
-        \item The function $f(\vect{x}) =  \vect{w}^T \vect{x}$ defined on the $p$-dimensional (input) space is a {\bf linear} function (we omit the hats over the $w$s since now we consider them as free variables)
+        \item Reminder: from now on we assume that $1$ is included in $\vect{x}$ and $\hat{w_0}$ in $\hat{\vect{w}}$/
+        \item The function $f(\vect{x}) =  \vect{w}^T \vect{x}$ defined on the $p$-dimensional (input) space is a {\bf linear} function (we omit the hats over the $w$s since now we consider them as free variables).
         \item The gradient $\nabla f(\vect{x})$ is a vector pointing along the direction of maximal change.
     \end{itemize}
-
 \end{frame}
-
+\fi
 
 \begin{frame}
 \frametitle{Linear model fit by least squares}
@@ -723,7 +727,7 @@ Materials:
         \end{center}
 \end{frame}
 
-
+\iffull
 \begin{frame}
 \frametitle{Example: Linear model fit by least squares}
 \begin{itemize}
@@ -732,8 +736,8 @@ Materials:
     \item $\{ \vect{x} : \vect{w}^T\vect{x} \geq 0.5 \}$ set of \textcolor{orange}{ORANGE} points
 
 \end{itemize}
-
 \end{frame}
+\fi
 
 \begin{frame}
 \frametitle{Example: Linear model fit by least squares}
@@ -761,7 +765,7 @@ Materials:
         \item $k$-nearest neighbour fit is defined as
         $$ \hat{y}(\vect{x}) = \frac{1}{k} \sum_{\vect{x}_i \in N_k(\vect{x})} y_i $$
         where $N_k(\vect{x})$ is the neighbourhood of $\vect{x}$ consisting of the $k$ "closest" points to $\vect{x}$.
-        \item "Closeness" requires a definition of {\bf metrics}
+        \item "Closeness" requires a definition of {\bf metrics}.
         \item For the moment we assume Euclidian distance (each $\vect{x}$ is a point in the hyperspace).
         \item An average of the classes of the $k$ closest points
     \end{itemize}
@@ -805,7 +809,7 @@ Materials:
     \end{center}
 \end{frame}
 
-
+\iffull
 \begin{frame}
 \frametitle{Comparison of the techniques}
     \begin{itemize}
@@ -815,6 +819,7 @@ Materials:
         \item An independent test set needed to obtain a better comparison of the methods.
     \end{itemize}
 \end{frame}
+\fi
 
 \begin{frame}
 \frametitle{Comparison of techniques}
@@ -861,10 +866,12 @@ Materials:
 \frametitle{Probability theory}
     \begin{itemize}
         \item A {\bf random variable} is a variable that can take values randomly.
+        \iffull
         \item We will denote random variables with plain (ordinary text) typeface and their values with standard math typeface\\
-        for example, if the random variable is denoted as x its values can be $x_1$ and $x_2$
+        for example, if the random variable is denoted as x its values can be $x_1$ and $x_2$.
         \item A vector-valued random variable is denoted with bold typeface, e.g. {\bf x}.
-        \item On its own a random variable just denotes the set of its possible values; to get its full meaning in needs to be coupled with a distribution
+        \fi
+        \item On its own a random variable just denotes the set of its possible values; to get its full meaning in needs to be coupled with a distribution.
     \end{itemize}
 \end{frame}
 
