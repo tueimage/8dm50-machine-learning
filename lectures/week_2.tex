@@ -1,7 +1,7 @@
 \documentclass[notes]{beamer}          % print frame + notes
 %\documentclass[notes=only]{beamer}     % only notes
 %\documentclass{beamer}                 % only frames
- 
+
 \usecolortheme{beaver}
 
 % Some commonly used packages
@@ -40,7 +40,7 @@
 \fullfalse
 %\fulltrue
 
-% Bibliography 
+% Bibliography
 \usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp]{biblatex}
 \bibliography{references}
 
@@ -54,13 +54,13 @@
 
 Department of Biomedical Engineering}
 \date{2019}
- 
- 
- 
+
+
+
 \begin{document}
- 
+
 \frame{\titlepage}
- 
+
 \begin{frame}
 \frametitle{Learning goals}
 
@@ -132,11 +132,11 @@ Materials:
 \begin{frame}
 \frametitle{Example: Linear regression}
  \begin{itemize}
-        \item Previously, we trained the model by minimizing the training error 
+        \item Previously, we trained the model by minimizing the training error
         $$
         \frac{1}{m^{\mbox{(train)}}}\norm{\vect{X}^{\mbox{(train)}}\hat{\vect{w}} - \vect{y}^{\mbox{(train)}}}_2^2
         $$
-        \item We would like actually to minimize the test error 
+        \item We would like actually to minimize the test error
          $$
         \frac{1}{m^{\mbox{(test)}}}\norm{\vect{X}^{\mbox{(test)}}\hat{\vect{w}} - \vect{y}^{\mbox{(test)}}}_2^2
         $$
@@ -161,7 +161,7 @@ Materials:
                         \item The training data set and the test data set are {\bf identically distributed}, i.e., drawn from the same probability distribution.
                     \end{itemize}
             \end{itemize}
-        
+
     \end{itemize}
 \end{frame}
 
@@ -193,7 +193,7 @@ Materials:
         \fi
         \item The capacity can be controlled by choosing its {\bf hypothesis space}, i.e. the set of functions from which the learning algorithm is allowed to select the solution.
         \item Example: The linear regression algorithm has the set of all linear functions as its hypothesis space.
-        
+
     \end{itemize}
 \end{frame}
 
@@ -289,7 +289,7 @@ Materials:
         \item An interesting, but mainly theoretical result.
         \item In practice we often have an information about the probability distributions we deal with and can tailor our algorithms to perform well with particular distributions.
     \end{itemize}
-    
+
 \end{frame}
 
 \begin{frame}
@@ -339,7 +339,7 @@ Materials:
         \fi
     \end{itemize}
 \end{frame}
- 
+
 
 \begin{frame}
 \frametitle{Choice of training, validation, and test sets}
@@ -413,12 +413,12 @@ Materials:
     \begin{itemize}
         \item Given a parameter $\vect{\theta}$ we denote its point estimate with ${\vect{\hat{\theta}}}$.
         \item As usual, let $\{\vect{x}^{(1)}, \ldots, \vect{x}^{(m)} \}$ be $m$ independent and identically distributed (i.i.d.) data points.
-        \item A {\bf point estimator} or {\bf statistic} is any function of the data 
+        \item A {\bf point estimator} or {\bf statistic} is any function of the data
         $$
         \hat{\vect{\theta}}_m = g(\vect{x}^{(1)}, \ldots, \vect{x}^{(m)}))
         $$
         \item This definition is very general. For instance, that the value returned by $g$ need not be close to the true value $\vect{\theta}$. Also $g$ might return a value which is outside the values that $\vect{\theta}$ is allowed to have.
-       
+
     \end{itemize}
 \end{frame}
 
@@ -435,7 +435,7 @@ Materials:
 \begin{frame}
 \frametitle{Function estimation}
     \begin{itemize}
-         \item In {\bf function estimation}, we assume that there is a (true) function that describes the (approximate) relationship between $\vect{x}$ and $\vect{y}$ 
+         \item In {\bf function estimation}, we assume that there is a (true) function that describes the (approximate) relationship between $\vect{x}$ and $\vect{y}$
         $$\vect{y} = f(\vect{x}) + \vect{\epsilon}$$
         where $\vect{\epsilon}$ is the part of $\vect{y}$ which is not predictable from $\vect{x}$
         \item The goal is to find the {\bf function estimate} ({\bf model}) $\hat{f}$ which is a good approximation of $f$.
@@ -447,7 +447,7 @@ Materials:
 \begin{frame}
 \frametitle{Bias}
     \begin{itemize}
-        \item A bias of an estimator $\vect{\hat{\theta}}_m$ is defined as 
+        \item A bias of an estimator $\vect{\hat{\theta}}_m$ is defined as
         $$
         \mbox{bias}(\vect{\hat{\theta}}_m) = \field{E}(\vect{\hat{\theta}}_m) - \vect{\theta}
         $$
@@ -486,7 +486,7 @@ Materials:
     \end{eqnarray*}
     The sample mean is an unbiased estimator of Gaussian mean parameter.
 \end{frame}
-   
+
 
 
 \begin{frame}
@@ -499,9 +499,9 @@ Materials:
         \hat{\sigma}^2 = \frac{1}{m}\sum_{1}^{m} \left (  x^{(i)} - \hat{\mu}_m \right )^2
         $$
         where $\hat{\mu}$ is the sample mean.
-        \item We are interested in computing 
+        \item We are interested in computing
         $$
-        \mbox{bias}(\hat{\sigma}^2_m) = \field{E} [\hat{\sigma}^2_m] - \sigma^2 
+        \mbox{bias}(\hat{\sigma}^2_m) = \field{E} [\hat{\sigma}^2_m] - \sigma^2
         $$
     \end{itemize}
 \end{frame}
@@ -516,10 +516,10 @@ Materials:
     $$
     \item Back to the bias
     $$
-    \mbox{bias}(\hat{\sigma}^2_m) = \field{E} [\hat{\sigma}^2_m] - \sigma^2  = \frac{m-1}{m} \sigma^2 - \sigma^2 = -\frac{\sigma^2}{m} 
+    \mbox{bias}(\hat{\sigma}^2_m) = \field{E} [\hat{\sigma}^2_m] - \sigma^2  = \frac{m-1}{m} \sigma^2 - \sigma^2 = -\frac{\sigma^2}{m}
     $$
     \item Therefore the sample variance is a \textbf{biased} estimator.
-\end{itemize}    
+\end{itemize}
 \end{frame}
 
 
@@ -527,17 +527,17 @@ Materials:
 \frametitle{Bias: example}
 \begin{itemize}
     \item The {\bf unbiased variance estimator} is defined as
-   
+
 
     $$
         \tilde{\sigma}^2 = \frac{1}{m - 1}\sum_{1}^{m} \left (  x^{(i)} - \hat{\mu}_m \right )^2
     $$
-    \item Indeed 
+    \item Indeed
     $$
     \field E [\tilde{\sigma}^2_m] = \field{E} \left [ \frac{1}{m-1}\sum_{1}^{m} \left (  x^{(i)} - \hat{\mu}_m \right )^2 \right ] = \frac{m-1}{m-1} \sigma^2 = \sigma^2
     $$
     and the bias is $0$. \\
-\end{itemize}    
+\end{itemize}
 \end{frame}
 
 
@@ -545,7 +545,7 @@ Materials:
 \frametitle{Variance and standard error}
     \begin{itemize}
         \item Another important feature of an estimator is its variance.
-        \item The {\bf variance} of an estimator is simple its statistical variance $\mbox{Var}(\hat{\theta})$ over the training set as a random variable. 
+        \item The {\bf variance} of an estimator is simple its statistical variance $\mbox{Var}(\hat{\theta})$ over the training set as a random variable.
         \item Alternatively we can compute the {\bf standard error} (the square root of the variance) $\mbox{SE}(\hat{\theta)}$.
         \item The variance or the standard error provide a measure how much the estimate would vary as we resample the data independently from the underlying data generating process.
         \item We would prefer a relatively low variance of the estimator.
@@ -603,7 +603,7 @@ Materials:
         \mbox{MSE} = \field{E}[(\hat{\theta}_m -  \theta)^2] = \mbox{bias}(\hat{\theta}_m)^2 + \mbox{Var}(\hat{\theta}_m)
         $$
         \item The smaller MSE the better - so minimizing both the bias and variance is always preferable.
-        
+
     \end{itemize}
 \end{frame}
 
@@ -770,7 +770,7 @@ Materials:
     \begin{itemize}
         \item By substituting (the full Gaussian function version of) $p(y \mid \vect{x})$ in the conditional log-likelihood formula we obtain
         $$
-        \sum_{i=1}^{m} \log p(\vect{x}^{(i)} \mid y^{(i)}; \vect{\theta}) = 
+        \sum_{i=1}^{m} \log p(\vect{x}^{(i)} \mid y^{(i)}; \vect{\theta}) =
         -m \log \sigma - \frac{m}{2} \log(2\pi) - \sum_{i=1}^{m }\frac{\norm{\hat{y}^{(i)} - y^{(i)}}^2}{2 \sigma^2}
         $$
         where $\hat{y}^{(i)}$ is the linear regression on the $i$-th input $\vect{x}^{(i)}$.
@@ -898,25 +898,25 @@ Materials:
             \multirow{6}{*}{Predicted class} & \multirow{3}{*}{$\vect{Y}$} &  True & False  \\
                 &   & positives & positives  \\
                 &   & (TP) & (FP) \\
-            \cline{2-4} 
+            \cline{2-4}
                 & \multirow{3}{*}{$\vect{N}$} & False &  True  \\
                 &   &  negatives & negatives  \\
                 &   & (FN) & (TN) \\
             \cline{2-4}
             \end{tabular}
-        \end{table}  
+        \end{table}
 \end{frame}
 
 
 
 \begin{frame}
- \frametitle{Binary classifications metrics}   
+ \frametitle{Binary classifications metrics}
     \begin{itemize}
         \item Using the four basic categories of prediction outcomes (TP, FP, TN, FN) we can derive various {\bf  measures} of performance of classification models.
-        \item For instance the accuracy can be defined as 
+        \item For instance the accuracy can be defined as
         $$\mbox{Accuracy} = \frac{TP+TN}{TP+FP+TN+FN}$$
         \item Also quite frequently used measures are \\
-        
+
     \end{itemize}
     \small{
         $$Sensitivity = \frac{TP}{TP+FN} \hspace{1em} Specificity = \frac{TN}{TN+FP} \hspace{1em} Precision = \frac{TP}{TP+FP}$$
@@ -945,7 +945,7 @@ Materials:
         \item We can obtain more objective evaluation by combing metrics.
         \item The metrics $F_1$ is the harmonic mean (average) of the precision and recall (sensitivity)
         $$
-        \frac{2}{F_1} = \frac{1}{Precision}+\frac{1}{Recall} \text{  or  } F_1 = 2 \cdot \frac{Precision \cdot Recall}{Precision+Recall} 
+        \frac{2}{F_1} = \frac{1}{Precision}+\frac{1}{Recall} \text{  or  } F_1 = 2 \cdot \frac{Precision \cdot Recall}{Precision+Recall}
         $$
     \end{itemize}
 \end{frame}
@@ -964,7 +964,7 @@ Materials:
 \begin{frame}
 \frametitle{Receiver Operating Characteristic (ROC) curve}
     \begin{itemize}
-        \item The ROC curve plots the true positive rate (sensitivity) versus the false positive rate (1 - specificity). 
+        \item The ROC curve plots the true positive rate (sensitivity) versus the false positive rate (1 - specificity).
         \begin{center}
         \includegraphics[width=0.95\textwidth]{figures/week_2/camelyon_roc.png}
         \end{center}
@@ -984,7 +984,7 @@ Materials:
                 (ideally it should cover the whole square corresponding to the ROC space)
             \end{itemize}
         \item  A less common example of a measure combination into a graphical plot is the precision-recall plot (recall on the $x$-axis, precision on the $y$-axis).
-    \end{itemize}   
+    \end{itemize}
 \end{frame}
 
 
@@ -1017,7 +1017,7 @@ Materials:
         \item One way would be to choose the models, training algorithms and objective functions as different as possible.
         \item In contrast, begging allows the same kind of model, algorithm and objective function to be reused several times.
     \end{itemize}
-    
+
 \end{frame}
 
 \begin{frame}
@@ -1027,12 +1027,12 @@ Materials:
         \item Each data set
         \begin{itemize}
             \item has the same size as the original set and
-            \item is constructed by sampling with repetition from the original data set 
+            \item is constructed by sampling with repetition from the original data set
         \end{itemize}
         \item For each data set a different model is produced.
         \item Each model reflects the differences between the (training) data sets.
     \end{itemize}
-    
+
 \end{frame}
 
 \begin{frame}
@@ -1064,7 +1064,9 @@ Materials:
 \begin{frame}
 \frametitle{Acknowledgements}
 
-The slides for this lecture were prepared by Mitko Veta and Dragan Bo{\v s}nacki. 
+The slides for this lecture were prepared by Mitko Veta and Dragan Bo{\v s}nacki.
+
+Some of the slides are based on the accompanying lectures of \cite{deeplearning}.
 
 \end{frame}
 
@@ -1073,130 +1075,5 @@ The slides for this lecture were prepared by Mitko Veta and Dragan Bo{\v s}nacki
 \frametitle{References}
 \printbibliography
 \end{frame}
-
-\end{document}
-
-
-%%% UNUSED SLIDES %%%
-
-\begin{comment}
-
-\begin{frame}
-\frametitle{Weight decay}
-    \begin{itemize}
-        \item Consider the linear regression example
-        \item We can modify the minimal squared error criterion by adding an additional condition
-        \item 
-        We define a new function $J(\vect{w}$ which can express preference for the weights to have smaller $L^2$ norm:
-        $$
-            J(\vect{w}) = MSE){\mbox{train}} + \lanbda \vect{w}^T\vect{w}
-        $$
-        where $\labda$ is a previously fixed parameter which expresses the strength of our preference for smaller weights
-        \item $\lambda = 0$ means no preference, the larger $\lambda$ the smaller the weights 
-        \item The choice is between fitting the training data and being small
-    \end{itemize}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Weight decay}
-    TODO figure (Fig. 5.5)
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Regularization}
-    \begin{itemize}
-        \item The waight decay is an example of a {\bf regularization}
-        \item Regularization is any modification of the learning algorithm in order to minimze the generalization error but not the training error
-        \item More generally, we can regularize a model that learns a function $f(\vect{x};\vect{\theta})$ by adding to the {\bf cost function} which we are minimizing a penalty called a {\bf regularizer}
-        \tem In the case of linear regression and weight decay, we added to $\mbox{MSE}$ cost function the regularizer $\Omega(\vect{w}) = \vect{w}^T\vect{w}$
-        \item In this course we will see other examples of regularization
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Decision trees}
-    TODO figure (Fig. 5.7)
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Principal component analysis}
-   TODO figure (Fig. 5.8)
-\end{frame}
-
-
-%\begin{frame}
-%\frametitle{Curse of dimensionality}
-%    TODO figure (Fig. 5.9)
-%\end{frame}
-
-\begin{frame}
-\frametitle{Regularization for deep learning}
-    \begin{itemize}
-        \item Central problem in machine learning: How to design our algorithms/model such that it will perform good not only on the training data, but also on new inputs, i.e., how to ultimately minimize the test error
-        \item Many strategies reduce the test error on the expense of the training error
-        \item A collective name for this strategies is {\bf regularization}
-        \item Definition: \\
-        Any modiﬁcation of the learning algorithm intended to reduce its generalization (test) error but not (necessarily) its training error
-    \end{itemize}
-    
-\end{frame}
-
-\section{Bootstrapping, crossvalidation}
-%covered in Model selection DL book 5.3 
-
-
-%\begin{frame}
-%\frametitle{Example: linear regression as maximum likelihood}
-%    \begin{itemize}
-%        \item linear regression : an algorithm that learns to take an input $\vect{x}$ and produce output %$\hat{y}$
-%        \item This function from $\vect{x}$ to $\hat{y}$ is chosen to minimize the mean squared error
-%        \item This criterion was introduced more or less arbitrarily
-%        \item We revisit linear regression from the point of view of maximal likelihood
-%    \end{itemize}
-%\end{frame}
-
-
-\begin{frame}
-\frametitle{Classification outcomes}
-    \begin{itemize}
-    \item In practice classes $\vect{p}$ and $\vect{Y}$ have the same name and are only distinguished by the prediction context "correct" and "incorrect". The same holds for $\vect{n}$ and $\vect{N}$ 
-    \item For example: In the context of a medical study the classification outcomes can be interpreted as:
-    \begin{itemize}
-    \item True positives: Sick people correctly diagnosed as sick \\
-    \item False positives: Healthy people incorrectly diagnosed as sick \\
-    \item True negatives: Healthy people correctly diagnosed as healthy \\
-    \item False negatives: Sick people incorrectly diagnosed as healthy 
-    \end{itemize}
-    \end{itemize}
-\end{frame}
-
-%\begin{frame}
-% \frametitle{Binary classifications metrics}   
- %   \begin{itemize}
- %       \item Using the four basic categories of prediction outcomes (TP, FP, TN, FN) we can derive %various {\bf statistical measures} of performance of the classification models
- %       \item For instance the accuracy can be defined as 
- %       $$\mbox{Accuracy} = \frac{TP+TN}{TP+FP+TN+FN}$$
- %       \item Also quite fequently used measures are
- %       $$Specificity = \frac{TP}{TP+FN}  \hspace{1cm}  Sensitivity = \frac{TN}{TN+FP}$$ \\
- %       $$Precision = \frac{TP}{TP+FP}$$
- %   \end{itemize}
-%\end{frame}
-
-\begin{frame}
-\frametitle{Model evaluation}
-    \begin{itemize}
-        \item For tasks which do not have a discrete (categorical) output, e.g., density estimation, does not make sense to use accuracy, error rate, etc. 
-        \item We need a measure which takes into account a continuous-valued score for each example.
-        \item The most common measure is the {\bf average log-probability} that the  model assigns to some examples
-        \item Choosing a performance measure is not always a straightforward task
-        \item It could be difficult to decide what to measure and how \\
-        Example of a dilemma: In regression, should we penalize the algorithm if it frequently makes medium-sized mistakes or if it rarely makes very large mistakes?
-    \end{itemize}
-\end{frame}
-
-\end{comment}
 
 \end{document}
