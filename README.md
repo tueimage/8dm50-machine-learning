@@ -20,8 +20,8 @@ Additional reading materials such as journal articles are listed within the lect
 * [Practical work](practicals/week_1.ipynb)
 
 ### Machine learning fundamentals II
-* [Lecture slides]
-* [Practical work]
+* [Lecture slides](lectures/week_2.pdf)
+* [Practical work](practicals/week_2.ipynb)
 
 ### Linear models
 * [Lecture slides]
