@@ -18,9 +18,23 @@
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{subfig}
-
 \usepackage{amsmath}
-\DeclareMathOperator*{\argmin}{argmin} % thin space, limits underneath in displays
+
+% Mainly math commands
+\newcommand{\vect}[1]{\bm{#1}}
+\usepackage{amsfonts}% to get the \mathbb alphabet
+\newcommand{\field}[1]{\mathbb{#1}}
+\newcommand{\C}{\field{C}}
+\newcommand{\R}{\field{R}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+% A variable used to exclude slides from the lecture version
+\newif\iffull
+%\fullfalse
+\fulltrue
 
 % Bibliography 
 \usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp]{biblatex}
@@ -41,8 +55,6 @@ Department of Biomedical Engineering}
  
 \frame{\titlepage}
  
-\section{Overview}
-
 \begin{frame}
 \frametitle{Learning goals}
 
@@ -62,7 +74,13 @@ Materials:
 \end{frame}
 
 
-\section{Introduction to linear models}
+\begin{frame}{Overview}
+Topics covered in this lecture:
+    \tableofcontents
+\end{frame}
+
+
+\section{Linear models for regression}
 
 
 \begin{frame}
@@ -79,27 +97,20 @@ The prediction task is defined as:
 
 \end{frame}
 
-
-\section{Linear methods for regression}
-
-
 \begin{frame}
 \frametitle{Linear regression model}
 Given a vector of inputs $X^T = (X_1, X_2, \dots, X_p)$, where $p$ is the number of features, a linear regression model has the form:
 
-\begin{equation**}
+\begin{equation*}
 f(X)=\beta_0 + \sum_{j=1}^p X_j\beta_j
-\end{equation**}
-where $b_j$ are the unknown parameters or coefficients. 
+\end{equation*}
+where $\beta_j$ are the unknown parameters or coefficients. 
 
 \vspace{5mm} 
 
 Note that the model remains linear in the parameters even if the the variables $X_j$ are polynomial (e.g. $X_2 = X_1^2$) or derive from interactions between variables (e.g. $X_3 = X_1 \cdot X_2$).
 
 \end{frame}
-
-\section{Linear methods for regression}
-
 
 \begin{frame}
 \frametitle{Estimation via least squares}
@@ -109,9 +120,9 @@ Parameters $b_j$ can be estimated from a set of training data $(x_1,y_1) \dots (
 
 With the \textit{least squares} estimation methods, the coefficients $\beta=(\beta_0, \beta_1, \dots, \beta_p)^T$ are selected by minimizing the residual sum of squares:
 
-\begin{equation**}
+\begin{equation*}
 RSS(\beta) = \sum_{i=1}^N (y_i - f(x_i))^2 = \sum_{i=1}^N (y_i - \beta_0 -  \sum_{j=1}^p x_{ij}\beta_j)^2
-\end{equation**}
+\end{equation*}
 \end{frame}
 
 \begin{frame}
@@ -203,9 +214,9 @@ We can interpret the prediction of drug sensitivity as a linear regression probl
 
 Idea: make sure features are on a similar scale.
 
-\begin{equation**}
+\begin{equation*}
 x_i = \frac{x_i-\mu_i}{\sigma_i}
-\end{equation**}
+\end{equation*}
 
 where $\mu_i$ and $\sigma_i$ are respectively the average and the standard deviation of all the values of feature $i$.
 
@@ -327,7 +338,7 @@ Idea: shrink regression coefficients by imposing a penalty on their size.
 $\lambda \geq 0$ is a tuning parameter.
 
 \begin{itemize}
-    \item $\lambda = 0$ corresponds to the least square estimates
+    \item $\lambda = 0$ corresponds to the least square estimates.
     \item for larger values of $\lambda$, coefficients $\beta_1, \dots, \beta_p$ will be shrinked towards zero
 \end{itemize}
 \end{frame}
@@ -481,10 +492,10 @@ Two data partitions - GDSC example (90\% training, 10\% test).
 
 We can use cross-validation following these steps:
 \begin{enumerate}
-  \item Choose a grid of $\lambda$
-  \item Optimize the model for each training set and compute Mean-Squared Error (MSE) for each validation set
-  \item Choose the model with smallest cross-validation error
-  \item Re-fit using all the available observations and the selected tuning parameter
+  \item Choose a grid of $\lambda$.
+  \item Optimize the model for each training set and compute Mean-Squared Error (MSE) for each validation set.
+  \item Choose the model with smallest cross-validation error.
+  \item Re-fit using all the available observations and the selected tuning parameter.
 \end{enumerate}
 
 \end{frame}
@@ -601,6 +612,7 @@ Profile of the Elastic net (with $\alpha=0.5$) regression coefficients for the G
 \end{frame}
 
 \section{Classification}
+
 \begin{frame}
 \frametitle{Classification}
 In a clinical setting, instead of predicting the continuous IC50 for each patient, we might be interested in classifying patients in sensitive or resistant to a specific drug.
@@ -682,7 +694,7 @@ Pr(response = resistant|ABCB1expression)
 p(X) = Pr(G = 1|X)
 \end{equation*}
 
-With \textit{logisitic regression} this probability is modeled as a \textit{logistic function}:
+With \textit{logistic regression} this probability is modeled as a \textit{logistic function}:
 
 \begin{equation*}
 p(X) = \frac{e^{\beta_0 + \beta_1X}}{1+e^{\beta_0 + \beta_1X}}
@@ -710,21 +722,21 @@ When having $K$ classes, the posterior probability is modeled as:
 \log \frac{Pr(G=K-1 | X=x)}{Pr(G=K | X=x)} &= \beta_{(K-1)0} + \beta_{K-1}^T x \\
 \end{align*}
 
-Using K-1 log-odds satisfies the constrain that probabilities sum to one. The choice of the last class to be used at denominator is arbitraty and does not affect the result.
+Using K-1 log-odds satisfies the constrain that probabilities sum to one. The choice of the last class to be used at denominator is arbitrary and does not affect the result.
 
 \end{frame}
 
 \begin{frame}
 \frametitle{Logistic regression: multi-class classification}
 
-It is easy to see that probabilites sum to one by rewriting the model as:
+It is easy to see that probabilities sum to one by rewriting the model as:
 
 \begin{align*}
 Pr(G=k | X=x) &= \frac{e^{\beta_{k0} + \beta_k^T X}}{1+\sum_{l=1}^{K-1} e^{\beta_{l0} + \beta_l^T X}}, k=1, \dots, K-1 \\
 Pr(G=K | X=x) &= \frac{1}{1+\sum_{l=1}^{K-1} e^{\beta_{l0} + \beta_l^T X}}
 \end{align*}
 
-An alternative notation for the probabilities is $P(G=k|X=x) = p_k(x;\theta)$, to emphasize the dependence on the entire parameter set $\theta=\{ \beta_{10}, \beta_1_T, \dots, \beta_{(K-1)0, \beta_{K-1}^T}\}$.
+An alternative notation for the probabilities is $P(G=k|X=x) = p_k(x;\theta)$, to emphasize the dependence on the entire parameter set $\theta=\{ \beta_{10}, \beta_1^T, \dots, \beta_{(K-1)0, \beta_{K-1}^T}\}$.
 
 \end{frame}
 
@@ -738,10 +750,10 @@ The parameters for logistic regression models are generally estimated using \tex
 For $N$ observations the log-likelihood to be maximized is:
 
 \begin{equation*}
-    l(\theta) = \sum_{i=1}^N \log p_g_i(x_i; \theta)
+    \ell(\theta) = \sum_{i=1}^N \log p_{g_i}(x_i; \theta)
 \end{equation*}
 
-where $p_k(x_i; \theta) = Pr(G=k|X=x_i; \theta)$
+where $p_k(x_i; \theta) = Pr(G=k|X=x_i; \theta)$.
 
 
 \end{frame}
@@ -752,7 +764,7 @@ where $p_k(x_i; \theta) = Pr(G=k|X=x_i; \theta)$
 For the two classes case the log-likelihood can be written
 
 \begin{align*}
-    l(\beta) &= \sum_{i=1}^N \{ y_i \log p(x_i;\beta) + (1-y_i) \log (1-p(x_i;\beta)) \} \\
+    \ell(\beta) &= \sum_{i=1}^N \{ y_i \log p(x_i;\beta) + (1-y_i) \log (1-p(x_i;\beta)) \} \\
     &= \sum_{i=1}^N \{ y_i \beta^T x_i - \log (1+e^{\beta^T x_i}) \}
 \end{align*}
 
@@ -767,7 +779,7 @@ where $\beta=\{ \beta_{10}, \beta_1\}$ and vector of inputs $x_i$ includes the c
 When we have multiple predictors
 
 \begin{equation*}
-    \log \left( \frac{p(X)}{1-p(X)} \right) = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p
+    \log \left( \frac{p(X)}{1-p(X)} \right) = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p 
 \end{equation*}
 
 where $X=(X_1, \dots, X_p)$ are the $p$ predictors. Or with the equivalent form
@@ -805,6 +817,12 @@ Also in this case cross-validation can be used to select the tuning parameter.
 \includegraphics[height=4.5cm]{figures/week_3/GDSC_logistic_regression_cross_validation.pdf}
 \end{center}
 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{References}
+\printbibliography
 \end{frame}
 
 
