@@ -28,7 +28,7 @@ Additional reading materials such as journal articles are listed within the lect
 * [Practical work](practicals/week_3.ipynb)
 
 ### Deep learning I
-* [Lecture slides]
+* [Lecture slides](lectures/week_4.pdf)
 * [Practical work]
 
 ### Deep learning II
