@@ -33,7 +33,7 @@ Additional reading materials such as journal articles are listed within the lect
 
 ### Deep learning II
 * [Lecture slides]
-* [Practical work]
+* [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-)
 
 ### Support vector machines, random forests
 * [Lecture slides]
