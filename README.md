@@ -40,7 +40,7 @@ Additional reading materials such as journal articles are listed within the lect
 * [Practical work]
 
 ### Unsupervised machine learning
-* [Reading list]
+* [Reading list](practicals/week_7.md)
 
 # Course informatiom
 
