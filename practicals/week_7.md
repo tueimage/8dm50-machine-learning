@@ -12,4 +12,4 @@ Baur, Christoph, et al. "Fusing Unsupervised and Supervised Deep Learning for Wh
 
 Bulten, Wouter, and Geert Litjens. "Unsupervised Prostate Cancer Detection on H&E using Convolutional Adversarial Autoencoders." arXiv preprint arXiv:1804.07098 (2018).
 
-Taskesen, Erdogan, et al. "Pan-cancer subtyping in a 2D-map shows substructures that are driven by specific combinations of molecular characteristics." Scientific reports 6 (2016): 24949.
+*(Grup 8)* Taskesen, Erdogan, et al. "Pan-cancer subtyping in a 2D-map shows substructures that are driven by specific combinations of molecular characteristics." Scientific reports 6 (2016): 24949.
