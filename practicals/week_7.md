@@ -4,7 +4,7 @@ Biton, Anne, et al. "Independent component analysis uncovers the landscape of th
 
 Zielinski, Christina E. "Meeting the challenges of high-dimensional single-cell data analysis in immunology." Frontiers in immunology 10 (2019): 1515.
 
-Schlegl, Thomas, et al. "f-AnoGAN: Fast unsupervised anomaly detection with generative adversarial networks." Medical image analysis 54 (2019): 30-44.
+***(Group 2)*** Schlegl, Thomas, et al. "f-AnoGAN: Fast unsupervised anomaly detection with generative adversarial networks." Medical image analysis 54 (2019): 30-44.
 
 ***(Group 6)*** Lafarge, Maxime W., et al. "Capturing Single-Cell Phenotypic Variation via Unsupervised Representation Learning." Medical Imaging and Deep Learning (2019).
 
