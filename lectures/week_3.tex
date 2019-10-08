@@ -717,12 +717,12 @@ When having $K$ classes, the posterior probability is modeled as:
 
 \begin{align*}
 \log \frac{Pr(G=1 | X=x)}{Pr(G=K | X=x)} &= \beta_{10} + \beta_1^T x \\
-\log \frac{Pr(G=2 | X=x)}{Pr(G=K | X=x)} &= \beta_{20} + \beta_1^T x \\
+\log \frac{Pr(G=2 | X=x)}{Pr(G=K | X=x)} &= \beta_{20} + \beta_2^T x \\
  & \vdots \\
 \log \frac{Pr(G=K-1 | X=x)}{Pr(G=K | X=x)} &= \beta_{(K-1)0} + \beta_{K-1}^T x \\
 \end{align*}
 
-Using K-1 log-odds satisfies the constrain that probabilities sum to one. The choice of the last class to be used at denominator is arbitrary and does not affect the result.
+Using $K$-1 log-odds satisfies the constraint that probabilities sum to one. The choice of the last class to be used at denominator is arbitrary and does not affect the result.
 
 \end{frame}
 
@@ -732,11 +732,11 @@ Using K-1 log-odds satisfies the constrain that probabilities sum to one. The ch
 It is easy to see that probabilities sum to one by rewriting the model as:
 
 \begin{align*}
-Pr(G=k | X=x) &= \frac{e^{\beta_{k0} + \beta_k^T X}}{1+\sum_{l=1}^{K-1} e^{\beta_{l0} + \beta_l^T X}}, k=1, \dots, K-1 \\
-Pr(G=K | X=x) &= \frac{1}{1+\sum_{l=1}^{K-1} e^{\beta_{l0} + \beta_l^T X}}
+Pr(G=k | X=x) &= \frac{e^{\beta_{k0} + \beta_k^T x}}{1+\sum_{l=1}^{K-1} e^{\beta_{l0} + \beta_l^T x}}, k=1, \dots, K-1 \\
+Pr(G=K | X=x) &= \frac{1}{1+\sum_{l=1}^{K-1} e^{\beta_{l0} + \beta_l^T x}}
 \end{align*}
 
-An alternative notation for the probabilities is $P(G=k|X=x) = p_k(x;\theta)$, to emphasize the dependence on the entire parameter set $\theta=\{ \beta_{10}, \beta_1^T, \dots, \beta_{(K-1)0, \beta_{K-1}^T}\}$.
+An alternative notation for the probabilities is $P(G=k|X=x) = p_k(x;\theta)$, to emphasize the dependence on the entire parameter set $\theta=  \{ \beta_{10}, \beta_1^T, \dots, \beta_{(K-1)0}, \beta_{K-1}^T \}$.
 
 \end{frame}
 
@@ -750,7 +750,7 @@ The parameters for logistic regression models are generally estimated using \tex
 For $N$ observations the log-likelihood to be maximized is:
 
 \begin{equation*}
-    \ell(\theta) = \sum_{i=1}^N \log p_{g_i}(x_i; \theta)
+    \ell(\theta) = \sum_{i=1}^N \log p_{g_i}(X_i; \theta)
 \end{equation*}
 
 where $p_k(x_i; \theta) = Pr(G=k|X=x_i; \theta)$.
