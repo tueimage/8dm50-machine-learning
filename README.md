@@ -36,8 +36,8 @@ Additional reading materials such as journal articles are listed within the lect
 * [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
 
 ### Support vector machines, random forests
-* [Lecture slides]
-* [Practical work]
+* [Lecture slides](lectures/week_6.pdf)
+* [Practical work](practicals/week_6.ipynb)
 
 ### Unsupervised machine learning
 * [Reading list](practicals/week_7.md)
