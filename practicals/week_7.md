@@ -2,7 +2,7 @@
 
 ***(Group 7)*** Biton, Anne, et al. "Independent component analysis uncovers the landscape of the bladder tumor transcriptome and reveals insights into luminal and basal subtypes." Cell reports 9.4 (2014): 1235-1245.
 
-Zielinski, Christina E. "Meeting the challenges of high-dimensional single-cell data analysis in immunology." Frontiers in immunology 10 (2019): 1515.
+***(Group 3)*** Zielinski, Christina E. "Meeting the challenges of high-dimensional single-cell data analysis in immunology." Frontiers in immunology 10 (2019): 1515.
 
 ***(Group 2)*** Schlegl, Thomas, et al. "f-AnoGAN: Fast unsupervised anomaly detection with generative adversarial networks." Medical image analysis 54 (2019): 30-44.
 
