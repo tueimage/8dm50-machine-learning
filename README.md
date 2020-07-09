@@ -1,4 +1,4 @@
-# Machine Learning in Medical Imaging and Biology (8DM40)
+# Machine Learning in Medical Imaging and Biology (8DM50)
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
 
 # Materials
