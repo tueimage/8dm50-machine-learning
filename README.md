@@ -1,4 +1,4 @@
-*** This page is currently in the process of being updated for the 2020 edition of the course. All materials and information are subject to change. ***
+***This page is currently in the process of being updated for the 2020 edition of the course. All materials and information are subject to change.***
 
 # Machine Learning in Medical Imaging and Biology (8DM50)
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
