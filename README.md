@@ -14,10 +14,12 @@ Additional reading materials such as journal articles are listed within the lect
 
 ## Assignments and Lectures
 
-**IMPORTANT**: All materials tagged with (*tentative*)  are not yet updated from the previous edition of the course and are subject to change. We will However, any changes made will not be substantial and you can still use the materials to get an early peek at the content.
+**IMPORTANT**: All materials tagged with (*tentative*)  are not updated from the previous edition of the course and might change for this edition. However, any changes made will not be substantial and you can still use the materials to get an early peek at the content.
 
 * (*tentative*) [Introduction slides](lectures/intro.pdf)
-* (*coming soon*) Reading assignments
+
+### Reading assignment
+* (*coming soon*) Instructions
 
 ### Machine learning fundamentals I
 * (*tentative*) [Lecture slides](lectures/week_1.pdf)
