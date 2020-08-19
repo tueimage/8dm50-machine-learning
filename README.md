@@ -1,4 +1,3 @@
-***This page is currently in the process of being updated for the 2020 edition of the course. All materials and information are subject to change.***
 
 # Machine Learning in Medical Imaging and Biology (8DM50)
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
@@ -13,9 +12,12 @@ The lectures are mainly based on the selected chapters from following two books 
 
 Additional reading materials such as journal articles are listed within the lecture slides.
 
-## Lectures
+## Assignments and Lectures
+
+**IMPORTANT**: All materials tagged with (*tentative*)  are not yet updated from the previous edition of the course and are subject to change. We will However, any changes made will not be substantial and you can still use the materials to get an early peek at the content.
 
 * (*tentative*) [Introduction slides](lectures/intro.pdf)
+* (*coming soon*) Reading assignments
 
 ### Machine learning fundamentals I
 * (*tentative*) [Lecture slides](lectures/week_1.pdf)
@@ -50,7 +52,7 @@ Additional reading materials such as journal articles are listed within the lect
 ## Learning objectives
 
 After completing the course, the student will be able to:
-* Recognize how machine learning methods can be used to solve problems in medical imaging and computational biology.
+* Recognise how machine learning methods can be used to solve problems in medical imaging and computational biology.
 * Comprehend the basic principles of machine learning.
 * Implement and use machine learning methods.
 * Design experimental setups for training and evaluation of machine learning models.
@@ -61,7 +63,7 @@ After completing the course, the student will be able to:
 The assessment will be performed in the following way:
 
 * Work on the practical assignments: 25% of the final grade (each assignment has equal contribution);
-* Unuspervised learning presentations: 10% of the final grade;
+* Reading assignment: 10% of the final grade;
 * Final exam: 65% of the final grade.
 
 Intermediate feedback will be provided as grades to the submitted assignments.
