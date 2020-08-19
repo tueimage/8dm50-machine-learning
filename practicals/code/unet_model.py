@@ -97,7 +97,6 @@ def decoder_path(inp, encoder_list, channels, depth, batchnorm, regularization):
 
 def unet(input_shape=(512, 512, 3), depth=4, channels=64, regularization=None, batchnorm=False):
     """
-    Includes both the implementation of the standard U-Net (Ronneberger).
     This function can create a U-Net for any amount of inputs with any desired network depth.
     Additional functionalities like batch normalization, residual layers and dropout can be selected.
 
