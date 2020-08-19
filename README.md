@@ -11,11 +11,11 @@ The lectures are mainly based on the selected chapters from following two books 
 * [Deep Learning](https://www.deeplearningbook.org/), Ian Goodfellow and Yoshua Bengio and Aaron Courville
 * [Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/), Trevor Hastie, Robert Tibshirani, Jerome Friedman
 
-Additional reading materials such as journal articles are listed within the lecture slides. 
+Additional reading materials such as journal articles are listed within the lecture slides.
 
 ## Lectures
 
-* [Introduction slides](lectures/intro_2019.pdf)
+* (**tentative**) [Introduction slides](lectures/intro.pdf)
 
 ### Machine learning fundamentals I
 * [Lecture slides](lectures/week_1.pdf)
@@ -42,9 +42,10 @@ Additional reading materials such as journal articles are listed within the lect
 * [Practical work](practicals/week_6.ipynb)
 
 ### Unsupervised machine learning
-* [Reading list](practicals/week_7.md)
+* Lecture slides
+* Practical work
 
-# Course informatiom
+# Course information
 
 ## Learning objectives
 
@@ -78,7 +79,7 @@ The students will receive instruction in the following ways:
 
 Course instructors:
 * Mitko Veta
-* Federica Eduati 
+* Federica Eduati
 
 ## Recommended preliminary knowledge
 
