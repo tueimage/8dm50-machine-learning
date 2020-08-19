@@ -15,35 +15,35 @@ Additional reading materials such as journal articles are listed within the lect
 
 ## Lectures
 
-* (**tentative**) [Introduction slides](lectures/intro.pdf)
+* (*tentative*) [Introduction slides](lectures/intro.pdf)
 
 ### Machine learning fundamentals I
-* [Lecture slides](lectures/week_1.pdf)
-* [Practical work](practicals/week_1.ipynb)
+* (*tentative*) [Lecture slides](lectures/week_1.pdf)
+* (*tentative*) [Practical work](practicals/week_1.ipynb)
 
 ### Machine learning fundamentals II
-* [Lecture slides](lectures/week_2.pdf)
-* [Practical work](practicals/week_2.ipynb)
+* (*tentative*) [Lecture slides](lectures/week_2.pdf)
+* (*tentative*) [Practical work](practicals/week_2.ipynb)
 
 ### Linear models
-* [Lecture slides](lectures/week_3.pdf)
-* [Practical work](practicals/week_3.ipynb)
+* (*tentative*) [Lecture slides](lectures/week_3.pdf)
+* (*tentative*) [Practical work](practicals/week_3.ipynb)
 
 ### Deep learning I
-* [Lecture slides](lectures/week_4.pdf)
-* [Practical work](practicals/week_4.ipynb)
+* (*tentative*) [Lecture slides](lectures/week_4.pdf)
+* (*tentative*) [Practical work](practicals/week_4.ipynb)
 
 ### Deep learning II
-* Lecture slides [part 1](lectures/week_5_1.pdf) and [part 2](lectures/week_5_2.pdf)
-* [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
+* (*tentative*) Lecture slides [part 1](lectures/week_5_1.pdf) and [part 2](lectures/week_5_2.pdf)
+* (*tentative*) [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
 
 ### Support vector machines, random forests
-* [Lecture slides](lectures/week_6.pdf)
-* [Practical work](practicals/week_6.ipynb)
+* (*tentative*) [Lecture slides](lectures/week_6.pdf)
+* (*tentative*) [Practical work](practicals/week_6.ipynb)
 
 ### Unsupervised machine learning
-* Lecture slides
-* Practical work
+* (*coming soon*) Lecture slides
+* (*coming soon*) Practical work
 
 # Course information
 
