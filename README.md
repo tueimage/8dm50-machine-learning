@@ -82,7 +82,7 @@ Guest lecture by Jelmer Wolterink.
 * (*coming soon*) Lecture slides
 * (*coming soon*) Practical work
 
-# Administrative matters
+# Other course information
 
 ## Learning objectives
 
