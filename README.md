@@ -37,9 +37,9 @@ Please carefully follow [the instructions available here](software.md) on settin
 
 ## Python quiz
 
-In the first week of the course you have to complete a Python self-assessment quiz in Canvas. **Completing the quiz is mandatory**, however, the quiz will not be graded. **If you fail to complete the quiz before the deadline, you will not get a grade for the course.**
+In the first week of the course you have to complete a Python self-assessment quiz in Canvas. **.IMPORTANT: Completing the quiz is mandatory**, however, the quiz will not be graded. **If you fail to complete the quiz before the deadline, you will not get a grade for the course.**
 
-If you lack prior knowledge of the Python programming language, you can use the material in the [Essential Skills](https://github.com/tueimage/essential-skills/blob/master/python-essentials.md) module. 
+If you lack prior knowledge of the Python programming language, you can use the material in the 'Python essentials' and 'Numerical and scientific computing in Python' modules available [here](https://github.com/tueimage/essential-skills/).
 
 ## Assignments and Lectures
 
@@ -106,8 +106,7 @@ The grading of the assignments will be done per groups, however, it is possible 
 The students will receive instruction in the following ways:
 
 * Lectures (on-line and on-campus)
-* On-line guided practical sessions
-* On-line contact hours with the teaching assistants for questions, assistance and advice
+* On-line guided practical sessions with the teaching assistants for questions, assistance and advice
 * On-line discussion (in Canvas, see below)
 
 Course instructors:
