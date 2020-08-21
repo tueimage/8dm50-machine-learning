@@ -35,6 +35,10 @@ The practical assignments for this course will be done in Python. **It is essent
 
 Please carefully follow [the instructions available here](software.md) on setting up the working environment and (optionally) a Git workflow.
 
+## Python quiz
+
+In the first week of the course you have to complete a Python self-assessment quiz in Canvas. **Completing the quiz is mandatory**, however, the quiz will not be graded. **If you fail to complete the quiz before the deadline, you will not get a grade for the course.**
+
 ## Assignments and Lectures
 
 **IMPORTANT**: All materials tagged with (*tentative*)  are not updated from the previous edition of the course and might change for this edition. However, any changes made will not be substantial and you can still use the materials to get an early peek at the content.
