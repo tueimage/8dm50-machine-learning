@@ -29,6 +29,21 @@ The lectures are mainly based on the selected chapters from following two books 
 
 Additional reading materials such as journal articles are listed within the lecture slides.
 
+## Software
+
+The practical assignments for this course will be done in Python. To get started with setting up a Python environment, follow the instructions in the [Essential Skills](https://github.com/tueimage/essential-skills/python-essentials) module. The Anaconda distribution is recommended. Optionally, you can use the desktop GUI called Anaconda Navigator.
+
+In addition, you have to install the packages `matplotlib`, `jupyter`, `scikit-learn`, `scipy`, `pandas` and `tensorflow-cpu`. It is recommended to install these packages in a separate Conda environment. A Conda environment is a directory in which you can install files and packages such that their dependencies will not interact with other environments, which is very useful if you develop code for different courses or research projects. If you want to know more about how to use Conda, read the [docs](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html).
+
+To create a new Conda environment and install the required packages, run the following commands from your terminal / command line (e.g. `CMD.exe Prompt`):
+
+````bash
+conda create --name myenv python=3.6				# create a new environment called `myenv`
+conda activate myenv						# activate this environment
+conda install matplotlib jupyter scikit-learn scipy	pandas tensorflow-cpu	# install the required packages
+````
+
+
 ## Assignments and Lectures
 
 **IMPORTANT**: All materials tagged with (*tentative*)  are not updated from the previous edition of the course and might change for this edition. However, any changes made will not be substantial and you can still use the materials to get an early peek at the content.
@@ -111,10 +126,6 @@ Teaching assistants:
 ## Recommended preliminary knowledge
 
 8DB00 Image acquisition and Processing, and 8DC00 Medical Image Analysis.
-
-## Software
-
-The practical assignments for this course will be done in Python. We recommend the Anaconda Python distribution.
 
 ## Canvas
 
