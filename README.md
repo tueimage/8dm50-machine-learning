@@ -9,7 +9,11 @@ The schedule is as follows:
 * **Lectures**, *time*: Mondays 13.30 - 15.30, *location*: Atlas - 1.210 and on-line via Microsoft Teams (the link will be shared on Canvas)
 * **Practical work**, *time*: Mondays 15.30 - 17.30, *location*: on-line via Microsoft Teams (the link will be shared on Canvas)
 
+Since the practical sessions are immediately after the lectures, if you attend the lectures on-line you might not have sufficient time to travel home for the practical session. The University is working on ensuring that there are sufficient number of safe workspaces on-campus so that you can log in from there.
 
+## Practical work on-line
+
+The practical work, a.k.a. guided self-study (*begeleide zelfstudie*), will be done in groups. The groups will be formed in Canvas and you will also submit all your work there (check the Assignments section for the deadlines). Your are expected to do this work independently with the help of the teaching assistants. Each group will be assigned a teaching assistant that you can contact via Microsoft Teams during the practical sessions (the details and links will be posted in Canvas). You can also post your questions in the Discussion section in Canvas at any time (i.e. not just during the practical sessions).
 
 # Materials
 
