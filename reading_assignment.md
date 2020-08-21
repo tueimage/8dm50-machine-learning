@@ -9,24 +9,24 @@ You are free to select the paper that you will review (in consultations with the
 
 Here is a non-extensive list of journals that you can use as a reference
 (note that some journals are multidisciplinary):
-Medical Image Analysis
-IEEE Transactions on Medical Imaging
-IEEE Transactions on Biomedical Engineering
-IEEE Transactions on Pattern Analysis and Machine Intelligence
-Computer Vision and Image Understanding
-Computerized Medical Imaging and Graphics
-Magnetic Resonance in Medicine
-Neuroimage
-Radiology: Artificial Intelligence
-Bioinformatics
-PloS Computational Biology
-Molecular Systems Biology
-Cell Systems
-Cancer Research
-Nature Biotechnology
-Frontiers in Oncology
-Frontiers in Immunoloty
-Cell Reports
+* Medical Image Analysis
+* IEEE Transactions on Medical Imaging
+* IEEE Transactions on Biomedical Engineering
+* IEEE Transactions on Pattern Analysis and Machine Intelligence
+* Computer Vision and Image Understanding
+* Computerized Medical Imaging and Graphics
+* Magnetic Resonance in Medicine
+* Neuroimage
+* Radiology: Artificial Intelligence
+* Bioinformatics
+* PloS Computational Biology
+* Molecular Systems Biology
+* Cell Systems
+* Cancer Research
+* Nature Biotechnology
+* Frontiers in Oncology
+* Frontiers in Immunoloty
+* Cell Reports
 
 Some specialised publications also publish Medical Image Analysis or Computational Biology research.
 For example, the Modern Pathology journal often publishes papers on image analysis for histopathology. You can also find such
