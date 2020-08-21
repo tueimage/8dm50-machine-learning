@@ -2,15 +2,15 @@ For the reading assignment you first have to select a recent journal publication
 
 # Paper selection
 You are free to select the paper that you will review (in consultations with the course instructors and teaching assistants). Use the following selection criteria for the paper:
-* Describes an application of Machine Learning to a Medical Image Analysis or Computational Biology problem
+* Describes an application of Machine Learning to a Medical Imaging or Computational Biology problem
 * Recently published (after 2015)
 * Published in a high-quality journal (see the reference list and examples below)
 * On a topic that you find interesting and want to learn more about
 
 Here is a non-extensive list of journals that you can use as a reference:
 
-Medical Image Analysis:
-* JMedical Image Analysis
+Medical Imaging:
+* Medical Image Analysis
 * IEEE Transactions on Medical Imaging
 * IEEE Transactions on Biomedical Engineering
 * IEEE Transactions on Pattern Analysis and Machine Intelligence
@@ -31,7 +31,7 @@ Computational Biology:
 * Frontiers in Immunoloty
 * Cell Reports
 
-Some specialised publications also publish Medical Image Analysis or Computational Biology research.
+Some specialised publications also publish Medical Imaging or Computational Biology research.
 For example, the Modern Pathology journal often publishes papers on image analysis for histopathology. You can also find such
 papers in interdisciplinary/wides scope journals such as Nature Methods, Nature Communications, Nature Medicine, Scientific Reports, PlosONE etc.
 

@@ -84,7 +84,7 @@ Guest lecture by Jelmer Wolterink.
 ## Learning objectives
 
 After completing the course, the student will be able to:
-* Recognise how machine learning methods can be used to solve problems in medical imaging and computational biology.
+* Recognise how machine learning methods can be used to solve problems in Medical Imaging and Computational Biology.
 * Comprehend the basic principles of machine learning.
 * Implement and use machine learning methods.
 * Design experimental setups for training and evaluation of machine learning models.
