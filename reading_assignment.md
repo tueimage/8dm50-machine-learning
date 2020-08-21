@@ -8,7 +8,9 @@ You are free to select the paper that you will review (in consultations with the
 * On a topic that you find interesting and want to learn more about
 
 Here is a non-extensive list of journals that you can use as a reference:
-* Medical Image Analysis
+
+Medical Image Analysis:
+* JMedical Image Analysis
 * IEEE Transactions on Medical Imaging
 * IEEE Transactions on Biomedical Engineering
 * IEEE Transactions on Pattern Analysis and Machine Intelligence
@@ -17,6 +19,8 @@ Here is a non-extensive list of journals that you can use as a reference:
 * Magnetic Resonance in Medicine
 * Neuroimage
 * Radiology: Artificial Intelligence
+
+Computational Biology:
 * Bioinformatics
 * PloS Computational Biology
 * Molecular Systems Biology
