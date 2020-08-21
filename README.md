@@ -95,7 +95,7 @@ Intermediate feedback will be provided as grades to the submitted assignments.
 
 The grading of the assignments will be done per groups, however, it is possible that individual students get separate grade from the rest of the group (e.g. if they did not sufficiently participate in the work of the group).
 
-## Instruction
+## Instruction 
 
 The students will receive instruction in the following ways:
 
