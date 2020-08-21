@@ -2,6 +2,15 @@
 # Machine Learning in Medical Imaging and Biology (8DM50)
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
 
+## Hybrid schedule due to the coronavirus pandemic
+The 2020 edition of the course will be given in a hybrid manner combining on-campus and on-line education. We have a limited capacity for around 30-35 students to attend the lectures on-campus. The lectures will also be streamed on-line via Microsoft Teams for the students that want to attend remotely.
+
+The schedule is as follows:
+* **Lectures**, *time*: Mondays 13.30 - 15.30, *location*: Atlas - 1.210 and on-line via Microsoft Teams (the link will be shared on Canvas)
+* **Practical work**, *time*: Mondays 15.30 - 17.30, *location*: on-line via Microsoft Teams (the link will be shared on Canvas)
+
+
+
 # Materials
 
 ## Books
@@ -84,6 +93,12 @@ The students will receive instruction in the following ways:
 Course instructors:
 * Mitko Veta
 * Federica Eduati
+
+Teaching assistants:
+* Suzanne Wetstein
+* Oscar Lapuente Santana
+* Yasmina Al Khalil
+
 
 ## Recommended preliminary knowledge
 
