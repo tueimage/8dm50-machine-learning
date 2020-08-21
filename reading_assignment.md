@@ -7,8 +7,7 @@ You are free to select the paper that you will review (in consultations with the
 * Published in a high-quality journal (see the reference list and examples below)
 * On a topic that you find interesting and want to learn more about
 
-Here is a non-extensive list of journals that you can use as a reference
-(note that some journals are multidisciplinary):
+Here is a non-extensive list of journals that you can use as a reference:
 * Medical Image Analysis
 * IEEE Transactions on Medical Imaging
 * IEEE Transactions on Biomedical Engineering
