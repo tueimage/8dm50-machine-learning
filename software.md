@@ -13,23 +13,31 @@ conda install matplotlib jupyter scikit-learn scipy pandas tensorflow	spyder # i
 ````
 Note that you have to activate the `8dm50` environment every time you start working on the assignments. In order to start Jupyter Notebook type `jupyter notebook` in Anadonda Prompt (after activating the `8dm50` environment with `conda activate 8dm50`). It is best if you change directory to the directory containing the code before starting Jupyter Notebook. Similarly, you can start the Spyder integrated development environment by typing `spyder` in the Anaconda Prompt.
 
-# Working with git
+# Working with Git
 
-For the practicals, you have to work as a group on the same code. Things are further complicated this year because you will likely not be able to meet in person and have to work remotely. While it is not essential, using git can make thing easier. The [Essential Skills](https://github.com/tueimage/essential-skills/blob/master/version-control-with-git.md) module also contains a section on git basics.
+**Note that this part is highly optional.** If you do not want to use Git, think it is an added burden and have found a better workflow for your group, feel free to ignore this section.
+
+For the practicals, you have to work as a group on the same code. Things are further complicated this year because you will likely not be able to meet in person and have to work remotely. While it is not essential, using a version-control system such as Git can make thing easier. The [Essential Skills](https://github.com/tueimage/essential-skills/blob/master/version-control-with-git.md) module also contains a section on Git basics.
+
+Here is an example Git workflow for this course:
 
 ````bash
-# first, you have to go to https://github.com/tueimage/8dm40-machine-learning and fork
+# first, you have to go to https://github.com/tueimage/8dm50-machine-learning and fork
 # the 'official' course repository by clicking 'fork' in the top right corner
 # of the page
 
 # then, make a local copy of your fork (note that you will have to replace the username mitkovetta with your own)
-git clone https://github.com/mitkovetta/8dm40-machine-learning.git
+git clone https://github.com/mitkovetta/8dm50-machine-learning.git
 
 # change the working directory to the repository
 cd 8dm40-machine-learning
 
 # add the 'official' course repository as upstream
-git remote add upstream https://github.com/tueimage/8dm40-machine-learning.git
+git remote add upstream https://github.com/tueimage/8dm50-machine-learning.git
+
+# to commit and push changes that you made locally
+git commit -a -m 'did some stuff'
+git push
 
 # to pull from the forked student version (e.g. to get updates pushed by other group members):
 git pull
@@ -37,3 +45,5 @@ git pull
 # to pull from the 'official' course repository (e.g. in case some assignments have been updated):
 git pull upstream master
 ````
+
+Only one person per group should fork the repository, and the other team mates can be added as collaborators (instructions here: # now add the your teammates as collaborators in GitHu (instructions [here](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository).
