@@ -37,7 +37,7 @@ Please carefully follow [the instructions available here](software.md) on settin
 
 ## Python quiz
 
-In the first week of the course you have to do a Python self-assessment quiz in Canvas. **.IMPORTANT: Attempting the quiz before the specified deadline is mandatory, however, the quiz will not be graded. If you fail to complete the quiz before the deadline, you will not get a grade for the course.** The goal of the quiz is to give you an idea of the Python programming level that is expected for this course.
+In the first week of the course you have to do a Python self-assessment quiz in Canvas. **IMPORTANT: Attempting the quiz before the specified deadline is mandatory, however, the quiz will not be graded. If you fail to complete the quiz before the deadline, you will not get a grade for the course.** The goal of the quiz is to give you an idea of the Python programming level that is expected.
 
 If you lack prior knowledge of the Python programming language, you can use the material in the "Python essentials" and "Numerical and scientific computing in Python" modules available [here](https://github.com/tueimage/essential-skills/).
 

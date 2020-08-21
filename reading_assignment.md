@@ -55,6 +55,6 @@ In Canvas you will find two assignments grouped under "Reading assignment".
 
 The first one is "Paper selection". You have to use this assignment to discuss your paper selection with the course instructors and teaching assistants. It is best if you suggest a few papers and order them by preference. One of the instructors or teaching assistants has to approve the paper selection.
 
-The second assignment is for submitting the paper review as a PDF document.
+The second assignment "Paper Review" is for submitting the paper review as a PDF document.
 
 Note that there are deadlines for both assignments.
