@@ -2,7 +2,7 @@
 # Machine Learning in Medical Imaging and Biology (8DM50)
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
 
-This GitHub page contains all the general information about the course and the study materials. The **Canvas** page of the course will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section).
+This GitHub page contains all the general information about the course and the study materials. The **Canvas** page of the course will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
 
 ## Hybrid schedule due to the coronavirus pandemic
 The 2020 edition of the course will be given in a hybrid manner combining on-campus and on-line education. We have a limited capacity for around 30-35 students to attend the lectures on-campus. The lectures will also be streamed on-line via Microsoft Teams for the students that want to attend remotely.
@@ -33,7 +33,7 @@ Additional reading materials such as journal articles are listed within the lect
 
 The practical assignments for this course will be done in Python. **It is essential that you correctly set up the Python working environment before the start of the course so there are no delays in the work on the practicals.**
 
-Please carefully follow [the instructions available here](software.md) on setting up the working environment and (optionally) a Git workflow. 
+Please carefully follow [the instructions available here](software.md) on setting up the working environment and (optionally) a Git workflow.
 
 ## Assignments and Lectures
 
@@ -99,10 +99,10 @@ The grading of the assignments will be done per groups, however, it is possible 
 
 The students will receive instruction in the following ways:
 
-* Lectures;
-* Guided practical sessions;
-* Contact hours with the project instructors for questions, assistance and advice;
-* Online discussion (in Canvas, see below).
+* Lectures (on-line and on-campus)
+* On-line guided practical sessions
+* On-line contact hours with the teaching assistants for questions, assistance and advice
+* On-line discussion (in Canvas, see below)
 
 Course instructors:
 * Mitko Veta
@@ -117,10 +117,6 @@ Teaching assistants:
 ## Recommended preliminary knowledge
 
 8DB00 Image acquisition and Processing, and 8DC00 Medical Image Analysis.
-
-## Canvas
-
-The [course page in Canvas] will be used for submission of the assignments, scheduling of the lectures and contact hours and announcements. The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section in Canvas and not asked during the contact hours.
 
 
 
