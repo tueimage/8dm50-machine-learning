@@ -2,8 +2,12 @@
 # Machine Learning in Medical Imaging and Biology (8DM50)
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
 
+This GitHub page contains all the general information about the course and the study materials. The **Canvas** page of the course will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section).
+
 ## Hybrid schedule due to the coronavirus pandemic
 The 2020 edition of the course will be given in a hybrid manner combining on-campus and on-line education. We have a limited capacity for around 30-35 students to attend the lectures on-campus. The lectures will also be streamed on-line via Microsoft Teams for the students that want to attend remotely.
+
+Because the room capacity is less than the number of students that registered for the course, you will have to subscribe to attend a lecture on-campus. The details about how to do this will be posted on Canvas.
 
 The schedule is as follows:
 * **Lectures**, *time*: Mondays 13.30 - 15.30, *location*: Atlas - 1.210 and on-line via Microsoft Teams (the link will be shared on Canvas)
