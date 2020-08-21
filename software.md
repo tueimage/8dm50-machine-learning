@@ -1,6 +1,6 @@
 # Setting up the Python environment
 
-To get started with setting up a Python environment, follow the instructions in the [Essential Skills](https://github.com/tueimage/essential-skills/python-essentials) module.
+To get started with setting up a Python environment, follow the instructions in the Getting Started section of the [Essential Skills](https://github.com/tueimage/essential-skills/python-essentials) Python module.
 
 In addition, you have to install the packages `matplotlib`, `jupyter`, `scikit-learn`, `scipy`, `pandas` and `tensorflow-cpu`. It is recommended to install these packages in a separate Conda environment. A Conda environment is a directory in which you can install files and packages such that their dependencies will not interact with other environments, which is very useful if you develop code for different courses or research projects. If you want to know more about how to use Conda, read the [docs](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html).
 
@@ -17,7 +17,7 @@ Note that you have to activate the `8dm50` environment every time you start work
 
 **Note that this part is highly optional.** If you do not want to use Git, think it is an added burden and have found a better workflow for your group, feel free to ignore this section.
 
-For the practicals, you have to work as a group on the same code. Things are further complicated this year because you will likely not be able to meet in person and have to work remotely. While it is not essential, using a version-control system such as Git can make thing easier. The [Essential Skills](https://github.com/tueimage/essential-skills/blob/master/version-control-with-git.md) module also contains a section on Git basics.
+For the practicals, you have to work as a group on the same code. Things are further complicated this year because you will likely not be able to meet in person and have to work remotely. While it is not essential, using a version-control system such as Git can make thing easier. The [Essential Skills](https://github.com/tueimage/essential-skills/blob/master/version-control-with-git.md) Git module goes over the basics of using Git.
 
 Here is an example Git workflow for this course:
 
@@ -46,4 +46,4 @@ git pull
 git pull upstream master
 ````
 
-Only one person per group should fork the repository, and the other team mates can be added as collaborators (instructions here: # now add the your teammates as collaborators in GitHu (instructions [here](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository).
+Only one person per group should fork the repository, and the other team mates can be added as collaborators (instructions here: # now add the your teammates as collaborators in GitHub (instructions [here](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository).
