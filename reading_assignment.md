@@ -1,8 +1,11 @@
-For the reading assignment, you first have to select a recent journal publication
-that describes an application of a machine learning method to a Medical Image Analysis or Computational Biology. Then, you have to write a 800 word review of the paper.
+For the reading assignment you first have to select a recent journal publication and then write a short review.
 
 # Paper selection
-You are free to select the paper that you will review in consultation with the course instructors and teaching assistants. The selected paper has to be recently published (after 2015) in a high-quality journal. And, of course, it has to be on a topic that you find interesting and want to learn more about.
+You are free to select the paper that you will review (in consultations with the course instructors and teaching assistants). Use the following selection criteria for the paper:
+* Describes an application of Machine Learning to a Medical Image Analysis or Computational Biology problem
+* Recently published (after 2015)
+* Published in a high-quality journal (see the reference list and examples below)
+* On a topic that you find interesting and want to learn more about
 
 Here is a non-extensive list of journals that you can use as a reference
 (note that some journals are multidisciplinary):
@@ -38,7 +41,17 @@ Campanella, G., Hanna, M. G., Geneslaw, L., Miraflor, A., Silva, V. W. K., Busam
 # Paper review
 
 Once you have selected the paper, you have to write a short 800 word review that:
-* Gives a summary of the application domain of the papers
-* Gives a summary of the used methodology and evaluation metrics
+* Gives a summary of the application domain of the paper
+* Gives a summary of the used (Machine Learning) methodology and evaluation metrics
 * Discusses the strong and weak points of the methodology and evaluation metrics
 * Suggests alternative methodology, evaluation metrics and ideas for improvement
+
+# Deliverables
+
+In Canvas you will find two assignments grouped under "Reading assignment".
+
+The first one is "Paper selection". You have to use this assignment to discuss your paper selection with the course instructors and teaching assistants. It is best if you suggest a few papers and order them by preference. One of the instructors or teaching assistants has to approve the paper selection.
+
+The second assignment is for submitting the paper review as a PDF document.
+
+Note that there are deadlines for both assignments.

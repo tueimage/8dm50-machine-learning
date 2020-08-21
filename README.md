@@ -67,6 +67,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * (*tentative*) [Practical work](practicals/week_4.ipynb)
 
 ### Deep learning II
+Guest lecture by Jelmer Wolterink.
 * (*tentative*) Lecture slides [part 1](lectures/week_5_1.pdf) and [part 2](lectures/week_5_2.pdf)
 * (*tentative*) [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
 
