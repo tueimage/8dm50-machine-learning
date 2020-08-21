@@ -37,18 +37,18 @@ Please carefully follow [the instructions available here](software.md) on settin
 
 ## Python quiz
 
-In the first week of the course you have to complete a Python self-assessment quiz in Canvas. **.IMPORTANT: Completing the quiz is mandatory**, however, the quiz will not be graded. **If you fail to complete the quiz before the deadline, you will not get a grade for the course.**
+In the first week of the course you have to do a Python self-assessment quiz in Canvas. **.IMPORTANT: Attempting the quiz before the specified deadline is mandatory, however, the quiz will not be graded. If you fail to complete the quiz before the deadline, you will not get a grade for the course.** The goal of the quiz is to give you an idea of the Python programming level that is expected for this course.
 
-If you lack prior knowledge of the Python programming language, you can use the material in the 'Python essentials' and 'Numerical and scientific computing in Python' modules available [here](https://github.com/tueimage/essential-skills/).
+If you lack prior knowledge of the Python programming language, you can use the material in the "Python essentials" and "Numerical and scientific computing in Python" modules available [here](https://github.com/tueimage/essential-skills/).
 
-## Assignments and Lectures
+## Lectures and assignments
 
 **IMPORTANT**: All materials tagged with (*tentative*)  are not updated from the previous edition of the course and might change for this edition. However, any changes made will not be substantial and you can still use the materials to get an early peek at the content.
 
 * (*tentative*) [Introduction slides](lectures/intro.pdf)
 
 ### Reading assignment
-* (*coming soon*) Instructions
+* [Instructions](reading_assignment.md)
 
 ### Machine learning fundamentals I
 * (*tentative*) [Lecture slides](lectures/week_1.pdf)
