@@ -25,7 +25,7 @@ The practical work, a.k.a. guided self-study (*begeleide zelfstudie*), will be d
 # Materials
 
 ## Books
-The lectures are mainly based on the selected chapters from following two books that are freely available online:
+The lectures are mainly based on the selected chapters from the following two books that are freely available online:
 
 * [Deep Learning](https://www.deeplearningbook.org/), Ian Goodfellow and Yoshua Bengio and Aaron Courville
 * [Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/), Trevor Hastie, Robert Tibshirani, Jerome Friedman
