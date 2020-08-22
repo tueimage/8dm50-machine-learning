@@ -36,7 +36,7 @@ Additional reading materials such as journal articles are listed within the lect
 
 The practical assignments for this course will be done in Python. **It is essential that you correctly set up the Python working environment by the end of the first week of the course so there are no delays in the work on the practicals.**
 
-Please carefully follow [the instructions available here](software.md) on setting up the working environment and (optionally) a Git workflow.
+Please carefully follow [the instructions available here](software.md) on setting up the working environment and (optionally) a Git workflow for your group.
 
 ## Python quiz
 
