@@ -15,7 +15,7 @@ Note that you have to activate the `8dm50` environment every time you start work
 
 # Working with Git
 
-**Note that this part is highly optional. If you do not want to use Git, think it is an added burden and have found a better workflow for your group, feel free to ignore this section.**
+**IMPORTANT: this part is highly optional. If you do not want to use Git, think it is an added burden and have found a better workflow for your group, feel free to ignore this section.**
 
 For the practicals, you have to work as a group on the same code. Things are further complicated this year because you will likely not be able to meet in person and have to work remotely. While it is not essential, using a version-control system such as Git can make thing easier. The [Essential Skills](https://github.com/tueimage/essential-skills/blob/master/version-control-with-git.md) Git module goes over the basics of using Git.
 
