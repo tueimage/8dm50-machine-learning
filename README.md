@@ -8,7 +8,7 @@ This GitHub page contains all the general information about the course and the s
 TLDR: GitHub is for content, Canvas for communication and submission of assignments.
 
 ## Hybrid schedule due to the coronavirus pandemic
-The 2020 edition of the course will be given in a hybrid manner combining on-campus and on-line education. We have a limited capacity for around 30-35 students to attend the lectures on-campus. The lectures will also be streamed on-line via Microsoft Teams for the students that want to attend remotely.
+The 2020 edition of the course will be given in a hybrid manner combining on-campus and on-line education. We have a limited capacity for 32 students to attend the lectures on-campus. You have to subscribe in Canvas in order to attend the lectures on-campus. The lectures will also be streamed on-line via Microsoft Teams for the students that want to attend remotely.
 
 Because the room capacity is less than the number of students that registered for the course, you will have to subscribe to attend a lecture on-campus. The details about how to do this will be posted on Canvas.
 
@@ -20,7 +20,7 @@ Since the practical sessions are immediately after the lectures, if you attend t
 
 The lectures will be recorder so you will be able to view them in case you are prevented to do so due to technical reasons (e.g. a broken internet connection).
 
-TLDR: Lectures will be on-campus AND on-line, guided self-study will be ONLY on-line.
+TLDR: Lectures will be on-campus (subscription in Canvas needed) AND on-line, guided self-study will be ONLY on-line.
 
 ## Practical work
 
@@ -76,7 +76,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * (*tentative*) [Practical work](practicals/week_4.ipynb)
 
 ### Deep learning II
-Guest lecture by Jelmer Wolterink.
+Guest lecture by Jelmer Wolterink. The lecture will be on-line only.
 * (*tentative*) Lecture slides [part 1](lectures/week_5_1.pdf) and [part 2](lectures/week_5_2.pdf)
 * (*tentative*) [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
 
@@ -86,7 +86,7 @@ Guest lecture by Jelmer Wolterink.
 
 ### Unsupervised machine learning
 * (*coming soon*) Lecture slides
-* (*coming soon*) Practical work
+* *There will be no practical work for this topic.*
 
 # Other course information
 
