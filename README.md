@@ -16,7 +16,9 @@ The schedule is as follows:
 * **Lectures**, *time*: Mondays 13.30 - 15.30, *location*: Atlas - 1.210 and on-line via Microsoft Teams (the link will be shared on Canvas)
 * **Guided self-study**, *time*: Mondays 15.30 - 17.30, *location*: on-line via Microsoft Teams (the link will be shared on Canvas)
 
-Since the practical sessions are immediately after the lectures, if you attend the lectures on-line you might not have sufficient time to travel home for the guided self-study. The University is working on ensuring that there are sufficient number of safe workspaces on-campus so that you can log in from there.
+Since the practical sessions are immediately after the lectures, if you attend the lectures on-campus you might not have sufficient time to travel home for the guided self-study. The University is working on ensuring that there are sufficient number of safe workspaces on-campus so that you can log in from there.
+
+The lectures will be recorder so you will be able to view them in case you are prevented to do so due to technical reasons (e.g. a broken internet connection).
 
 TLDR: Lectures will be on-campus AND on-line, guided self-study will be ONLY on-line.
 
