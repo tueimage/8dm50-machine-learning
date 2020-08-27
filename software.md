@@ -1,6 +1,6 @@
 # Setting up the Python environment
 
-To get started with setting up a Python environment, follow the instructions in the Getting Started section of the [Essential Skills](https://github.com/tueimage/essential-skills/python-essentials) Python module.
+To get started with setting up a Python environment, follow the instructions in the Getting Started section of the [Essential Skills](https://github.com/tueimage/essential-skills/python-essentials.md) Python module.
 
 In addition, you have to install the packages `matplotlib`, `jupyter`, `scikit-learn`, `scipy`, `pandas`, `tensorflow` and `spyder`. It is recommended to install these packages in a separate Conda environment. A Conda environment is a directory in which you can install files and packages such that their dependencies will not interact with other environments, which is very useful if you develop code for different courses or research projects. If you want to know more about how to use Conda, read the [docs](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html).
 
