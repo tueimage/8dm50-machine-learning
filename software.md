@@ -16,7 +16,7 @@ conda install matplotlib jupyter scikit-learn scipy pandas tensorflow spyder # i
 Note that you have to activate the `8dm50` environment every time you start working on the assignments. In order to start Jupyter Notebook type `jupyter notebook` in Anadonda Prompt (after activating the `8dm50` environment with `conda activate 8dm50`). It is best if you change directory to the directory containing the code before starting Jupyter Notebook. Similarly, you can start the Spyder integrated development environment by typing `spyder` in the Anaconda Prompt.
 
 ## Video instructions
-We have also prepared a short vide that you can use as a guide for this process:
+We have also prepared a short video that you can use as a guide for this process:
 
 [![](http://img.youtube.com/vi/AxSwTvnwCUU/0.jpg)](http://www.youtube.com/watch?v=AxSwTvnwCUU "")
 
