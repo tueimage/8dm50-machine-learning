@@ -1,16 +1,16 @@
-# How to effectively ask questions (during the tutorials and on Canvas)?
+# How to effectively ask questions (during the practical sessions and on Canvas)?
 
 ## You should never be afraid or feel discouraged to ask questions
 
-The guidelines below are not intended to discourage you from asking questions and guidance during the tutorials or on Canvas. Quite the opposite, the goal of this short document is to instruct you how to communicate your questions in a more effective way.
+The guidelines below are not intended to discourage you from asking questions and guidance during the practical sessions or on Canvas. Quite the opposite, the goal of this short document is to instruct you how to communicate your questions in a more effective way.
 
 ## Start your question by explaining the context
 
-During the tutorials, the student assistants and teachers have to simultaneously answer questions from students working on different exercises (same for Canvas). Before asking the questions, make sure that you properly explain the context. While helpful, simply stating the assignment number (e.g. &quot;Exercise 2.1&quot;) is not sufficient (the student assistants and teachers don&#39;t have the assignments memorized). Good context description should include the goal of the task or assignment that you are working on and the expected outcome or result. If you are asking the question on Canvas, provide a descriptive title for your post so the teachers and other students can immediately get the gist of it.
+During the practical sessions, the student assistants and teachers have to simultaneously answer questions from students working on different exercises (same for Canvas). Before asking the questions, make sure that you properly explain the context. While helpful, simply stating the assignment number (e.g. &quot;Exercise 2.1&quot;) is not sufficient (the student assistants and teachers don&#39;t have the assignments memorized). Good context description should include the goal of the task or assignment that you are working on and the expected outcome or result. If you are asking the question on Canvas, provide a descriptive title for your post so the teachers and other students can immediately get the gist of it.
 
 ## Formulate a specific question
 
-&quot;I don&#39;t know how to solve Exercise 2&quot; is not a specific question (and is not even a question). The goal of the tutorials sessions is not to simply provide you with the answers for the assignments, but to guide you in coming up with an answer yourself.
+&quot;I don&#39;t know how to solve Exercise 2&quot; is not a specific question (and is not even a question). The goal of the practical sessions is not to simply provide you with the answers for the assignments, but to guide you in coming up with an answer yourself.
 
 Always make it clear what you want to get out by asking a question or guidance. If the answer is simply &quot;the solution to the exercise or assignment&quot;, your question is not specific enough.
 
