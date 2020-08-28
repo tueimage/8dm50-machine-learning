@@ -26,6 +26,8 @@ TLDR: Lectures will be on-campus (subscription in Canvas needed) AND on-line, gu
 
 The practical work will be done in groups. The groups will be formed in Canvas and you will also submit all your work there (check the Assignments section for the deadlines). Your are expected to do this work independently with the help of the teaching assistants during the guided self-study sessions (*begeleide zelfstudie*). Each group will be assigned a teaching assistant that you can contact via Microsoft Teams during the practical sessions (the details and links will be posted in Canvas). You can also post your questions in the Discussion section in Canvas at any time (i.e. not just during the practical sessions).
 
+**IMPORTANT: Please read [this guide](how_to_ask_questions.md) on effectively asking questions during the practical sessions.**
+
 # Materials
 
 ## Books
