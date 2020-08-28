@@ -1,6 +1,6 @@
 # Setting up the Python environment
 
-You can download the code from this repository [here](https://github.com/tueimage/8dm50-machine-learning/archive/master.zip) (or use Git, see below).
+You can download the source code for the course from this repository [here](https://github.com/tueimage/8dm50-machine-learning/archive/master.zip) (or use Git, see below).
 
 To get started with setting up a Python environment, follow the instructions in the Getting Started section of the [Essential Skills](https://github.com/tueimage/essential-skills/blob/master/python-essentials.md) Python module.
 
@@ -20,7 +20,7 @@ We have also prepared a short vide that you can use as a guide for this process:
 
 [![](http://img.youtube.com/vi/AxSwTvnwCUU/0.jpg)](http://www.youtube.com/watch?v=AxSwTvnwCUU "")
 
-Note that at the `8DM50-Code` folder at the end of the video should be the folder containing the course source code that you have downloaded.
+Note that the `8DM50-Code` folder at the end of the video should be the folder containing the course source code that you have downloaded.
 
 
 # Working with Git
