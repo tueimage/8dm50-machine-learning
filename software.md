@@ -1,5 +1,7 @@
 # Setting up the Python environment
 
+You can download the code from this repository [here](https://github.com/tueimage/8dm50-machine-learning/archive/master.zip) (or use Git, see below).
+
 To get started with setting up a Python environment, follow the instructions in the Getting Started section of the [Essential Skills](https://github.com/tueimage/essential-skills/blob/master/python-essentials.md) Python module.
 
 In addition, you have to install the packages `matplotlib`, `jupyter`, `scikit-learn`, `scipy`, `pandas`, `tensorflow` and `spyder`. It is recommended to install these packages in a separate Conda environment. A Conda environment is a directory in which you can install files and packages such that their dependencies will not interact with other environments, which is very useful if you develop code for different courses or research projects. If you want to know more about how to use Conda, read the [docs](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html).
@@ -15,6 +17,7 @@ Note that you have to activate the `8dm50` environment every time you start work
 
 ## Video instructions
 We have also prepared a short vide that you can use as a guide for this process:
+
 [![](http://img.youtube.com/vi/AxSwTvnwCUU/0.jpg)](http://www.youtube.com/watch?v=AxSwTvnwCUU "")
 
 
