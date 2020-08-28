@@ -33,7 +33,7 @@ Inner matrix dimensions must agree.
 
 Error in some_matlab_func (line 6)
 
-C = A\*B;
+C = A*B;
 ```
 
 It contains several pieces of information. &quot;Error using \*&quot; means that the error occurs when using the multiplication operator &quot;\*&quot;. The next message &quot;Inner matrix dimensions must agree.&quot; means that the dimensions of the matrices that you are trying to multiply are not suitable for performing matrix multiplication (in order to perform matrix multiplication, the number of rows of the first matrix must be equal to the number of columns of the second matrix). Furthermore, the error message says that the error occurs on line 6 of the function `some_matlab_func.m`. This line is `C = A*B;`. Thus, the dimensions of the matrices `A` and `B` that you are trying to multiply are not suitable for performing matrix multiplication. The next step in the debugging process should be to investigate why these dimensions do not match.
