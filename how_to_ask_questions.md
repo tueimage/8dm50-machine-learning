@@ -26,6 +26,7 @@ When asking for help, always describe your attempts to solve the problem or answ
 
 &quot;It gives an error.&quot; is not a question. Errors are in almost all instances accompanied by error messages that give you information that can help you solve the problem. Look at the following error message for example (this is a MATLAB example, however, error messages look similar in other programming languages as well):
 
+```
 Error using \*
 
 Inner matrix dimensions must agree.
@@ -33,6 +34,7 @@ Inner matrix dimensions must agree.
 Error in some\_matlab\_func (line 6)
 
 C = A\*B;
+```
 
 It contains several pieces of information. &quot;Error using \*&quot; means that the error occurs when using the multiplication operator &quot;\*&quot;. The next message &quot;Inner matrix dimensions must agree.&quot; means that the dimensions of the matrices that you are trying to multiply are not suitable for performing matrix multiplication (in order to perform matrix multiplication, the number of rows of the first matrix must be equal to the number of columns of the second matrix). Furthermore, the error message says that the error occurs on line 6 of the function some\_matlab\_func.m. This line is C = A\*B;. Thus, the dimensions of the matrices A and B that you are trying to multiply are not suitable for performing matrix multiplication. The next step in the debugging process should be to investigate why these dimensions do not match.
 
@@ -48,6 +50,7 @@ If you ask the question online, make sure that you attach a minimal and standalo
 
 **Good**: &quot;In the first assignment from the exercises from the computer aided diagnosis topic, we need to compute the parameters of a linear regression model for a given dataset. According to me, we need to use the ls\_solve function that we previously implemented to solve for the parameters Theta. I do this by running the following line of code Theta = ls solve(addones(trainingX), trainingY);. However, when I plot the results with plot\_regression(addones(trainingX), trainingY, Theta);, I get the following error message:
 
+```
 Error using \*
 
 Inner matrix dimensions must agree.
@@ -55,6 +58,7 @@ Inner matrix dimensions must agree.
 Error in plot\_regression (line 8)
 
 predictedY = addones(X)\*Theta;
+```
 
 It seems that the problem occurs when calculating the predicted target values. I assume that it is due to the use of the addones() function.
 
