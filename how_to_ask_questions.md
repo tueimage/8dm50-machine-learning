@@ -46,7 +46,7 @@ If you ask the question online, make sure that you attach a minimal and standalo
 
 ## Example
 
-**Bad**: &quot;I am not sure what to do in the first assignment. I tried &quot;`Theta = ls solve(addones(trainingX), trainingY);`&quot;,but I get an error when I try to plot the model.&quot;
+**Bad**: &quot;I am not sure what to do in the first assignment. I tried `Theta = ls solve(addones(trainingX), trainingY);`, but I get an error when I try to plot the model.&quot;
 
 **Good**: &quot;In the first assignment from the exercises from the computer aided diagnosis topic, we need to compute the parameters of a linear regression model for a given dataset. According to me, we need to use the ls_solve function that we previously implemented to solve for the parameters Theta. I do this by running the following line of code `Theta = ls solve(addones(trainingX), trainingY);`. However, when I plot the results with `plot_regression(addones(trainingX), trainingY, Theta);`, I get the following error message:
 
