@@ -33,12 +33,12 @@
 
 % A variable used to exclude slides from the lecture version
 \newif\iffull
-\fullfalse
-%\fulltrue
+%\fullfalse
+\fulltrue
 
 % Bibliography
-\usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp]{biblatex}
-\bibliography{lectures/references}
+\usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp,backend=bibtex]{biblatex}
+\bibliography{./references}
 
 \setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
 
@@ -345,9 +345,9 @@ Materials:
 \frametitle{Effect of eigenvalues}
 
 \begin{center}
-\includegraphics[width=0.5\textwidth]{../figures/week_1/unit_circle_before.pdf}
+\includegraphics[width=0.48\textwidth]{../figures/week_1/unit_circle_before.pdf}
 \hfill
-\includegraphics[width=0.5\textwidth]{../figures/week_1/unit_circle_after.pdf}
+\includegraphics[width=0.48\textwidth]{../figures/week_1/unit_circle_after.pdf}
 \end{center}
 
 \end{frame}
@@ -688,7 +688,16 @@ Materials:
         $$\hat{\vect{w}} = (\vect{X}^T\vect{X})^{-1}\vect{X}^T \vect{y}$$
     \end{itemize}
 
-         {\bf Question}: Why not simply $\vect{y} -\vect{X}\vect{w}=  \vect{0}$ $\rightarrow$ $\vect{y} = \vect{X}\vect{w}$ $\rightarrow$ $\hat{\vect{w}} = \vect{X}^{-1} \vect{y}$?
+\end{frame}
+
+\begin{frame}
+\frametitle{Discussion point}
+
+Why we cannot simply solve for $\hat{\vect{w}}$ in the following way?
+
+$$\vect{y} -\vect{X}\vect{w}=  \vect{0}$$ 
+$$\vect{y} = \vect{X}\vect{w}$$ 
+$$\hat{\vect{w}} = \vect{X}^{-1} \vect{y}$$
 
 \end{frame}
 
@@ -721,9 +730,9 @@ Materials:
 
 \begin{frame}{Example: Linear model fit by least squares}
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{../figures/week_1/classification_problem.pdf}
+        \includegraphics[width=0.48\textwidth]{../figures/week_1/classification_problem.pdf}
         \hfill
-        \includegraphics[width=0.5\textwidth]{../figures/week_1/linear_model.pdf}
+        \includegraphics[width=0.48\textwidth]{../figures/week_1/linear_model.pdf}
         \end{center}
 \end{frame}
 
@@ -756,6 +765,12 @@ Materials:
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Discussion point}
+What is the expression for the Euclidean distance between two vectors (points) $\mathbf{a}$ and $\mathbf{b}$ in vector form?
+
+\end{frame}
+
 \subsection{Nearest-neighbours model}
 
 \begin{frame}
@@ -767,7 +782,7 @@ Materials:
         where $N_k(\vect{x})$ is the neighbourhood of $\vect{x}$ consisting of the $k$ "closest" points to $\vect{x}$.
         \item "Closeness" requires a definition of {\bf metrics}.
         \item For the moment we assume Euclidian distance (each $\vect{x}$ is a point in the hyperspace).
-        \item An average of the classes of the $k$ closest points
+        \item An average of the classes of the $k$ closest points (but only for binary classification problem.
     \end{itemize}
 \end{frame}
 
@@ -775,27 +790,27 @@ Materials:
 \frametitle{Back to the \textcolor{blue}{BLUE} and \textcolor{orange}{ORANGE} example}
     \begin{itemize}
         \item We use the same training data as in the linear model example.
-        \item New borderline between the classes generated with 15-nearest-neighbour model
-        \item Since \textcolor{orange}{ORANGE} is encoded as 1 $\hat{y}$ is the proportion of \textcolor{orange}{ORANGE} points in the 15-neighbourhood
-        \item Class \textcolor{orange}{ORANGE} assigned to $\vect{x}$ if $\hat{y}(\vect{x}) > 0.5$ (majority is \textcolor{orange}{ORANGE})
+        \item New borderline between the classes generated with 15-nearest-neighbour model.
+        \item Since \textcolor{orange}{ORANGE} is encoded as 1 $\hat{y}$ is the proportion of \textcolor{orange}{ORANGE} points in the 15-neighbourhood.
+        \item Class \textcolor{orange}{ORANGE} assigned to $\vect{x}$ if $\hat{y}(\vect{x}) > 0.5$ (majority is \textcolor{orange}{ORANGE}).
     \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{15-Nearest neighbour classifier}
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{../figures/week_1/classification_problem.pdf}
+        \includegraphics[width=0.48\textwidth]{../figures/week_1/classification_problem.pdf}
         \hfill
-        \includegraphics[width=0.5\textwidth]{../figures/week_1/15-nn.pdf}
+        \includegraphics[width=0.48\textwidth]{../figures/week_1/15-nn.pdf}
     \end{center}
 \end{frame}
 
 \begin{frame}
 \frametitle{Linear classifier vs. 15-Nearest neighbour}
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{../figures/week_1/linear_model.pdf}
+        \includegraphics[width=0.48\textwidth]{../figures/week_1/linear_model.pdf}
         \hfill
-        \includegraphics[width=0.5\textwidth]{../figures/week_1/15-nn.pdf}
+        \includegraphics[width=0.48\textwidth]{../figures/week_1/15-nn.pdf}
     \end{center}
 \end{frame}
 
@@ -803,9 +818,9 @@ Materials:
 \begin{frame}
 \frametitle{1-Nearest neighbour vs. 15-Nearest neighbour}
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{../figures/week_1/1-nn.pdf}
+        \includegraphics[width=0.48\textwidth]{../figures/week_1/1-nn.pdf}
         \hfill
-        \includegraphics[width=0.5\textwidth]{../figures/week_1/15-nn.pdf}
+        \includegraphics[width=0.48\textwidth]{../figures/week_1/15-nn.pdf}
     \end{center}
 \end{frame}
 
@@ -820,6 +835,7 @@ Materials:
     \end{itemize}
 \end{frame}
 \fi
+
 
 \begin{frame}
 \frametitle{Comparison of techniques}
@@ -837,16 +853,37 @@ Materials:
 \end{frame}
 
 
-\section{Probability theory}
+\begin{frame}
+\frametitle{Discussion point}
+Assume that you are building a machine learning model to be used as an \textit{aid} by clinicians for decision making. The inputs to the model are a number of \textit{biomarkers} describing the condition of the patient.
+\\~\
 
+The clinician specifies that they are interested in a model that is \textit{interpretable}, i.e. a model that will not only output a prediction but also give an indication about which biomarkers are important when making the prediction.
+\\~\
+
+You can either use a linear model or a $k$-NN classifier. What is the better choice in your opinion?
+
+\end{frame}
+
+\iffull
+\section{Probability theory}
+\else
+\section{Probability theory (self-study)}
+\fi
 
 \begin{frame}
+\iffull
 \frametitle{Probability theory}
+\else
+\frametitle{Probability theory (self-study)}
+\fi
 Materials:
 \begin{itemize}
     \item Chapter I.3 from \cite{deeplearning}
 \end{itemize}
 \end{frame}
+
+\iffull
 
 \begin{frame}
 \frametitle{Probability theory}
@@ -1014,9 +1051,9 @@ Materials:
 \begin{frame}
 \frametitle{Gaussian distribution}
 \begin{center}
-\includegraphics[width=0.5\textwidth]{../figures/week_1/gaussian_1d.pdf}
+\includegraphics[width=0.48\textwidth]{../figures/week_1/gaussian_1d.pdf}
 \hfill
-\includegraphics[width=0.5\textwidth]{../figures/week_1/gaussian_2d.pdf}
+\includegraphics[width=0.48\textwidth]{../figures/week_1/gaussian_2d.pdf}
 \end{center}
 \end{frame}
 
@@ -1027,7 +1064,7 @@ Materials:
     $$\sigma(x) = \frac{1}{1 + \exp{(-x)}}$$
     \item The Logistic (sigmoid) function is commonly used to parametrize Bernoulli distributions.
     \begin{center}
-    \includegraphics[width=0.5\textwidth]{../figures/week_1/sigmoid.pdf}
+    \includegraphics[width=0.48\textwidth]{../figures/week_1/sigmoid.pdf}
     \end{center}
 
 \end{itemize}
@@ -1047,6 +1084,7 @@ Materials:
 \end{itemize}
 \end{frame}
 
+\fi % probability theory
 
 \begin{frame}
 \frametitle{Acknowledgements}
