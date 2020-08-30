@@ -18,7 +18,7 @@ The schedule is as follows:
 
 Since the practical sessions are immediately after the lectures, if you attend the lectures on-campus you might not have sufficient time to travel home for the guided self-study. The University is working on ensuring that there are sufficient number of safe workspaces on-campus so that you can log in from there.
 
-The lectures will be recorder so you will be able to view them in case you are prevented to do so due to technical reasons (e.g. a broken internet connection).
+The lectures will be recorded so you will be able to view them in case you are prevented to do so due to technical reasons (e.g. a broken internet connection).
 
 TLDR: Lectures will be on-campus (subscription in Canvas needed) AND on-line, guided self-study will be ONLY on-line.
 
