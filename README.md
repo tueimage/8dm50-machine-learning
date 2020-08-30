@@ -56,14 +56,14 @@ If you lack prior knowledge of the Python programming language, you can use the 
 
 **IMPORTANT: All materials tagged with (*tentative*)  are not updated from the previous edition of the course and might change for this edition. However, any changes made will not be substantial and you can still use the materials to get an early peek at the content.**
 
-* (*tentative*) [Introduction slides](lectures/intro.pdf)
+* [Introduction slides](lectures/intro.pdf)
 
 ### Reading assignment
 * [Instructions](reading_assignment.md)
 
 ### Machine learning fundamentals I
-* (*tentative*) [Lecture slides](lectures/week_1.pdf)
-* (*tentative*) [Practical work](practicals/week_1.ipynb)
+* [Lecture slides](lectures/week_1.pdf)
+* [Practical work](practicals/week_1.ipynb)
 
 ### Machine learning fundamentals II
 * (*tentative*) [Lecture slides](lectures/week_2.pdf)
