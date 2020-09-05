@@ -16,3 +16,14 @@ def lsq(X, y):
     beta = np.dot(np.linalg.inv(np.dot(X.T, X)), np.dot(X.T, y))
 
     return beta
+
+def calcMSE(X, y_true, beta):
+    y_pred = np.zeros([300,1])
+    for patient in range(len(y_true)):
+        y_pred[patient] = beta[0,0]
+        for feature in range(len(X[patient,:])):
+            y_pred[patient] = y_pred[patient] + beta[feature+1] * X[patient, feature]
+
+    # Mean Squared Error 
+    MSE = np.square(np.subtract(y_true,y_pred)).mean() 
+    return MSE
