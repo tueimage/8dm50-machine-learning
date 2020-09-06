@@ -49,7 +49,7 @@
 \institute{Eindhoven University of Technology
 
 Department of Biomedical Engineering}
-\date{2019}
+\date{2020}
 
 
 
@@ -396,7 +396,11 @@ $$A_{m,1}x_1 + A_{m,2}x_2 + \ldots + A_{m,n}x_n = b_m$$
 \end{frame}
 
 \begin{frame}
+\iffull
 \frametitle{Eigendecomposition}
+\else
+\frametitle{Eigendecomposition (self-study)}
+\fi
     \begin{itemize}
         \item Eigenvector and eigenvalue
         $$ \vect{A}\vect{x} = \lambda \vect{x}$$
@@ -407,6 +411,7 @@ $$A_{m,1}x_1 + A_{m,2}x_2 + \ldots + A_{m,n}x_n = b_m$$
 
 \end{frame}
 
+\iffull
 \begin{frame}
 \frametitle{Eigendecomposition}
     \begin{itemize}
@@ -431,7 +436,6 @@ $$A_{m,1}x_1 + A_{m,2}x_2 + \ldots + A_{m,n}x_n = b_m$$
 \end{frame}
 
 
-\iffull
 \begin{frame}
 \frametitle{Eigendecomposition}
     \begin{itemize}
@@ -748,7 +752,7 @@ $$\hat{\vect{w}} = \vect{X}^{-1} \vect{y}$$
 \begin{frame}
 \frametitle{Example: Linear model fit by least squares}
 \begin{itemize}
-    \item Scatter plot of training data on a pair of inputs $x_1$ and $x_2$
+    \item Scatter plot (on next slide) of training data on a pair of inputs $x_1$ and $x_2$
     \item Output class variable $g$ has two values \textcolor{blue}{BLUE} and \textcolor{orange}{ORANGE}.
     \item Linear regression model fitted with the response variable $y$ coded as $0$ for \textcolor{blue}{BLUE} and $1$ for \textcolor{orange}{ORANGE}.
     \item Fitted values $\hat{y}$ converted to a fitted class variable $\hat{g}$ as
