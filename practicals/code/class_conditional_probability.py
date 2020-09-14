@@ -15,9 +15,12 @@ def normpdf(x_axis, mean, std):
           standard deviation of normal distribution
     """
     pdf = []
+    
     if isinstance(x_axis, float): 
         x_axis = np.array([x_axis])
+
     for x in x_axis:
         exponent = math.exp(-((x-mean)**2 / (2 * std**2 )))
         pdf.append((1 / (math.sqrt(2 * math.pi) * std)) * exponent)
+
     return pdf
