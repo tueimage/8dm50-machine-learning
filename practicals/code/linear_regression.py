@@ -16,3 +16,23 @@ def lsq(X, y):
     beta = np.dot(np.linalg.inv(np.dot(X.T, X)), np.dot(X.T, y))
 
     return beta
+
+def lsq_predict(X, beta):
+    """
+    
+
+    Parameters
+    ----------
+    X : numpy.ndarray
+        Input data to be predicted
+    beta : numpy.ndarray
+        coefficients from the linear regression
+
+    Returns
+    -------
+    y_pred : numpy.ndarray
+        predicted values
+
+    """
+    y_pred = np.inner(beta[1:11].T, X).T + beta[0]
+    return y_pred

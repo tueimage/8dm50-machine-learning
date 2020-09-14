@@ -56,7 +56,7 @@ def kNN_regression(X_train, y_train, X_test, k):
 
 def get_neighbour_targets_numpy(X_train, X_test, y_train, k):
     """
-    Numpy implementation of k neirest neighbors
+    get the target values from the k nearest neighbors
 
     Parameters
     ----------
@@ -68,8 +68,6 @@ def get_neighbour_targets_numpy(X_train, X_test, y_train, k):
         numpy array containing training targets
     k : int
         number of neighbors to account for (preferably odd)
-    regression : boolean
-        when False this function classifies, when True this function regresses
 
     Returns
     -------
@@ -85,7 +83,6 @@ def get_neighbour_targets_numpy(X_train, X_test, y_train, k):
     X_three = np.swapaxes(X_three, 1, 2)
     
     # Subtract features of samples from 3D matrix
-    # I'm not entirely sure this does what I think it does
     X_subtract = X_three - X_test
     
     # Square, sum, square root, to get L2 norm
@@ -104,11 +101,53 @@ def get_neighbour_targets_numpy(X_train, X_test, y_train, k):
 
 
 def kNN_classification_numpy(X_train, X_test, y_train, k):
+    """
+    Classify X_test using the k nearest neighbors and the training data
+    X_train and y_train
+
+    Parameters
+    ----------
+    X_train : numpy.ndarray
+        numpy array containing training samples
+    X_test : numpy.ndarray
+        numpy array containing test samples
+    y_train : numpy.ndarray
+        numpy array containing training targets
+    k : int
+        number of neighbors to account for (preferably odd)
+
+    Returns
+    -------
+    y_predic : numpy.ndarray
+        numpy array containing predicted targets
+
+    """
     y_k = get_neighbour_targets_numpy(X_train, X_test, y_train, k)
     
     return np.swapaxes(sp.stats.mode(y_k)[0], 0, 1)
 
 def kNN_regression_numpy(X_train, X_test, y_train, k):
+    """
+    Regress X_test using the k nearest neighbors and the training data
+    X_train and y_train
+
+    Parameters
+    ----------
+    X_train : numpy.ndarray
+        numpy array containing training samples
+    X_test : numpy.ndarray
+        numpy array containing test samples
+    y_train : numpy.ndarray
+        numpy array containing training targets
+    k : int
+        number of neighbors to account for (preferably odd)
+
+    Returns
+    -------
+    y_predic : numpy.ndarray
+        numpy array containing predicted targets
+
+    """
     y_k = get_neighbour_targets_numpy(X_train, X_test, y_train, k)
     
     return np.mean(y_k, axis=0)[:, None]
@@ -153,5 +192,5 @@ def kNN_find_optimal_k(X_train, X_test, y_train, kNN_type, use_numpy, k_array):
                 ))
     else: print("kNN_type should be one of 'classification' or 'regression'")
     
-    return targets
+    return np.asarray(targets)
                 
