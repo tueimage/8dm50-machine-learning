@@ -112,3 +112,46 @@ def kNN_regression_numpy(X_train, X_test, y_train, k):
     y_k = get_neighbour_targets_numpy(X_train, X_test, y_train, k)
     
     return np.mean(y_k, axis=0)[:, None]
+
+def kNN_find_optimal_k(X_train, X_test, y_train, kNN_type, use_numpy, k_array):
+    targets = []
+    
+    if kNN_type == 'classification':
+        if use_numpy == True:
+            for k in k_array:
+                targets.append(kNN_classification_numpy(
+                    X_train,
+                    X_test,
+                    y_train,
+                    k
+                ))
+        else:
+            for k in k_array:
+                targets.append(kNN_classification(
+                    X_train, 
+                    X_test, 
+                    y_train, 
+                    k
+                ))
+                
+    elif kNN_type == 'regression':
+        if use_numpy == True:
+            for k in k_array:
+                targets.append(kNN_regression_numpy(
+                    X_train,
+                    X_test,
+                    y_train,
+                    k
+                ))
+        else:
+            for k in k_array:
+                targets.append(kNN_regression(
+                    X_train, 
+                    X_test, 
+                    y_train, 
+                    k
+                ))
+    else: print("kNN_type should be one of 'classification' or 'regression'")
+    
+    return targets
+                
