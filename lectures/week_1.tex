@@ -226,29 +226,17 @@ Materials:
 
 
 \begin{frame}
-\frametitle{Systems of linear equations}
-
-$$A_{1,1}x_1 + A_{1,2}x_2 + \ldots + A_{1,n}x_n = b_1$$
-$$A_{2,1}x_1 + A_{2,2}x_2 + \ldots + A_{2,n}x_n = b_2$$
-$$\ldots$$
-$$A_{m,1}x_1 + A_{m,2}x_2 + \ldots + A_{m,n}x_n = b_m$$
-\\~\
-
-\begin{itemize}
-  \item $A_{*,*}$ and $b_*$ are the knowns, $x_*$ are the unknowns.
-  \item In matrix form: $\vect{A}\vect{x} = \vect{b}$ 
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Systems of linear equations}
+\frametitle{Systems of equations}
     \begin{itemize}
         \item $\vect{A}\vect{x} = \vect{b}$ expands to
-            $$\vect{A}_{1,:} \vect{x}_1 = \vect{b}_1 $$
-            $$\vect{A}_{2,:} \vect{x}_2 = \vect{b}_2 $$
-            $$\ldots $$
-            $$\vect{A}_{m,:} \vect{x}_m = \vect{b}_m $$
+        \begin{center}
+        \begin{align}
+            \vect{A}_{1,:} \vect{x}_1 = \vect{b}_1 \\
+            \vect{A}_{2,:} \vect{x}_2 = \vect{b}_2 \\
+            \ldots \\
+            \vect{A}_{m,:} \vect{x}_m = \vect{b}_m
+        \end{align}
+        \end{center}
     \end{itemize}
 
 \end{frame}
@@ -282,10 +270,8 @@ $$A_{m,1}x_1 + A_{m,2}x_2 + \ldots + A_{m,n}x_n = b_m$$
             $$ \vect{I}_n \vect{x} = \vect{A}^{-1}\vect{b} $$
             $$ \vect{x} = \vect{A}^{-1}\vect{b} $$
         \end{center}
-	\iffull
         \item This is useful mostly for abstract analysis.
         \item From a numerical point of view there are much more efficient methods.
-        \fi
     \end{itemize}
 \end{frame}
 
@@ -299,63 +285,6 @@ $$A_{m,1}x_1 + A_{m,2}x_2 + \ldots + A_{m,n}x_n = b_m$$
     \end{itemize}
 \end{frame}
 
-
-\begin{frame}
-\frametitle{Moore-Penrose pseudoinverse}
-    \begin{itemize}
-        \item Matrix inversion is not defined on matrices that are no square.
-        \item The {\bf Moore-Penrose pseudoinverse} is defined as
-        $$
-        \vect{A}^{+} = \lim_{\alpha \searrow 0}(\vect{A}^T\vect{A}+\alpha \vect{I})^{-1}\vect{A}^T
-        $$
-
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Moore-Penrose pseudoinverse}
-    Now we can consider
-    $$\vect{x} = \vect{A}^{+} \vect{y}$$
-    \begin{itemize}
-        \item If the equation has
-            \begin{itemize}
-                \item exactly one solution: this is the same as inverse,
-                \item no solution: gives the solution with the smallest error, $\norm{\vect{A}\vect{x} - \vect{y}}_2$
-                \item many solutions: gives the solution with the smallest norm of $\vect{x}$.
-            \end{itemize}
-    \end{itemize}
-
-\end{frame}
-
-\iffull
-
-\begin{frame}
-\frametitle{Singular value decomposition}
-    \begin{itemize}
-        \item Similar to eigenvalue decomposition
-        \item More general: matrix need not be square
-        $$\vect{A} = \vect{U} \vect{D} \vect{V}^T$$
-        \item $\vect{U}$ and $\vect{V}$ are square matrices and are both orthogonal, $\vect{D}$ is diagonal.
-        \item The diagonal elements of $D$ are called {\bf singular values} of matrix $\vect{A}$; the columns of $\vect{U}$ and $\vect{V}$ are {\bf left-singular} and {\bf right-singular vectors} of $\vect{A}$, respectively.
-    \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Computing the pseudoinverse}
-    \begin{itemize}
-        \item Efficient implementations are based on the formula allowed by the singular decomposition
-        $$
-        \vect{A}^{+} = \vect{V}\vect{D}^{+}\vect{U}^T
-        $$
-        \item $\vect{U},\vect{D},\vect{V}$ are from the singular value decomposition of $\vect{A}$.
-        \item The pseudoinverse $\vect{D}^{+}$ of $\vect{D}$ is obtained by taking the reciprocal non-zero elements and after that taking the transpose of the resulting matrix.
-    \end{itemize}
-
-\end{frame}
-
-\fi
-
 \begin{frame}
 \frametitle{Norms}
     \begin{itemize}
@@ -368,8 +297,6 @@ $$A_{m,1}x_1 + A_{m,2}x_2 + \ldots + A_{m,n}x_n = b_m$$
         \end{itemize}
     \end{itemize}
 \end{frame}
-
-
 
 \begin{frame}
 \frametitle{Norms}
@@ -445,11 +372,57 @@ $$A_{m,1}x_1 + A_{m,2}x_2 + \ldots + A_{m,n}x_n = b_m$$
 \fi
 
 
+\begin{frame}
+\frametitle{Singular value decomposition}
+    \begin{itemize}
+        \item Similar to eigenvalue decomposition
+        \item More general: matrix need not be square
+        $$\vect{A} = \vect{U} \vect{D} \vect{V}^T$$
+        \item $\vect{U}$ and $\vect{V}$ are square matrices and are both orthogonal, $\vect{D}$ is diagonal.
+        \item The diagonal elements of $D$ are called {\bf singular values} of matrix $\vect{A}$; the columns of $\vect{U}$ and $\vect{V}$ are {\bf left-singular} and {\bf right-singular vectors} of $\vect{A}$, respectively.
+    \end{itemize}
 
+\end{frame}
 
+\begin{frame}
+\frametitle{Moore-Penrose pseudoinverse}
+    \begin{itemize}
+        \item Matrix inversion is not defined on matrices that are no square.
+        \item The {\bf Moore-Penrose pseudoinverse} is defined as
+        $$
+        \vect{A}^{+} = \lim_{\alpha \searrow 0}(\vect{A}^T\vect{A}+\alpha \vect{I})^{-1}\vect{A}^T
+        $$
 
+    \end{itemize}
+\end{frame}
 
+\begin{frame}
+\frametitle{Moore-Penrose pseudoinverse}
+    Now we can consider
+    $$\vect{x} = \vect{A}^{+} \vect{y}$$
+    \begin{itemize}
+        \item If the equation has
+            \begin{itemize}
+                \item exactly one solution: this is the same as inverse,
+                \item no solution: gives the solution with the smallest error, $\norm{\vect{A}\vect{x} - \vect{y}}_2$
+                \item many solutions: gives the solution with the smallest norm of $\vect{x}$.
+            \end{itemize}
+    \end{itemize}
 
+\end{frame}
+
+\begin{frame}
+\frametitle{Computing the pseudoinverse}
+    \begin{itemize}
+        \item Efficient implementations are based on the formula allowed by the singular decomposition
+        $$
+        \vect{A}^{+} = \vect{V}\vect{D}^{+}\vect{U}^T
+        $$
+        \item $\vect{U},\vect{D},\vect{V}$ are from the singular value decomposition of $\vect{A}$.
+        \item The pseudoinverse $\vect{D}^{+}$ of $\vect{D}$ is obtained by taking the reciprocal non-zero elements and after that taking the transpose of the resulting matrix.
+    \end{itemize}
+
+\end{frame}
 
 \iffull
 \begin{frame}
