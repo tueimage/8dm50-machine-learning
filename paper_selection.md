@@ -24,3 +24,10 @@ Voorkeur Rutger:
   3. [Generative adversarial network in medical imaging: A review](https://www.sciencedirect.com/science/article/abs/pii/S1361841518308430)
   4. [Multi-Contrast Super-Resolution MRI Through a Progressive Network](https://ieeexplore.ieee.org/document/9001105)
   5. [Machine and deep learning meet genomescale metabolic modeling](https://doi.org/10.1371/journal.pcbi.1007084)
+  
+  Voorkeur Sander:
+  1 Multi-Contrast Super-Resolution MRI Through a Progressive Network
+  2 Deep learning enables rapid identification of potent DDR1 kinase inhibitors
+  3 Machine and deep learning meet genome-scale metabolic modeling
+  4 MS-Net: Multi-Site Network for Improving Prostate Segmentation With Heterogeneous MRI Data
+  5 Generative adversarial network in medical imaging: A review
