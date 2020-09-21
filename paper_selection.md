@@ -28,7 +28,11 @@ Voorkeur Rutger:
   Voorkeur Sander:
   
   1 Multi-Contrast Super-Resolution MRI Through a Progressive Network
+  
   2 Deep learning enables rapid identification of potent DDR1 kinase inhibitors
+  
   3 Machine and deep learning meet genome-scale metabolic modeling
+  
   4 MS-Net: Multi-Site Network for Improving Prostate Segmentation With Heterogeneous MRI Data
+  
   5 Generative adversarial network in medical imaging: A review
