@@ -37,12 +37,13 @@
 
 % A variable used to exclude slides from the lecture version
 \newif\iffull
-\fullfalse
-%\fulltrue
+%\fullfalse
+\fulltrue
 
 % Bibliography
-\usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp]{biblatex}
-\bibliography{references}
+\usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp,backend=bibtex]{biblatex}
+\bibliography{./references}
+
 
 \setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
 
@@ -53,7 +54,7 @@
 \institute{Eindhoven University of Technology
 
 Department of Biomedical Engineering}
-\date{2019}
+\date{2020}
 
 
 
@@ -77,6 +78,13 @@ Topics covered in this lecture:
     \tableofcontents
 \end{frame}
 
+\iffull
+\begin{frame}{Note on the slides}
+This set of slides is larger than the one used during the lectures. It includes some additional material that you can use as a guide when studying.
+\end{frame}
+\fi
+
+
 \section{Model capacity, underfitting and overfitting}
 
 \begin{frame}
@@ -90,7 +98,7 @@ Materials:
 \begin{frame}
 \frametitle{Linear regression}
     \begin{center}
-            \includegraphics[width=0.75\textwidth]{figures/week_2/linear_regression.pdf} \\
+            \includegraphics[width=0.75\textwidth]{../figures/week_2/linear_regression.pdf} \\
             $\hat{y} = \hat{w_0} + \sum_{i=1}^{n} x_i \hat{w_i}$ \\
             $\hat{y} = \vect{x}^T \hat{\vect{w}}$
     \end{center}
@@ -109,11 +117,11 @@ Materials:
     \end{itemize}
     \begin{center}
             \iffull
-            \includegraphics[width=0.3\textwidth]{figures/week_2/linear_regression_error.pdf}
-            \includegraphics[width=0.3\textwidth]{figures/week_2/linear_regression_test_set.pdf}
+            \includegraphics[width=0.3\textwidth]{../figures/week_2/linear_regression_error.pdf}
+            \includegraphics[width=0.3\textwidth]{../figures/week_2/linear_regression_test_set.pdf}
             \else
-            \includegraphics[width=0.5\textwidth]{figures/week_2/linear_regression_error.pdf}
-            \includegraphics[width=0.5\textwidth]{figures/week_2/linear_regression_test_set.pdf}
+            \includegraphics[width=0.47\textwidth]{../figures/week_2/linear_regression_error.pdf}
+            \includegraphics[width=0.47\textwidth]{../figures/week_2/linear_regression_test_set.pdf}
             \fi
     \end{center}
 \end{frame}
@@ -142,8 +150,8 @@ Materials:
         $$
 \end{itemize}
 \begin{center}
-        \includegraphics[width=0.5\textwidth]{figures/week_2/linear_regression_error.pdf}
-        \includegraphics[width=0.5\textwidth]{figures/week_2/linear_regression_test_set.pdf}
+        \includegraphics[width=0.47\textwidth]{../figures/week_2/linear_regression_error.pdf}
+        \includegraphics[width=0.47\textwidth]{../figures/week_2/linear_regression_test_set.pdf}
 \end{center}
 \end{frame}
 
@@ -163,6 +171,11 @@ Materials:
             \end{itemize}
 
     \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Discussion point}
+Can you name a scenario in medical image analysis practice where the i.i.d. assumptions are bound to be broken?
 \end{frame}
 
 
@@ -219,15 +232,15 @@ Materials:
 \frametitle{Polynomial regression}
     A comparison of a linear, degree-4, and degree-12 polynomials as predictors
     \begin{center}
-        \includegraphics[width=0.33\textwidth]{figures/week_2/linear_regression_error.pdf}
-        \includegraphics[width=0.33\textwidth]{figures/week_2/polynomial_regression_degree_4.pdf}
-        \includegraphics[width=0.33\textwidth]{figures/week_2/polynomial_regression_degree_12.pdf}
+        \includegraphics[width=0.31\textwidth]{../figures/week_2/linear_regression_error.pdf}
+        \includegraphics[width=0.31\textwidth]{../figures/week_2/polynomial_regression_degree_4.pdf}
+        \includegraphics[width=0.31\textwidth]{../figures/week_2/polynomial_regression_degree_12.pdf}
     \end{center}
     \pause
     \begin{center}
-        \includegraphics[width=0.33\textwidth]{figures/week_2/linear_regression_test_set.pdf}
-        \includegraphics[width=0.33\textwidth]{figures/week_2/polynomial_regression_degree_4_test_set.pdf}
-        \includegraphics[width=0.33\textwidth]{figures/week_2/polynomial_regression_degree_12_test_set.pdf}
+        \includegraphics[width=0.31\textwidth]{../figures/week_2/linear_regression_test_set.pdf}
+        \includegraphics[width=0.31\textwidth]{../figures/week_2/polynomial_regression_degree_4_test_set.pdf}
+        \includegraphics[width=0.31\textwidth]{../figures/week_2/polynomial_regression_degree_12_test_set.pdf}
     \end{center}
 \end{frame}
 
@@ -257,11 +270,11 @@ Materials:
 \begin{frame}
 \frametitle{Generalization and capacity}
     \begin{center}
-        \includegraphics[width=0.85\textwidth]{figures/week_2/generalization_gap.pdf}
+        \includegraphics[width=0.85\textwidth]{../figures/week_2/generalization_gap.pdf}
     \end{center}
 \end{frame}
 
-
+\iffull
 \begin{frame}
 \frametitle{Training set size}
     \begin{itemize}
@@ -277,10 +290,12 @@ Materials:
 \begin{frame}
 \frametitle{Training set size}
     \begin{center}
-        \includegraphics[width=0.7\textwidth]{figures/week_2/training_set_size.png}
+        \includegraphics[width=0.7\textwidth]{../figures/week_2/training_set_size.png}
     \end{center}
     \tiny{Figure from \cite{deeplearning}}
 \end{frame}
+\fi
+
 
 \iffull
 \begin{frame}
@@ -294,6 +309,7 @@ Materials:
     \end{itemize}
 \end{frame}
 \fi 
+
 
 \begin{frame}
 \frametitle{Regularization}
@@ -343,24 +359,29 @@ Materials:
     \end{itemize}
 \end{frame}
 
-
+\iffull
 \begin{frame}
 \frametitle{Choice of training, validation, and test sets}
     \begin{itemize}
-        \item {\bf Question}: How large should the validation set be?
         \item Since the validation set is used to determine the hyperparameters it will typically underestimate the generalization error.
         \item However, it will usually better predict the generalization error than the training set.
         \item After the completion of the hyperparameters optimization we can estimate the generalization error using the test data.
         \item In practice the testing should be done also on different test data to avoid the test data becoming ``stale''.
     \end{itemize}
 \end{frame}
-
+\fi
 
 \begin{frame}
 \frametitle{Choice of training, validation, and test sets}
     \begin{center}
-        \includegraphics[width=0.95\textwidth]{figures/week_2/subsets.png}
+        \includegraphics[width=0.95\textwidth]{../figures/week_2/subsets.png}
     \end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Discussion point}
+How large should the training, validation and testing datasets be as a percentage (\%) of the total available data?
 \end{frame}
 
 
@@ -385,6 +406,27 @@ Materials:
     \end{itemize}
 \end{frame}
 \fi
+
+\begin{frame}
+\frametitle{Expectation (recap)}
+\begin{itemize}
+    \item The {\bf expectation} or {\bf expected} value of a function $f(x)$ with respect to a probability distribution $P(x)$ is the average value of $f$ over all values $x$ assuming they are drawn from $P$
+$$\field{E}_{\text{x} \sim P} [f(x)] = \sum_{x} P(x) f(x)$$
+$$\field{E}_{\text{x} \sim P} [f(x)] = \int p(x) f(x) dx$$
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Variance (recap)}
+\begin{itemize}
+    \item The {\bf variance} gives a measure of variation of the values of a random variable x $$\mbox{Var}(f(x)) = \field{E}[(f(x) - E[f(x)])^2]$$
+
+\end{itemize}
+
+\end{frame}
 
 \section{Bias and variance trade-off}
 
@@ -621,11 +663,22 @@ Materials:
     \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Discussion point}
+How will the estimated regression model change when one training data point is replaced with another one?
+\vfill
+  \begin{center}
+        \includegraphics[width=0.31\textwidth]{../figures/week_2/linear_regression_error.pdf}
+        \includegraphics[width=0.31\textwidth]{../figures/week_2/polynomial_regression_degree_4.pdf}
+        \includegraphics[width=0.31\textwidth]{../figures/week_2/polynomial_regression_degree_12.pdf}
+    \end{center}
+  
+\end{frame}
 
 \begin{frame}
 \frametitle{Bias and variance}
     \begin{center}
-        \includegraphics[width=0.85\textwidth]{figures/week_2/bias_variance.pdf}
+        \includegraphics[width=0.85\textwidth]{../figures/week_2/bias_variance.pdf}
     \end{center}
 \end{frame}
 
@@ -696,7 +749,10 @@ Materials:
     \begin{itemize}
         \item We can further rescale by dividing the expression by $m$
         $$
-        \vect{\theta}_{\mbox{ML}} = \mbox{argmax}_{\vect{\theta}} p_{\mbox{model}}(\field{X};\vect{\theta}) = \field{E}_{\text{\bf x} \sim  \hat{p}_{\mbox{data}}} \log p_{\mbox{model}}(\vect{x};\vect{\theta})
+        \vect{\theta}_{\mbox{ML}} = \mbox{argmax}_{\vect{\theta}} p_{\mbox{model}}(\field{X};\vect{\theta}) 
+        $$
+        $$
+        \vect{\theta}_{\mbox{ML}} =  \mbox{argmax}_{\vect{\theta}} \field{E}_{\text{\bf x} \sim  \hat{p}_{\mbox{data}}} \log p_{\mbox{model}}(\vect{x};\vect{\theta})
         $$
         \item In this way the problem is expressed as an equivalent expectation problem (now the empirical distribution $\hat{p}_{\mbox{data}}$ becomes explicit).
     \end{itemize}
@@ -763,7 +819,7 @@ Materials:
     \begin{itemize}
         \item With an infinitely large training set we might see several examples whit the same input $\vect{x}$ but different $y$.
         \item The learning algorithm needs to fit the distribution to all these $y$ corresponding to the same $\vect{x}$.
-        \item To derive the linear regression algorithm we assume $p(y \mid \vect{x}) = \mathcal{N}(y; \hat{y}(\vect{x};\vect{w}), \sigma^2)$, where $\hat{y}(\vect{x};\vect{w})$ gives the (prediction of the) mean of the normal distribution and $\sigma$ is fixed to some chose constant.
+        \item To derive the linear regression algorithm we assume $p(y \mid \vect{x}) = \mathcal{N}(y; \hat{y}(\vect{x};\vect{w}), \sigma^2)$, where $\hat{y}(\vect{x};\vect{w})$ gives the (prediction of the) mean of the normal distribution and $\sigma$ is fixed to some chosen constant.
         \item The parameter vector $\theta$ corresponds in this case to $\vect{w}$.
     \end{itemize}
 \end{frame}
@@ -803,43 +859,6 @@ Materials:
 \end{frame}
 \fi
 
-\section{Supervised and unsupervised learning algorithms}
-
-\begin{frame}
-\frametitle{Supervised and unsupervised learning algorithms}
-Materials:
-\begin{itemize}
-    \item Chapters I.5.6 and I.5.7 from \cite{deeplearning}
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Supervised learning algorithms}
-    \begin{itemize}
-        \item Learning algorithms that learn based on a given training examples $\vect{x}$ and their corresponding outputs $\vect{y}$.
-        \begin{itemize}
-            \item Linear and logistic regressions
-            \item Support vector machines
-            \item $k$-nearest neighbours
-            \item Decision trees
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Unsupervised learning algorithms}
-    \begin{itemize}
-        \item Unsupervised algorithms experience only "features", but not supervision feedback.
-        \item The distinction with the supervised algorithms is not always clear since there is no good test to distinguish if something is a feature or a target provided by the supervisor.
-        \item Rule of thumb: in unsupervised algorithms no human annotation is needed for the training examples.
-        \begin{itemize}
-            \item Principal component analysis
-            \item $k$-means clustering
-            \item t-Distributed Stochastic Neighbor Embedding
-            \item Generative adversarial networks
-        \end{itemize}
-    \end{itemize}
-\end{frame}
 
 \section{Model evaluation}
 
@@ -874,7 +893,7 @@ Materials:
     \begin{itemize}
         \item We consider {\bf binary classification} problems, i.e., problems using only two classes/
         \item Formally each input example $x^{(i)}$ needs to be mapped into one element of the set $\{\vect{p},\vect{n}\}$ of {\bf true} classes.
-        \item A {\bf classification model} ({\bf classifier}) is a function from the input examples to  from the set $\{\vect{Y}, \vect{N}\}$ of {\bf predicted classes} or {\bf hypothesized classes}.
+        \item A {\bf classification model} ({\bf classifier}) is a function from the input examples to the set $\{\vect{Y}, \vect{N}\}$ of {\bf predicted classes} or {\bf hypothesized classes}.
         \item $\vect{p},\vect{n}$ correspond to $\vect{Y},\vect{N}$, respectively.
     \end{itemize}
 \end{frame}
@@ -930,8 +949,8 @@ Materials:
 \begin{frame}
 \frametitle{Binary classification metrics}
     \begin{itemize}
-        \item Sensitivity is also called {\bf recall}, {\bf true positive rate} or {\bf hit rate}
-        \item In medical contexts the sensitivity can be interpreted as a measure of the extent to which diseased individuals are incorrectly diagnosed.
+        \item Sensitivity is also called {\bf recall}, {\bf true positive rate} or {\bf hit rate}.
+        \item In medical contexts the sensitivity can be interpreted as a measure of the extent to which diseased individuals are correctly diagnosed.
         \item In general: measures the proportion of the target group the method is able to detect, i.e. how sensitive is to this group.
         \item Specificity is also called {\bf true negative rate} or {\bf selectivity}.
         \item In medical contexts the specificity can be interpreted as a measure of the extent to which healthy individuals are correctly diagnosed.
@@ -939,6 +958,11 @@ Materials:
     \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Discussion point}
+You have developed a method for some image analysis diagnostic task that has very high sensitivity (e.g. 0.99) but relatively low specificity (e.g. 0.25). 
+
+Can this be still a useful tool for clinicians and if so in what context? \end{frame}
 
 \begin{frame}
 \frametitle{Binary classification metrics}
@@ -969,7 +993,7 @@ Materials:
     \begin{itemize}
         \item The ROC curve plots the true positive rate (sensitivity) versus the false positive rate (1 - specificity).
         \begin{center}
-        \includegraphics[width=0.95\textwidth]{figures/week_2/camelyon_roc.png}
+        \includegraphics[width=0.95\textwidth]{../figures/week_2/camelyon_roc.png}
         \end{center}
     \end{itemize}
     {\tiny Figure from \cite{camelyon}}
@@ -991,7 +1015,51 @@ Materials:
 \end{frame}
 
 
+\section{Supervised and unsupervised learning algorithms}
+
+\begin{frame}
+\frametitle{Supervised and unsupervised learning algorithms}
+Materials:
+\begin{itemize}
+    \item Chapters I.5.6 and I.5.7 from \cite{deeplearning}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Supervised learning algorithms}
+    \begin{itemize}
+        \item Learning algorithms that learn based on a given training examples $\vect{x}$ and their corresponding outputs $\vect{y}$.
+        \begin{itemize}
+            \item Linear and logistic regressions
+            \item Support vector machines
+            \item $k$-nearest neighbours
+            \item Decision trees
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Unsupervised learning algorithms}
+    \begin{itemize}
+        \item Unsupervised algorithms experience only "features", but not supervision feedback.
+        \item The distinction with the supervised algorithms is not always clear since there is no good test to distinguish if something is a feature or a target provided by the supervisor.
+        \item Rule of thumb: in unsupervised algorithms no human annotation is needed for the training examples.
+        \begin{itemize}
+            \item Principal component analysis
+            \item $k$-means clustering
+            \item t-Distributed Stochastic Neighbor Embedding
+            \item Generative adversarial networks
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+
+\iffull
 \section{Ensambling}
+\else
+\section{Ensambling (self-study)}
+\fi
 
 \begin{frame}
 \frametitle{Ensambling}
@@ -1000,6 +1068,8 @@ Materials:
     \item Chapter II.7.11 from \cite{deeplearning}
 \end{itemize}
 \end{frame}
+
+\iffull
 
 \begin{frame}
 \frametitle{Bagging and other ensemble methods}
@@ -1042,7 +1112,7 @@ Materials:
 \frametitle{Bagging example}
     Training an ``8 detector'' with two resampled datasets: a ``cartoon'' example.
     \begin{center}
-        \includegraphics[width=0.75\textwidth]{figures/week_2/bagging_cartoon.png}
+        \includegraphics[width=0.75\textwidth]{../figures/week_2/bagging_cartoon.png}
     \end{center}
     \tiny{Figure from \cite{deeplearning}}
 \end{frame}
@@ -1067,6 +1137,7 @@ Materials:
     \end{itemize}
 \end{frame}
 
+\fi
 
 \begin{frame}
 \frametitle{Acknowledgements}

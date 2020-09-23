@@ -66,16 +66,16 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * [Practical work](practicals/week_1.ipynb)
 
 ### Machine learning fundamentals II
-* (*tentative*) [Lecture slides](lectures/week_2.pdf)
-* (*tentative*) [Practical work](practicals/week_2.ipynb)
+* [Lecture slides](lectures/week_2.pdf)
+* [Practical work](practicals/week_2.ipynb)
 
 ### Linear models
-* (*tentative*) [Lecture slides](lectures/week_3.pdf)
-* (*tentative*) [Practical work](practicals/week_3.ipynb)
+* [Lecture slides](lectures/week_3.pdf)
+* [Practical work](practicals/week_3.ipynb)
 
 ### Deep learning I
-* (*tentative*) [Lecture slides](lectures/week_4.pdf)
-* (*tentative*) [Practical work](practicals/week_4.ipynb)
+* [Lecture slides](lectures/week_4.pdf)
+* [Practical work](practicals/week_4.ipynb)
 
 ### Deep learning II
 Guest lecture by Jelmer Wolterink. The lecture will be on-line only.

@@ -37,9 +37,9 @@
 \fulltrue
 
 % Bibliography 
-\usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp]{biblatex}
-\bibliography{references}
-
+\usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp,backend=bibtex8]{biblatex}
+%\bibliography{references}
+\addbibresource{references.bib}
 
 %Information to be included in the title page:
 \title{Linear models}
@@ -47,7 +47,7 @@
 \institute{Eindhoven University of Technology
 
 Department of Biomedical Engineering}
-\date{2019}
+\date{2020}
  
  
  
@@ -114,7 +114,7 @@ Note that the model remains linear in the parameters even if the the variables $
 
 \begin{frame}
 \frametitle{Estimation via least squares}
-Parameters $b_j$ can be estimated from a set of training data $(x_1,y_1) \dots (x_N,y_N)$, where each $x_i=(x_{i1}, x_{i2}, \dots, x_{ip})^T$ is a vector of feature measurements for the $i$th case.
+Parameters $\beta_j$ can be estimated from a set of training data $(x_1,y_1) \dots (x_N,y_N)$, where each $x_i=(x_{i1}, x_{i2}, \dots, x_{ip})^T$ is a vector of feature measurements for the $i$th case.
 
 \vspace{5mm} 
 
@@ -130,7 +130,7 @@ RSS(\beta) = \sum_{i=1}^N (y_i - f(x_i))^2 = \sum_{i=1}^N (y_i - \beta_0 -  \sum
 $\hat{y} = \beta_0 + \beta_1 x$, where output variable $Y$ represents the sensitivity to a certain drug and input variable $X$ the expression of a gene.
 
 \begin{center}
-\includegraphics[height=6cm]{figures/week_3/Univariate_linear_regression_0.pdf}
+\includegraphics[height=6cm]{../figures/week_3/Univariate_linear_regression_0.pdf}
 \end{center}
 
 \end{frame}
@@ -140,7 +140,7 @@ $\hat{y} = \beta_0 + \beta_1 x$, where output variable $Y$ represents the sensit
 Least square fitting: linear function of $X$ that minimises the sum of squared residuals.
 
 \begin{center}
-\includegraphics[height=6cm]{figures/week_3/Univariate_linear_regression_1.pdf}
+\includegraphics[height=6cm]{../figures/week_3/Univariate_linear_regression_1.pdf}
 \end{center}
 
 \end{frame}
@@ -150,7 +150,7 @@ Least square fitting: linear function of $X$ that minimises the sum of squared r
 Least square fitting: linear function of $X$ that minimises the sum of squared residuals. $RSS = \sum_{i=1}^N (y_i - \beta_0 - \beta_1 x_i)^2$
 
 \begin{center}
-\includegraphics[height=6cm]{figures/week_3/Univariate_linear_regression_2.pdf}
+\includegraphics[height=6cm]{../figures/week_3/Univariate_linear_regression_2.pdf}
 \end{center}
 
 \end{frame}
@@ -160,7 +160,7 @@ Least square fitting: linear function of $X$ that minimises the sum of squared r
 We will use as example data from the GDSC project (https://www.cancerrxgene.org/) \cite{GDSC}.
 
 \begin{center}
-\includegraphics[height=6cm]{figures/week_3/GDSC_study_description.png}
+\includegraphics[height=6cm]{../figures/week_3/GDSC_study_description.png}
 \end{center}
 
 \end{frame}
@@ -171,13 +171,13 @@ Cancer patients tends to respond very differently to drugs. A big challenge in c
 is to find ways to assign the optimal treatment to each patient.
 
 \begin{center}
-\includegraphics[height=2.5cm]{figures/week_3/precision_oncology.png}
+\includegraphics[height=2.5cm]{../figures/week_3/precision_oncology.png}
 \end{center}
 
 The aim of the study is to find biomarkers of drug sensitivity.
 
 \begin{center}
-\includegraphics[height=2.5cm]{figures/week_3/GDSC_study_aim.png}
+\includegraphics[height=2.5cm]{../figures/week_3/GDSC_study_aim.png}
 \end{center}
 
 \end{frame}
@@ -249,7 +249,7 @@ Especially when we have a large number of features ($p$ large compared to $N$), 
 \frametitle{Model complexity and overfitting}
 
 \begin{center}
-\includegraphics[height=5.5cm]{figures/week_3/Bias_variance_complexity.pdf}
+\includegraphics[height=5.5cm]{../figures/week_3/Bias_variance_complexity.pdf}
 \end{center}
 
 Complex models tend to overfit the training data and perform poorly on the test data.
@@ -293,7 +293,7 @@ Three classical approaches to step-wise \textit{subset selection}:
 
 \begin{itemize}
     \item improve \textit{interpretability}: only the most relevant predictors useful to explain the output are selected.
-    \item still suffer from  low \textit{prediction accuracy}: high variance (discrete process in retaining and discarting predictors) often does not reduce prediction error.
+    \item still suffer from  low \textit{prediction accuracy}: high variance (discrete process in retaining and discarding predictors) often does not reduce prediction error.
 \end{itemize}
 
 \end{frame}
@@ -303,7 +303,11 @@ Three classical approaches to step-wise \textit{subset selection}:
 
 \begin{frame}
 \frametitle{Improving least square estimates with regularization}
-Least square estimates generally provide all non-zero coefficient and, if $p>N$, solutions are not unique (i.e. multiple solutions with same minimum, often overfitting the data).
+\begin{itemize}
+	\item least square estimates generally provide all non-zero coefficient.
+	\item if $p>N$, solutions are not unique (i.e. multiple solutions with same minimum, often overfitting the data).
+\end{itemize}
+
 
 \vspace{5mm} 
 
@@ -349,7 +353,7 @@ $\lambda \geq 0$ is a tuning parameter.
 
 \begin{center}
 
-\includegraphics[height=5.5cm]{figures/week_3/Ridge_regression_coefficinets.pdf}
+\includegraphics[height=5.5cm]{../figures/week_3/Ridge_regression_coefficinets.pdf}
 \end{center}
 
 Profile of the Ridge regression coefficients for the GDSC example.
@@ -358,10 +362,10 @@ Profile of the Ridge regression coefficients for the GDSC example.
 
 \begin{frame}
 \frametitle{The effect of regularization on bias and variance}
-In matrix form we can rewrite the RSS as:
+In matrix form we can rewrite the Ridge regression as:
 
 \begin{equation*}
-    RSS(\lambda) = (\mathbf{y} - \mathbf{X}\beta)^T (\mathbf{y} - \mathbf{X}\beta) + \lambda\beta^T\beta
+    (\mathbf{y} - \mathbf{X}\beta)^T (\mathbf{y} - \mathbf{X}\beta) + \lambda\beta^T\beta
 \end{equation*}
 
 And the Ridge regression solution becomes:
@@ -372,11 +376,11 @@ And the Ridge regression solution becomes:
 
 where $\mathbf{I}$ is the $p \times p$ identity matrix. This is linear in $\mathbf{y}$ and in closed form.
 
-Assuming that $\mathbf{y} = \mathbf{X}\beta + \mathbf{e}$, where $\mathbf{e}$ is a random error on the output variable, the Ridge regression solution can be written as:
+Assuming that $\mathbf{y} = \mathbf{X}\beta_{\mathrm{true}} + \mathbf{e}$, where $\mathbf{e}$ is a random error on the output variable, the Ridge regression solution can be written as:
 
 \begin{align*}
-    \hat{\beta}^{ridge} &= (\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1}\mathbf{X}^T(\mathbf{X}\beta + \mathbf{e}) \\
-    &= \underbrace{(\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1}\mathbf{X}^T\mathbf{X}\beta}_{\textrm{bias}} + \underbrace{(\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1}\mathbf{X}^T\mathbf{e}}_{\textrm{variance}}
+    \hat{\beta}^{ridge} &= (\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1}\mathbf{X}^T(\mathbf{X}\beta_{\mathrm{true}} + \mathbf{e}) \\
+    &= \underbrace{(\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1}\mathbf{X}^T\mathbf{X}\beta_{\mathrm{true}}}_{\textrm{bias}} + \underbrace{(\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1}\mathbf{X}^T\mathbf{e}}_{\textrm{variance}}
 \end{align*}
 
 \end{frame}
@@ -390,7 +394,7 @@ Effect of $\lambda$ on the bias-variance trade off in a simulated example ($y_i 
 
 
 \begin{center}
-\includegraphics[height=5.5cm]{figures/week_3/Ridge_bias_variance_insilico.pdf}
+\includegraphics[height=5.5cm]{../figures/week_3/Ridge_bias_variance_insilico.pdf}
 \end{center}
 
 \end{frame}
@@ -427,7 +431,7 @@ $\lambda \geq 0$ is a tuning parameter.
 \frametitle{Lasso regression: the meaning of $\lambda$}
 
 \begin{center}
-\includegraphics[height=5.5cm]{figures/week_3/Lasso_regression_coefficinets.pdf}
+\includegraphics[height=5.5cm]{../figures/week_3/Lasso_regression_coefficinets.pdf}
 \end{center}
 
 Profile of the Lasso regression coefficients for the GDSC example.
@@ -460,7 +464,7 @@ It is possible to show that there is a one-to-one correspondence between the par
 \frametitle{Comparing Lasso and Ridge regression}
 
 \begin{center}
-\includegraphics[height=7cm]{figures/week_3/Comparison_lasso_ridge.pdf}
+\includegraphics[height=7cm]{../figures/week_3/Comparison_lasso_ridge.pdf}
 \end{center}
 
 \end{frame}
@@ -483,7 +487,7 @@ We want the model that provides the best predictions on the test set. In general
 Two data partitions - GDSC example (90\% training, 10\% test).
 
 \begin{center}
-\includegraphics[height=7cm]{figures/week_3/Lasso_MSE_train_test.pdf}
+\includegraphics[height=7cm]{../figures/week_3/Lasso_MSE_train_test.pdf}
 \end{center}
 \end{frame}
 
@@ -504,7 +508,7 @@ We can use cross-validation following these steps:
 \frametitle{$\lambda$ selection: GDSC example 10-fold cross validation}
 
 \begin{center}
-\includegraphics[height=5cm]{figures/week_3/Lasso_MSE_crossvalidation.pdf}
+\includegraphics[height=5cm]{../figures/week_3/Lasso_MSE_crossvalidation.pdf}
 \end{center}
 
 \vspace{-2mm} 
@@ -521,7 +525,7 @@ We can use cross-validation following these steps:
 GDSC example 10-fold cross validation
 
 \begin{center}
-\includegraphics[height=5cm]{figures/week_3/Lasso_feature_selection.pdf}
+\includegraphics[height=5cm]{../figures/week_3/Lasso_feature_selection.pdf}
 \end{center}
 
 $\lambda_{min+1se}$ gives more sparse solutions.
@@ -546,7 +550,7 @@ To select only robust features we can use \textit{bootstrap}: feature selection 
 GDSC example: 100 times bootstrap (with 10-fold cross-validation)
 
 \begin{center}
-\includegraphics[height=7cm]{figures/week_3/Lasso_feature_selection_bootstrap.pdf}
+\includegraphics[height=7cm]{../figures/week_3/Lasso_feature_selection_bootstrap.pdf}
 \end{center}
 
 \end{frame}
@@ -563,7 +567,7 @@ Two or more predictor variables can be closely related to each other and show a 
 This is common in genomic data, because genes can be redundant or have related functions.
 
 \begin{center}
-\includegraphics[height=5cm]{figures/week_3/collinearity.pdf}
+\includegraphics[height=5cm]{../figures/week_3/collinearity.pdf}
 \end{center}
 
 \end{frame}
@@ -594,8 +598,8 @@ Elastic Net provides a compromise between Ridge and Lasso, by selecting variable
 Where $\alpha$ is a tunable parameter. This corresponds to:
 
 \begin{itemize}
-    \item Ridge for $\alpha=0$
-    \item Lasso for $\alpha=1$
+    \item Ridge for $\alpha=1$
+    \item Lasso for $\alpha=0$
 \end{itemize}
 
 \end{frame}
@@ -604,7 +608,7 @@ Where $\alpha$ is a tunable parameter. This corresponds to:
 \frametitle{Elastic Net regression}
 
 \begin{center}
-\includegraphics[height=5.5cm]{figures/week_3/ElasticNet_regression_coefficinets.pdf}
+\includegraphics[height=5.5cm]{../figures/week_3/ElasticNet_regression_coefficinets.pdf}
 \end{center}
 
 Profile of the Elastic net (with $\alpha=0.5$) regression coefficients for the GDSC example.
@@ -622,7 +626,7 @@ In a clinical setting, instead of predicting the continuous IC50 for each patien
 Using the cell lines from the GDSC study this corresponds to divide them in sensitive and resistant to the drug. 
 
 \begin{center}
-\includegraphics[height=2.7cm]{figures/week_3/GDSC_classification_overview.pdf}
+\includegraphics[height=2.7cm]{../figures/week_3/GDSC_classification_overview.pdf}
 \end{center}
 
 Cell lines are separated in sensitive and resistant based on the average response across all cell lines in the panel.
@@ -640,7 +644,7 @@ For binary classification we will consider a positive and a negative class:
 \end{itemize}
 
 \begin{center}
-\includegraphics[height=5cm]{figures/week_3/GDSC_classification_sensitivity.pdf}
+\includegraphics[height=5cm]{../figures/week_3/GDSC_classification_sensitivity.pdf}
 \end{center}
 \end{frame}
 
@@ -651,7 +655,7 @@ For binary classification we will consider a positive and a negative class:
 Using the same example used for univariate linear regression, we consider the ability of gene ABCB1 to classify cell lines in sensitive and resistant.
 
 \begin{center}
-\includegraphics[height=4cm]{figures/week_3/GDSC_one_variable_example_logistic_regression_1.pdf}
+\includegraphics[height=4cm]{../figures/week_3/GDSC_one_variable_example_logistic_regression_1.pdf}
 \end{center}
 
 \end{frame}
@@ -662,7 +666,7 @@ Using the same example used for univariate linear regression, we consider the ab
 We can try to fit a linear regression to a binary response, e.g.using 0.5 as threshold for prediction.
 
 \begin{center}
-\includegraphics[height=4.5cm]{figures/week_3/GDSC_one_variable_example_logistic_regression_2.pdf}
+\includegraphics[height=4.5cm]{../figures/week_3/GDSC_one_variable_example_logistic_regression_2.pdf}
 \end{center}
 
 Poor interpretability, with predicted values also outside [0, 1].
@@ -680,7 +684,7 @@ Pr(response = resistant|ABCB1expression)
 
 
 \begin{center}
-\includegraphics[height=4.5cm]{figures/week_3/GDSC_one_variable_example_logistic_regression_3.pdf}
+\includegraphics[height=4.5cm]{../figures/week_3/GDSC_one_variable_example_logistic_regression_3.pdf}
 \end{center}
 
 \end{frame}
@@ -814,7 +818,7 @@ Note that the intercept term is not penalized. Similarly to Lasso, the predictor
 Also in this case cross-validation can be used to select the tuning parameter.
 
 \begin{center}
-\includegraphics[height=4.5cm]{figures/week_3/GDSC_logistic_regression_cross_validation.pdf}
+\includegraphics[height=4.5cm]{../figures/week_3/GDSC_logistic_regression_cross_validation.pdf}
 \end{center}
 
 \end{frame}
