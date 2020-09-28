@@ -19,6 +19,11 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{bm}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks = true,
+ }
 
 % Mainly math commands
 \newcommand{\vect}[1]{\bm{#1}}
@@ -49,7 +54,7 @@
 \institute{Eindhoven University of Technology
 
 Department of Biomedical Engineering}
-\date{2019}
+\date{2020}
 
 
 
@@ -323,7 +328,11 @@ Materials:
 \end{frame}
 
 \begin{frame}
+\iffull
 \frametitle{Eigendecomposition}
+\else
+\frametitle{Eigendecomposition (self-study)}
+\fi
     \begin{itemize}
         \item Eigenvector and eigenvalue
         $$ \vect{A}\vect{x} = \lambda \vect{x}$$
@@ -334,6 +343,7 @@ Materials:
 
 \end{frame}
 
+\iffull
 \begin{frame}
 \frametitle{Eigendecomposition}
     \begin{itemize}
@@ -358,7 +368,6 @@ Materials:
 \end{frame}
 
 
-\iffull
 \begin{frame}
 \frametitle{Eigendecomposition}
     \begin{itemize}
@@ -675,10 +684,14 @@ Materials:
         % (\vect{y} - \vect{X}^T \vect{w})^2 =
         $$\mbox{RSS}(\vect{w}) =  (\vect{y} - \vect{X} \vect{w})^T (\vect{y} - \vect{X} \vect{w})$$
         \item To find the minimum we differentiate with respect to $\vect{w}$ which gives
-        $$(-\vect{X})^T(\vect{y}-\vect{X}\vect{w}) + (\vect{y}-\vect{X}\vect{w})^T (-\vect{X})$$
-        using the rule $(\vect{A}\vect{B})^T = \vect{B}^T\vect{A}^T$ this is equivalent to
+        %$$(-\vect{X})^T(\vect{y}-\vect{X}\vect{w}) + (\vect{y}-\vect{X}\vect{w})^T (-\vect{X})$$
+        %using the rule $(\vect{A}\vect{B})^T = \vect{B}^T\vect{A}^T$ this is equivalent to
         $$ -2 \vect{X}^T(\vect{y}-\vect{X}\vect{w})$$
     \end{itemize}
+    
+\vfill
+\tiny{For details about the derivation check equations 4 and 5 in \href{https://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf}{this document}.}
+
 \end{frame}
 
 \begin{frame}
@@ -721,7 +734,7 @@ $$\hat{\vect{w}} = \vect{X}^{-1} \vect{y}$$
 \begin{frame}
 \frametitle{Example: Linear model fit by least squares}
 \begin{itemize}
-    \item Scatter plot of training data on a pair of inputs $x_1$ and $x_2$
+    \item Scatter plot (on next slide) of training data on a pair of inputs $x_1$ and $x_2$
     \item Output class variable $g$ has two values \textcolor{blue}{BLUE} and \textcolor{orange}{ORANGE}.
     \item Linear regression model fitted with the response variable $y$ coded as $0$ for \textcolor{blue}{BLUE} and $1$ for \textcolor{orange}{ORANGE}.
     \item Fitted values $\hat{y}$ converted to a fitted class variable $\hat{g}$ as
