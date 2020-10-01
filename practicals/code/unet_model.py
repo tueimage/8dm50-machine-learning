@@ -1,9 +1,9 @@
-from keras.models import Sequential, Model
-from keras.layers import Dense, Dropout, Flatten
-from keras.layers import Conv2D, MaxPooling2D, Input
-from keras.layers import UpSampling2D, concatenate, add
-from keras.layers import Concatenate, BatchNormalization
-from keras import backend as K
+from tensorflow.keras.models import Sequential, Model
+from tensorflow.keras.layers import Dense, Dropout, Flatten
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Input
+from tensorflow.keras.layers import UpSampling2D, concatenate, add
+from tensorflow.keras.layers import Concatenate, BatchNormalization
+from tensorflow.keras import backend as K
 
 
 def conv_block(inp, encoder_list, channels, batchnorm, regularization, encoder_branch=False, pool=False):
