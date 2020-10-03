@@ -70,17 +70,17 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * [Practical work](practicals/week_2.ipynb)
 
 ### Linear models
-* (*tentative*) [Lecture slides](lectures/week_3.pdf)
-* (*tentative*) [Practical work](practicals/week_3.ipynb)
+* [Lecture slides](lectures/week_3.pdf)
+* [Practical work](practicals/week_3.ipynb)
 
 ### Deep learning I
-* (*tentative*) [Lecture slides](lectures/week_4.pdf)
-* (*tentative*) [Practical work](practicals/week_4.ipynb)
+* [Lecture slides](lectures/week_4.pdf)
+* [Practical work](practicals/week_4.ipynb)
 
 ### Deep learning II
 Guest lecture by Jelmer Wolterink. The lecture will be on-line only.
 * (*tentative*) Lecture slides [part 1](lectures/week_5_1.pdf) and [part 2](lectures/week_5_2.pdf)
-* (*tentative*) [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
+* [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
 
 ### Support vector machines, random forests
 * (*tentative*) [Lecture slides](lectures/week_6.pdf)

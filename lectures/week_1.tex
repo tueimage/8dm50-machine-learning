@@ -19,6 +19,11 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{bm}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks = true,
+ }
 
 % Mainly math commands
 \newcommand{\vect}[1]{\bm{#1}}
@@ -706,10 +711,14 @@ Materials:
         % (\vect{y} - \vect{X}^T \vect{w})^2 =
         $$\mbox{RSS}(\vect{w}) =  (\vect{y} - \vect{X} \vect{w})^T (\vect{y} - \vect{X} \vect{w})$$
         \item To find the minimum we differentiate with respect to $\vect{w}$ which gives
-        $$(-\vect{X})^T(\vect{y}-\vect{X}\vect{w}) + (\vect{y}-\vect{X}\vect{w})^T (-\vect{X})$$
-        using the rule $(\vect{A}\vect{B})^T = \vect{B}^T\vect{A}^T$ this is equivalent to
+        %$$(-\vect{X})^T(\vect{y}-\vect{X}\vect{w}) + (\vect{y}-\vect{X}\vect{w})^T (-\vect{X})$$
+        %using the rule $(\vect{A}\vect{B})^T = \vect{B}^T\vect{A}^T$ this is equivalent to
         $$ -2 \vect{X}^T(\vect{y}-\vect{X}\vect{w})$$
     \end{itemize}
+    
+\vfill
+\tiny{For details about the derivation check equations 4 and 5 in \href{https://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf}{this document}.}
+
 \end{frame}
 
 \begin{frame}
