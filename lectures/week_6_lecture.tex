@@ -186,6 +186,12 @@ The slack variables $\xi = (\xi_1, \xi_2, \dots, \xi_N)$ tell us how much each p
 
 \end{frame}
 
+\begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
+How many points are on the wrong side of the hyperplane?
+\begin{center}
+\includegraphics[height=5.5cm]{../figures/week_6/svm_support_vector_classifier.pdf}  
+\end{center}
+\end{frame}
 
 \begin{frame}{Regularization}
 
@@ -243,7 +249,7 @@ Example:
 $X_1, X_2 \hspace{0.05\textwidth}\to\hspace{0.05\textwidth} X_1, X^2_1, X_2, X^2_2, X_1X_2$}
 \end{center}
 \begin{equation*}
-	f(x)=\beta_0 + \beta_1X_1 + \beta_2Xˆ2_1 + \beta_3X_2 + 		\beta_4Xˆ2_2+ \beta_5X_1X_2 
+	f(x)=\beta_0 + \beta_1X_1 + \beta_2X^2_1 + \beta_3X_2 + 		\beta_4Xˆ2X^2_2+ \beta_5X_1X_2 
 \end{equation*}
 
 Example with one dimension:
@@ -263,24 +269,24 @@ Problems:
 	\item Which polynomial order?
 \end{itemize}
 \vspace{0.5cm}
-\textit{Support vector machines}(SVM): extension of the support vector classifier which enlarges the feature space by using \textbf{kernels}.\\
+\textit{Support vector machines} (SVM): extension of the support vector classifier which enlarges the feature space by using \textbf{kernels}.\\
 \vspace{0.5cm}
-The kernel approach is a efficient computational methodology to enlarge the feature space.
+The kernel approach is an efficient computational methodology to enlarge the feature space.
 
 
 \end{frame}
 
 \begin{frame}{Support Vector Machines}
-Inner product definition:$\langle {a,b} \rangle = \sum_{i=1}^{p} a_{i}b_{i},$ where a,b are r-vectors\\~\\
+Inner product definition:$\langle {a,b} \rangle = \sum_{i=1}^{p} a_{i}b_{i},$ where a,b are vectors\\~\\
 The solution to the support vector classifier problem involves only the inner products of the observations. The inner product of two observations $x_i, x_i'$ is given by
 \begin{equation*}
 \langle {x_i,x_i'} \rangle = \sum_{j=1}^{p} x_{ij} x_{i'j}
 \end{equation*}
 Then, the linear support vector classifier can be represented as:
 \begin{equation*}
-f(x) = \beta_0 + \sum_{i=1}^{N} \alpha_i \langle {x,x_i} \rangle
+f(x) = \beta_0 + \sum_{i=1}^{N} \hat \alpha_i \langle {x,x_i} \rangle
 \end{equation*}
-where there are \textit{N} parameters $\alpha_i$, one per training observation.
+where there are \textit{N} parameters $\hat \alpha_i$, one per training observation.
 \end{frame}
 
 %
@@ -298,6 +304,13 @@ Abstraction of the inner product:
 \end{equation*}
 where we refer to $\mathit{K}$ as \textit{kernel}. 
 A \textit{kernel} is a function that quantifies the similarity of two observations.
+\end{frame}
+
+\begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
+How many $\hat \alpha$ do we have to estimate in this case?
+\begin{center}
+\includegraphics[height=5.5cm]{../figures/week_6/svm_support_vector_classifier.pdf}  
+\end{center}
 \end{frame}
 
 \begin{frame}{Support Vector Machines}
@@ -347,6 +360,10 @@ Two approaches for extending SVMs to K$>$2 classes classification:
 
 
 \begin{frame}{Example}
+Coimbra Breast Cancer dataset
+
+(Patricio, M., et al, BMC Cancer, 2018)
+\vspace{-1cm}
 \begin{center}
 \includegraphics[height=8cm]{../figures/week_6/breast_cancer_2Dscatterplot.pdf}  
 \end{center}
@@ -501,7 +518,7 @@ where:
 
 
 \begin{frame}{Bagging (or bootstrap aggregation)}
-General concept: the average of N observations with variance $\sigma^2$ gives an observation with variance $\sigma^2/N$
+General concept: the average of N independent observations with variance $\sigma^2$ gives an observation with variance $\sigma^2/N$
 
 \vspace{1cm}
 
