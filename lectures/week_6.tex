@@ -82,13 +82,13 @@ Classification problem: find a hyperplane that separates the classes in feature 
 
 \vspace{5mm} 
 
-In $p$ dimensions a hyperplane is a flat affine subspace of dimension $p-1$, with general equation
+In $p$ dimensions a hyperplane is a flat affine subspace of dimension $p-1$, with general equation.
 
 \begin{equation}
     f(x) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_p X_p = x^T\beta + \beta_0 = 0
 \end{equation}
 
-where:
+Where:
 \begin{itemize}
     \item $\beta_0 = 0$ only if the hyperplane goes through the origin \item the vector $\beta = (\beta_1, \beta_2, \dots, \beta_p)$ is a unit vector ($\norm{\beta} = 1$) orthogonal to the surface of the hyperplane
 \end{itemize}
@@ -182,9 +182,9 @@ The slack variables $\xi = (\xi_1, \xi_2, \dots, \xi_N)$ tell us how much each p
     \item $\xi > 0$ when the $i$th observation is on the wrong side of the margin
     \item $\xi > 1$ when the $i$th observation is on the wrong side of the hyperplane
 \end{itemize}
+
+
 \end{frame}
-
-
 
 \begin{frame}{Regularization}
 
@@ -242,7 +242,7 @@ Example:
 $X_1, X_2 \hspace{0.05\textwidth}\to\hspace{0.05\textwidth} X_1, X^2_1, X_2, X^2_2, X_1X_2$}
 \end{center}
 \begin{equation*}
-	f(x)=\beta_0 + \beta_1X_1 + \beta_2X^2_1 + \beta_3X_2 + 		\beta_4X^2_2+ \beta_5X_1X_2 
+	f(x)=\beta_0 + \beta_1X_1 + \beta_2X^2_1 + \beta_3X_2 + 		\beta_4Xˆ2X^2_2+ \beta_5X_1X_2 
 \end{equation*}
 
 Example with one dimension:
@@ -298,6 +298,7 @@ Abstraction of the inner product:
 where we refer to $\mathit{K}$ as \textit{kernel}. 
 A \textit{kernel} is a function that quantifies the similarity of two observations.
 \end{frame}
+
 
 \begin{frame}{Support Vector Machines}
 Linear kernel: $\mathit{K}(x_i,x_i') = \sum_{j=1}^{p} x_{ij} x_{i'j}$ \\
@@ -368,7 +369,6 @@ Coimbra Breast Cancer dataset
 
 
 
-
 \begin{frame}{How to build a decision-tree}
 To grow a decision-tree we need a set of training data with $N$ observations consisting in $p$ inputs and a response
 $(x_1,y_1) \dots (x_N,y_N)$, where each $x_i=(x_{i1}, x_{i2}, \dots, x_{ip})^T$ is a vector of feature measurements for the $i$th case.
@@ -403,7 +403,6 @@ We adopt an approach that is:
 
 \end{frame}
 
-
 \begin{frame}{Example}
  \begin{figure}
 \minipage{0.5\textwidth}
@@ -414,6 +413,9 @@ We adopt an approach that is:
 \endminipage
 \end{figure}
 \end{frame}
+
+
+
 
 \begin{frame}{Cost functions}
 Let $N_m$ be the number of observations falling in region $R_m$.
@@ -427,7 +429,7 @@ For \textbf{classification}:
 
 is the proportion of training observations in region $m$ that are from class $k$. Different measures of node impurity include:
 \begin{itemize}
-\item  \textbf{Misclassification error}: $1-\hat{p}_{mk}(m)$
+\item  \textbf{Misclassification error}: $1-\max_k \hat{p}_{mk}$
 \item  \textbf{Gini index}: $\sum_{k=1}^K\hat{p}_{mk}(1-\hat{p}_{mk})$
 \item  \textbf{Cross-entropy or deviance} $-\sum_{k=1}^K\hat{p}_{mk}\log\hat{p}_{mk}$
 \end{itemize}
@@ -444,7 +446,6 @@ What value will each leaf predict?
 \vspace{0.5cm}
 
 \end{frame}
-
 
 
 \begin{frame}{Pruning a tree}
@@ -471,17 +472,6 @@ where:
 \end{frame}
 
 
-\begin{frame}{Bagging (or bootstrap aggregation)}
-General concept: the average of N independent observations with variance $\sigma^2$ gives an observation with variance $\sigma^2/N$
-
-\vspace{1cm}
-
-Idea: Instead of pruning big trees, build multiple independent big trees and average their predictions.
-
-\vspace{1cm}
-
-How to build independent trees with only one dataset? With \textbf{bootstrap}.
-\end{frame}
 
 \begin{frame}{Bagging (or bootstrap aggregation)}
 General concept: the average of N observations with variance $\sigma^2$ gives an observation with variance $\sigma^2/N$
@@ -553,7 +543,7 @@ With \textbf{boosting} the trees are grown sequentially.
 \item The higher $B$ (i.e. the number of trees), the smaller the bias and the higher the variance
 \end{itemize}
 
-Choice of parameters:
+Choice of hyper-parameters:
 
 \begin{itemize}
 \item $B$: cross-validation
@@ -583,7 +573,7 @@ Choice of parameters:
 \end{frame}
 
 \begin{frame}{Case study: prediction of human population response}
-Open challenge with 213 participants.
+Open DREAM challenge (http://dreamchallenges.org/) with 213 participants.
 \begin{itemize}
 \item Subchallenge 1: predict cytotoxicity of new cell lines based on the genotype.
 
@@ -593,6 +583,7 @@ Open challenge with 213 participants.
 \begin{center}
 \includegraphics[height=3.5cm]{../figures/week_6/Challenge.pdf}  
 \end{center}
+\vspace{-0.5cm}
 For both subchallenges the best performing methods were based on random forests.
 
 \end{frame}

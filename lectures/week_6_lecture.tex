@@ -430,6 +430,17 @@ We adopt an approach that is:
 
 \end{frame}
 
+\begin{frame}{Example}
+ \begin{figure}
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{../figures/week_6/breast_cancer_2Dscatterplot_vline.pdf}  
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+  \includegraphics[width=\linewidth]{../figures/week_6/breast_cancer_2Dscatterplot_vhlines.pdf}  
+\endminipage
+\end{figure}
+\end{frame}
+
 \begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
 What happens for a \textbf{regression tree} if there is no termination criterion?
 \begin{itemize}
@@ -448,16 +459,7 @@ What happens for a \textbf{classification tree} if there is no termination crite
 \end{itemize}	
 \end{frame}
 
-\begin{frame}{Example}
- \begin{figure}
-\minipage{0.5\textwidth}
-  \includegraphics[width=\linewidth]{../figures/week_6/breast_cancer_2Dscatterplot_vline.pdf}  
-\endminipage\hfill
-\minipage{0.5\textwidth}%
-  \includegraphics[width=\linewidth]{../figures/week_6/breast_cancer_2Dscatterplot_vhlines.pdf}  
-\endminipage
-\end{figure}
-\end{frame}
+
 
 \begin{frame}{Cost functions}
 Let $N_m$ be the number of observations falling in region $R_m$.
@@ -471,7 +473,7 @@ For \textbf{classification}:
 
 is the proportion of training observations in region $m$ that are from class $k$. Different measures of node impurity include:
 \begin{itemize}
-\item  \textbf{Misclassification error}: $1-\hat{p}_{mk}(m)$
+\item  \textbf{Misclassification error}: $1-\max_k \hat{p}_{mk}$
 \item  \textbf{Gini index}: $\sum_{k=1}^K\hat{p}_{mk}(1-\hat{p}_{mk})$
 \item  \textbf{Cross-entropy or deviance} $-\sum_{k=1}^K\hat{p}_{mk}\log\hat{p}_{mk}$
 \end{itemize}
@@ -517,17 +519,6 @@ where:
 \end{frame}
 
 
-\begin{frame}{Bagging (or bootstrap aggregation)}
-General concept: the average of N independent observations with variance $\sigma^2$ gives an observation with variance $\sigma^2/N$
-
-\vspace{1cm}
-
-Idea: Instead of pruning big trees, build multiple independent big trees and average their predictions.
-
-\vspace{1cm}
-
-How to build independent trees with only one dataset? With \textbf{bootstrap}.
-\end{frame}
 
 \begin{frame}{Bagging (or bootstrap aggregation)}
 General concept: the average of N observations with variance $\sigma^2$ gives an observation with variance $\sigma^2/N$
@@ -599,7 +590,7 @@ With \textbf{boosting} the trees are grown sequentially.
 \item The higher $B$ (i.e. the number of trees), the smaller the bias and the higher the variance
 \end{itemize}
 
-Choice of parameters:
+Choice of hyper-parameters:
 
 \begin{itemize}
 \item $B$: cross-validation
@@ -629,7 +620,7 @@ Choice of parameters:
 \end{frame}
 
 \begin{frame}{Case study: prediction of human population response}
-Open challenge with 213 participants.
+Open DREAM challenge (http://dreamchallenges.org/) with 213 participants.
 \begin{itemize}
 \item Subchallenge 1: predict cytotoxicity of new cell lines based on the genotype.
 
@@ -639,6 +630,7 @@ Open challenge with 213 participants.
 \begin{center}
 \includegraphics[height=3.5cm]{../figures/week_6/Challenge.pdf}  
 \end{center}
+\vspace{-0.5cm}
 For both subchallenges the best performing methods were based on random forests.
 
 \end{frame}
