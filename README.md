@@ -87,7 +87,7 @@ Guest lecture by Jelmer Wolterink. The lecture will be on-line only.
 * [Practical work](practicals/week_6.ipynb)
 
 ### Unsupervised machine learning
-* (*coming soon*) Lecture slides
+* [Lecture slides](lectures/week_7.pdf)
 * *There will be no practical work for this topic.*
 
 # Other course information
