@@ -43,7 +43,7 @@
 
 
 %Information to be included in the title page:
-\title{Classification: Support vector machines and random forests}
+\title{Unsupervised learning}
 \author{Federica Eduati}
 \institute{Eindhoven University of Technology
 
@@ -211,6 +211,9 @@ $Z_2$ needs to be uncorrelated with $Z_1$. This is equivalent to constrain the d
 
 \end{frame}
 
+
+
+
 \begin{frame}{PCA computation using SVD}
 This optimisation problem can be solved via \textit{singular value decomposition} of the matrix $\mathbf X$:
 
@@ -311,7 +314,7 @@ Elbow in the "proportion of variance explained" plot can be used as a criteria t
 \begin{itemize}
 
 \item Assign each observation $i \in \{1, 2, \dots, N \}$ to one cluster $k \in \{1, 2, \dots, K \}$.
-\item $K$ need to be predefines, and $K < N$
+\item $K$ need to be predefined, and $K < N$
 \item This assignment correspond to a many-to-one mapping $k = C(i)$, which is an \textit{encoder} that assigns the $i$th observation to the $k$th cluster.
 \item Each observation is assigned to one and only one cluster.
 
@@ -376,6 +379,7 @@ We need \textit{iterative greedy descent} strategies to iteratively improve clus
 \end{center}
 \end{frame}
 
+
 \begin{frame}{K-means problems and solutions}
 \begin{itemize}
  \item Problem: Does not guarantee the global minimum. Solution: we can check that no single switch of an observation to a different group decreases the objective function.
@@ -422,9 +426,6 @@ Number of cases of each cancer type (columns) in each cluster (rows), when using
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Question}
-How many clusters do we have after $N-1$ steps?
-\end{frame}
 
 \begin{frame}{Hierarchical clustering - Bottom-up approach }
 \begin{center}
@@ -483,16 +484,6 @@ How do we measure dissimilarity between two points?
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Question}
-What is the best measure of dissimilarity when observations are time series similar to the ones in the plot?
-\begin{itemize}
-\item Euclidean distance
-\item Correlation
-\end{itemize}
-\begin{center}
-\includegraphics[height=5cm]{../figures/week_7/question_metric_hierarchical_clustering.pdf}  
-\end{center}
-\end{frame}
 
 \begin{frame}{Hierarchical clustering - How to interpret a dendogram}
 \begin{itemize}
@@ -555,6 +546,15 @@ Clustering using complete linkage for cluster similarity and correlation as obse
 \end{center}
 \end{frame}
 
+\begin{frame}{Conclusions}
+\begin{itemize}
+\item Unsupervised learning is useful to find inherent patterns in data. 
+\item It does not use/require labels on data. 
+\item No gold standard to assess performances.
+\item Used a lot for data exploration and/or as first step to then apply supervised learning.
+\item Active field of research, essential to explore increasingly available high-dimensional data.
+\end{itemize}
+\end{frame}
 
 
 
