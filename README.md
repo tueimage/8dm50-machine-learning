@@ -3,28 +3,23 @@
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
 
 ## Use of Canvas
-This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/15589) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
+This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/17912) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
 
 TLDR: GitHub is for content, Canvas for communication and submission of assignments.
 
-## Hybrid schedule due to the coronavirus pandemic
-The 2020 edition of the course will be given in a hybrid manner combining on-campus and on-line education. We have a limited capacity for 32 students to attend the lectures on-campus. You have to subscribe in Canvas in order to attend the lectures on-campus. The lectures will also be streamed on-line via Microsoft Teams for the students that want to attend remotely.
+## Schedule
 
-Because the room capacity is less than the number of students that registered for the course, you will have to subscribe to attend a lecture on-campus. The details about how to do this will be posted on Canvas.
+The course schedule is as follows:
+* **Lectures**, *time*: Wednesdays 08:45 - 10:45, *location*: Auditorium 10
+* **Guided self-study**, *time*: Wednesdays 10.45 - 12.45, *location*: Atlas -1.210
 
-The schedule is as follows:
-* **Lectures**, *time*: Mondays 13.30 - 15.30, *location*: Atlas - 1.210 and on-line via Microsoft Teams (the link will be shared on Canvas)
-* **Guided self-study**, *time*: Mondays 15.30 - 17.30, *location*: on-line via Microsoft Teams (the link will be shared on Canvas)
+If you are absent because you are ill or awaiting test results, you can view lecture recordings from the previous edition of the course with largely the same content. In addition, an online session with a teaching assistant that can help you with the practical assignments will be scheduled. Details will be provided on Canvas.
 
-Since the practical sessions are immediately after the lectures, if you attend the lectures on-campus you might not have sufficient time to travel home for the guided self-study. The University is working on ensuring that there are sufficient number of safe workspaces on-campus so that you can log in from there.
-
-The lectures will be recorded so you will be able to view them in case you are prevented to do so due to technical reasons (e.g. a broken internet connection).
-
-TLDR: Lectures will be on-campus (subscription in Canvas needed) AND on-line, guided self-study will be ONLY on-line.
+TLDR: Lectures will be on-campus, there are on-online alternatives in case you have to be absent.
 
 ## Practical work
 
-The practical work will be done in groups. The groups will be formed in Canvas and you will also submit all your work there (check the Assignments section for the deadlines). Your are expected to do this work independently with the help of the teaching assistants during the guided self-study sessions (*begeleide zelfstudie*). Each group will be assigned a teaching assistant that you can contact via Microsoft Teams during the practical sessions (the details and links will be posted in Canvas). You can also post your questions in the Discussion section in Canvas at any time (i.e. not just during the practical sessions).
+The practical work will be done in groups. The groups will be formed in Canvas and you will also submit all your work there (check the Assignments section for the deadlines). Your are expected to do this work independently with the help of the teaching assistants during the guided self-study sessions (*begeleide zelfstudie*). You can also post your questions in the Discussion section in Canvas at any time (i.e. not just during the practical sessions).
 
 **IMPORTANT: Please read [this guide](how_to_ask_questions.md) on effectively asking questions during the practical sessions.**
 
@@ -65,32 +60,31 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * [Instructions](reading_assignment.md)
 
 ### Machine learning fundamentals I
-* [Lecture slides](lectures/week_1.pdf)
+* (*tentative*) [Lecture slides](lectures/week_1.pdf)
 * [Practical work](practicals/week_1.ipynb)
 
 ### Machine learning fundamentals II
-* [Lecture slides](lectures/week_2.pdf)
+* (*tentative*) [Lecture slides](lectures/week_2.pdf)
 * [Practical work](practicals/week_2.ipynb)
 
 ### Linear models
-* [Lecture slides](lectures/week_3.pdf)
+* (*tentative*) [Lecture slides](lectures/week_3.pdf)
 * [Practical work](practicals/week_3.ipynb)
 
 ### Deep learning I
-* [Lecture slides](lectures/week_4.pdf)
+* (*tentative*) [Lecture slides](lectures/week_4.pdf)
 * [Practical work](practicals/week_4.ipynb)
 
 ### Deep learning II
-Guest lecture by Jelmer Wolterink. The lecture will be on-line only.
 * (*tentative*) Lecture slides [part 1](lectures/week_5_1.pdf) and [part 2](lectures/week_5_2.pdf)
 * [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
 
 ### Support vector machines, random forests
-* [Lecture slides](lectures/week_6.pdf)
+* (*tentative*) [Lecture slides](lectures/week_6.pdf)
 * [Practical work](practicals/week_6.ipynb)
 
 ### Unsupervised machine learning
-* [Lecture slides](lectures/week_7.pdf)
+* (*tentative*) [Lecture slides](lectures/week_7.pdf)
 * *There will be no practical work for this topic.*
 
 # Other course information
@@ -117,20 +111,21 @@ Intermediate feedback will be provided as grades to the submitted assignments.
 The grading of the assignments will be done per groups, however, it is possible that individual students get separate grade from the rest of the group (e.g. if they did not sufficiently participate in the work of the group).
 
 An example exam can be found [here](exam.pdf).
+
 ## Instruction
 
 The students will receive instruction in the following ways:
 
-* Lectures (on-line and on-campus)
-* On-line guided practical sessions with the teaching assistants for questions, assistance and advice
-* On-line discussion (in Canvas, see below)
+* Lectures
+* Guided practical sessions with the teaching assistants for questions, assistance and advice
+* On-line discussion
 
 Course instructors:
 * Mitko Veta
 * Federica Eduati
 
 Teaching assistants:
-* Suzanne Wetstein
+* Sina Amirrajab
 * Oscar Lapuente Santana
 * Yasmina Al Khalil
 
