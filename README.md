@@ -87,6 +87,9 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * (*tentative*) [Lecture slides](lectures/week_7.pdf)
 * *There will be no practical work for this topic.*
 
+### Explainable AI
+* Guest lecture by Francesca Grisoni
+
 # Other course information
 
 ## Learning objectives
