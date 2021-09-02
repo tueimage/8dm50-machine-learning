@@ -60,7 +60,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * [Instructions](reading_assignment.md)
 
 ### Machine learning fundamentals I
-* (*tentative*) [Lecture slides](lectures/week_1.pdf)
+* [Lecture slides](lectures/week_1.pdf)
 * [Practical work](practicals/week_1.ipynb)
 
 ### Machine learning fundamentals II
