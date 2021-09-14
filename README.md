@@ -64,7 +64,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * [Practical work](practicals/week_1.ipynb)
 
 ### Machine learning fundamentals II
-* (*tentative*) [Lecture slides](lectures/week_2.pdf)
+* [Lecture slides](lectures/week_2.pdf)
 * [Practical work](practicals/week_2.ipynb)
 
 ### Linear models
