@@ -68,7 +68,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * [Practical work](practicals/week_2.ipynb)
 
 ### Linear models
-* (*tentative*) [Lecture slides](lectures/week_3.pdf)
+* [Lecture slides](lectures/week_3.pdf)
 * [Practical work](practicals/week_3.ipynb)
 
 ### Deep learning I
