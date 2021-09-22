@@ -33,4 +33,4 @@ def mse(X, y, beta):
     # compute the error
     epsilon = np.transpose(X.dot(beta) - y).dot(X.dot(beta) - y) / len(y)
     
-    return epsilon
+    return epsilon.item()
