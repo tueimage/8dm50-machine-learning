@@ -72,7 +72,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * [Practical work](practicals/week_3.ipynb)
 
 ### Deep learning I
-* (*tentative*) [Lecture slides](lectures/week_4.pdf)
+* [Lecture slides](lectures/week_4.pdf)
 * [Practical work](practicals/week_4.ipynb)
 
 ### Deep learning II
