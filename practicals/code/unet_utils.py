@@ -161,14 +161,14 @@ def data_aug(x, y, z, aug_number, min_offset, max_offset, bspline):
         
         brightness = np.random.uniform(min_offset, max_offset)
         x_random_brightness = np.array(brightness+x[im_nr])
-        #y_random_brightness = np.array(brightness+y[im_nr])
-        #z_random_brightness = np.array(brightness+z[im_nr])
+        y_random_brightness = np.array(brightness+y[im_nr])
+        z_random_brightness = np.array(brightness+z[im_nr])
         x_random_brightness[x_random_brightness > 1] = 1 # clip data to valid range ([0..1])
-        #y_random_brightness[y_random_brightness > 1] = 1 # clip data to valid range ([0..1])
-        #z_random_brightness[z_random_brightness > 1] = 1 # clip data to valid range ([0..1])
+        y_random_brightness[y_random_brightness > 1] = 1 # clip data to valid range ([0..1])
+        z_random_brightness[z_random_brightness > 1] = 1 # clip data to valid range ([0..1])
         x_random_brightness[x_random_brightness < 0] = 0 # clip data to valid range ([0..1])
-        #y_random_brightness[y_random_brightness < 0] = 0 # clip data to valid range ([0..1])
-        #z_random_brightness[z_random_brightness < 0] = 0 # clip data to valid range ([0..1])
+        y_random_brightness[y_random_brightness < 0] = 0 # clip data to valid range ([0..1])
+        z_random_brightness[z_random_brightness < 0] = 0 # clip data to valid range ([0..1])
             
         if bspline:  
             transformed = np.zeros_like(x[im_nr])  
@@ -183,11 +183,11 @@ def data_aug(x, y, z, aug_number, min_offset, max_offset, bspline):
             
             # Define an interpolator object for the image:
             # Images x are RGB images - they have three color channels (3D), so we have to separate them in orer to define the interpolators.
-            interpolator_x1 = gryds.Interpolator(x[im_nr,:,:,0])
-            interpolator_x2 = gryds.Interpolator(x[im_nr,:,:,1])
-            interpolator_x3 = gryds.Interpolator(x[im_nr,:,:,2])
-            interpolator_y = gryds.Interpolator(y[im_nr,:,:,0])
-            interpolator_z = gryds.Interpolator(z[im_nr,:,:,0])
+            interpolator_x1 = gryds.Interpolator(x_random_brightness[:,:,0])
+            interpolator_x2 = gryds.Interpolator(x_random_brightness[:,:,1])
+            interpolator_x3 = gryds.Interpolator(x_random_brightness[:,:,2])
+            interpolator_y = gryds.Interpolator(y_random_brightness[:,:,0])
+            interpolator_z = gryds.Interpolator(z_random_brightness[:,:,0])
                 
             transformed_image_x1 = interpolator_x1.transform(bspline)
             transformed_image_x2 = interpolator_x2.transform(bspline)
