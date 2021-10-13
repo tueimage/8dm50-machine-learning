@@ -5,6 +5,8 @@ import gryds
 import time
 import matplotlib.pyplot as plt
 import tifffile as tif # ADDED TO WORK ON WINDOWS
+from random import randrange
+import gryds
 
 
 def load_data(impaths_all, test=False):
@@ -133,3 +135,84 @@ def datagenerator(images, segmentations, patch_size, patches_per_im, batch_size)
             y_batch = y[idx * batch_size:(idx + 1) * batch_size]
             yield x_batch, y_batch
 
+
+
+def data_aug(x, y, z, aug_number, min_offset, max_offset, bspline):
+    """
+    :param x: Input images
+    :param y: Corresponding segmentations
+    :param z: Corresponding masks
+    :param aug_number: Number of augmentations to be performed
+    :params min_offset and max_offset: the brightness offset applied to the image is a random float between min_offset and max_offset
+    :param bspline: True if we want to perform a b-spline geometric augmentation in addition to brightness augmentation, False if we only want to perform brightness augmentation.
+    
+    Output: the function data_aug returns: 
+    - original_new_x: input images + augmented images
+    - original_new_y: input segmentations + augmented segmentations
+    - original_new_z: input masks + augmented masks
+    """
+    new_x = np.zeros((aug_number, x.shape[1], x.shape[2], x.shape[3]))
+    new_y = np.zeros((aug_number, y.shape[1], y.shape[2], y.shape[3]))
+    new_z = np.zeros((aug_number, z.shape[1], z.shape[2], z.shape[3]))
+
+    for i in range(0, aug_number, 1):   
+        
+        im_nr = randrange(len(x)) #random image to perform data augmentation
+        
+        brightness = np.random.uniform(min_offset, max_offset)
+        x_random_brightness = np.array(brightness+x[im_nr])
+        #y_random_brightness = np.array(brightness+y[im_nr])
+        #z_random_brightness = np.array(brightness+z[im_nr])
+        x_random_brightness[x_random_brightness > 1] = 1 # clip data to valid range ([0..1])
+        #y_random_brightness[y_random_brightness > 1] = 1 # clip data to valid range ([0..1])
+        #z_random_brightness[z_random_brightness > 1] = 1 # clip data to valid range ([0..1])
+        x_random_brightness[x_random_brightness < 0] = 0 # clip data to valid range ([0..1])
+        #y_random_brightness[y_random_brightness < 0] = 0 # clip data to valid range ([0..1])
+        #z_random_brightness[z_random_brightness < 0] = 0 # clip data to valid range ([0..1])
+            
+        if bspline:  
+            transformed = np.zeros_like(x[im_nr])  
+            
+            # Define a random 3x3 B-spline grid for a 2D image:
+            random_grid = np.random.rand(2,3,3)
+            random_grid -= 0.5
+            random_grid /= 5
+
+            # Define a B-spline transformation object
+            bspline = gryds.BSplineTransformation(random_grid)
+            
+            # Define an interpolator object for the image:
+            # Images x are RGB images - they have three color channels (3D), so we have to separate them in orer to define the interpolators.
+            interpolator_x1 = gryds.Interpolator(x[im_nr,:,:,0])
+            interpolator_x2 = gryds.Interpolator(x[im_nr,:,:,1])
+            interpolator_x3 = gryds.Interpolator(x[im_nr,:,:,2])
+            interpolator_y = gryds.Interpolator(y[im_nr,:,:,0])
+            interpolator_z = gryds.Interpolator(z[im_nr,:,:,0])
+                
+            transformed_image_x1 = interpolator_x1.transform(bspline)
+            transformed_image_x2 = interpolator_x2.transform(bspline)
+            transformed_image_x3 = interpolator_x3.transform(bspline)
+            transformed_image_y = interpolator_y.transform(bspline)
+            transformed_image_z = interpolator_z.transform(bspline)
+            
+            # Join the three color channels together            
+            transformed[:,:,0], transformed[:,:,1], transformed[:,:,2] = transformed_image_x1, transformed_image_x2, transformed_image_x3
+            
+            new_x[i, :, :, :] = transformed
+            new_y[i, :, :, :] = transformed_image_y[:, :, np.newaxis]
+            new_z[i, :, :, :] = transformed_image_z[:, :, np.newaxis]
+            
+            original_new_x = np.concatenate((x, new_x), axis = 0)
+            original_new_y = np.concatenate((y, new_y), axis = 0)
+            original_new_z = np.concatenate((z, new_z), axis = 0)
+        
+        else:
+            new_x[i, :, :, :] = x_random_brightness
+            new_y[i, :, :, :] = y_random_brightness
+            new_z[i, :, :, :] = z_random_brightness
+            
+            original_new_x = np.concatenate((x, new_x), axis = 0)
+            original_new_y = np.concatenate((y, new_y), axis = 0)
+            original_new_z = np.concatenate((z, new_z), axis = 0)
+            
+    return original_new_x, original_new_y, original_new_z
