@@ -4,6 +4,7 @@ from sklearn.feature_extraction.image import extract_patches_2d
 import gryds
 import time
 import matplotlib.pyplot as plt
+import tifffile as tif # ADDED TO WORK ON WINDOWS
 
 
 def load_data(impaths_all, test=False):
@@ -21,7 +22,8 @@ def load_data(impaths_all, test=False):
 
     # Load as numpy array and normalize between 0 and 1
     for im_path in impaths_all:
-        images.append(np.array(Image.open(im_path)) / 255.)
+        #images.append(np.array(Image.open(im_path)) / 255.) # UNCOMMENT TO RUN ON LINUX
+        images.append(np.array(tif.imread(im_path)) / 255.) # ADDED TO WORK ON WINDOWS, COMMENT TO RUN ON LINUX
         mask_path = im_path.replace('images', 'mask').replace('.tif', '_mask.gif')
         masks.append(np.array(Image.open(mask_path)) / 255.)
         if not test:
