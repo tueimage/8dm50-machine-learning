@@ -80,11 +80,11 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
 
 ### Support vector machines, random forests
-* (*tentative*) [Lecture slides](lectures/week_6.pdf)
+* [Lecture slides](lectures/week_6_lecture.pdf)
 * [Practical work](practicals/week_6.ipynb)
 
 ### Unsupervised machine learning
-* (*tentative*) [Lecture slides](lectures/week_7.pdf)
+* [Lecture slides](lectures/week_7_lecture.pdf)
 * *There will be no practical work for this topic.*
 
 ### Explainable AI
