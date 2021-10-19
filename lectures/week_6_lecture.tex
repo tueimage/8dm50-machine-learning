@@ -48,7 +48,7 @@
 \institute{Eindhoven University of Technology
 
 Department of Biomedical Engineering}
-\date{2020}
+\date{2021}
  
  
 \begin{document}
@@ -73,6 +73,11 @@ Materials:
 \end{itemize}
 
 \end{frame}
+
+\begin{frame}{Mentimeter}
+Go to www.menti.com and use the code 47 08 97 17
+\end{frame}
+
 
 
 \section{General introduction}
@@ -186,7 +191,7 @@ The slack variables $\xi = (\xi_1, \xi_2, \dots, \xi_N)$ tell us how much each p
 
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
+\begin{frame}{Mentimeter question (www.menti.com code 47 08 97 17)}
 How many points are on the wrong side of the hyperplane?
 \begin{center}
 \includegraphics[height=5.5cm]{../figures/week_6/svm_support_vector_classifier.pdf}  
@@ -280,7 +285,7 @@ The kernel approach is an efficient computational methodology to enlarge the fea
 Inner product definition:$\langle {a,b} \rangle = \sum_{i=1}^{p} a_{i}b_{i},$ where a,b are vectors\\~\\
 The solution to the support vector classifier problem involves only the inner products of the observations. The inner product of two observations $x_i, x_i'$ is given by
 \begin{equation*}
-\langle {x_i,x_i'} \rangle = \sum_{j=1}^{p} x_{ij} x_{i'j}
+\langle {x_i,x_i'} \rangle = \sum_{j=1}^{p} x_{ij} x_{ij}' 
 \end{equation*}
 Then, the linear support vector classifier can be represented as:
 \begin{equation*}
@@ -306,7 +311,7 @@ where we refer to $\mathit{K}$ as \textit{kernel}.
 A \textit{kernel} is a function that quantifies the similarity of two observations.
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
+\begin{frame}{Mentimeter question (www.menti.com code 47 08 97 17)}
 How many $\hat \alpha$ do we have to estimate in this case?
 \begin{center}
 \includegraphics[height=5.5cm]{../figures/week_6/svm_support_vector_classifier.pdf}  
@@ -314,9 +319,9 @@ How many $\hat \alpha$ do we have to estimate in this case?
 \end{frame}
 
 \begin{frame}{Support Vector Machines}
-Linear kernel: $\mathit{K}(x_i,x_i') = \sum_{j=1}^{p} x_{ij} x_{i'j}$ \\
-Polynomial kernel of degree d: $\mathit{K}(x_i,x_i') = (1+ \sum_{j=1}^{p} x_{ij} x_{i'j})^d$\\
-Radial kernel: $\mathit{K}(x_i,x_i') = exp(- \gamma \sum_{j=1}^{p} (x_{ij}-x_{i'j})^2)$ \\~\\
+Linear kernel: $\mathit{K}(x_i,x_i') = \sum_{j=1}^{p} x_{ij} x_{ij}' $ \\
+Polynomial kernel of degree d: $\mathit{K}(x_i,x_i') = (1+ \sum_{j=1}^{p} x_{ij} x_{ij}')^d$\\
+Radial kernel: $\mathit{K}(x_i,x_i') = exp(- \gamma \sum_{j=1}^{p} (x_{ij}-x_{ij}')^2)$ \\~\\
 What is the advantage of using a kernel rather than simply enlarging the feature space using functions of the original features?
 \begin{itemize}
  \item Computational advantage: we don't work in the enlarged feature space.
@@ -380,14 +385,14 @@ Coimbra Breast Cancer dataset
 \end{figure}
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
+\begin{frame}{Mentimeter question (www.menti.com code 47 08 97 17)}
 For which ones the decision boundary was defined using a decision tree?
 \begin{center}
 \includegraphics[height=5cm]{../figures/week_6/Question_decision_tree}  
 \end{center}
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
+\begin{frame}{Mentimeter question (www.menti.com code 47 08 97 17)}
 Which scenarios are suitable for decision trees?
 \begin{center}
 \includegraphics[height=5cm]{../figures/week_6/Question_decision_tree}  
@@ -441,7 +446,7 @@ We adopt an approach that is:
 \end{figure}
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
+\begin{frame}{Mentimeter question (www.menti.com code 47 08 97 17)}
 What happens for a \textbf{regression tree} if there is no termination criterion?
 \begin{itemize}
 \item The tree goes to infinity
@@ -450,7 +455,7 @@ What happens for a \textbf{regression tree} if there is no termination criterion
 \end{itemize}	
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
+\begin{frame}{Mentimeter question (www.menti.com code 47 08 97 17)}
 What happens for a \textbf{classification tree} if there is no termination criterion?
 \begin{itemize}
 \item The tree goes to infinity
@@ -491,7 +496,7 @@ What value will each leaf predict?
 
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 50 37 54 0)}
+\begin{frame}{Mentimeter question (www.menti.com code 47 08 97 17)}
 What is the risk of a tree with a lot of leaves?
 \end{frame}
 
