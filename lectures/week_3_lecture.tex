@@ -47,7 +47,7 @@
 \institute{Eindhoven University of Technology
 
 Department of Biomedical Engineering}
-\date{2020}
+\date{2021}
  
  
  
@@ -79,6 +79,11 @@ Topics covered in this lecture:
     \tableofcontents
 \end{frame}
 
+\begin{frame}{Mentimeter}
+Go to www.menti.com and use the code 67236648
+\end{frame}
+
+
 
 \section{Linear models for regression}
 
@@ -95,6 +100,16 @@ The prediction task is defined as:
     \item \textit{Classification}: when we predict \textit{qualitative outputs} (also referred to as \textit{categorical or discrete variables}).
 \end{itemize}
 
+\end{frame}
+
+\begin{frame}
+\frametitle{Mentimeter question (www.menti.com code 67236648)}
+
+Excluding COVID-19 infection based on blood values is a:
+\begin{itemize}
+    \item regression problem
+    \item classification problem
+\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -247,7 +262,7 @@ Especially when we have a large number of features ($p$ large compared to $N$), 
 
 
 \begin{frame}
-\frametitle{Mentimeter question (www.menti.com code 79 13 26 9)}
+\frametitle{Mentimeter question (www.menti.com code 67236648)}
 
 A model with a high number of parameters will tend to:
 \begin{itemize}
@@ -399,9 +414,9 @@ Assuming that $\mathbf{y} = \mathbf{X}\beta_{\mathrm{true}} + \mathbf{e}$, where
 \end{frame}
 
 \begin{frame}
-\frametitle{Mentimeter question (www.menti.com code 79 13 26 9)}
+\frametitle{Mentimeter question (www.menti.com code 67236648)}
 
-What is the value of λ that gives the minimum variance?
+What is the value of $\lambda$ that gives the minimum variance?
 
 \end{frame}
 
@@ -448,7 +463,7 @@ $\lambda \geq 0$ is a tuning parameter.
 \end{frame}
 
 \begin{frame}
-\frametitle{Mentimeter question (www.menti.com code 79 13 26 9)}
+\frametitle{Mentimeter question (www.menti.com code 67236648)}
 
 A high value of $\lambda$:
 \begin{itemize}
@@ -554,7 +569,7 @@ We can use cross-validation following these steps:
 \end{frame}
 
 \begin{frame}
-\frametitle{Mentimeter question (www.menti.com code 79 13 26 9)}
+\frametitle{Mentimeter question (www.menti.com code 67236648)}
 
 Would you select $\lambda_{min}$ or $\lambda_{min+1se}$ to have a less complex model'?
 
@@ -626,7 +641,7 @@ When using Lasso, \textit{collinearity} can result in an arbitrary selection of 
 \end{frame}
 
 \begin{frame}
-\frametitle{Mentimeter question (www.menti.com code 79 13 26 9)}
+\frametitle{Mentimeter question (www.menti.com code 67236648)}
 
 If you do bootstrap with lasso with 2 explanatory features which are collinear, what do you expect as frequency of selection?
 
@@ -786,13 +801,15 @@ The parameters for logistic regression models are generally estimated using \tex
 
 \vspace{5mm} 
 
+\vspace{5mm} 
+
 For $N$ observations the log-likelihood to be maximized is:
 
 \begin{equation*}
-    \ell(\theta) = \sum_{i=1}^N \log p_{g_i}(X_i; \theta)
+    \ell(\theta) = \sum_{i=1}^N \log p_{g_i}(x_i; \theta)
 \end{equation*}
 
-where $p_k(x_i; \theta) = Pr(G=k|X=x_i; \theta)$.
+where $p_k(x_i; \theta) = Pr(G=k|X=x_i; \theta)$ and $\theta$ is the parameter set.
 
 
 \end{frame}
@@ -800,7 +817,7 @@ where $p_k(x_i; \theta) = Pr(G=k|X=x_i; \theta)$.
 \begin{frame}
 \frametitle{Logistic regression: parameters estimation}
 
-For the two classes case the log-likelihood can be written
+For the two classes case, the response $y_i \in \{0,1\}$. Being $p(x_i;\beta)$ the probability for class 1, and $1-p(x_i;\beta)$ the probability for class 0, the log-likelihood can be written as:
 
 \begin{align*}
     \ell(\beta) &= \sum_{i=1}^N \{ y_i \log p(x_i;\beta) + (1-y_i) \log (1-p(x_i;\beta)) \} \\
