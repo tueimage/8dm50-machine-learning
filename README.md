@@ -68,23 +68,23 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * [Practical work](practicals/week_2.ipynb)
 
 ### Linear models
-* (*tentative*) [Lecture slides](lectures/week_3.pdf)
+* [Lecture slides](lectures/week_3.pdf)
 * [Practical work](practicals/week_3.ipynb)
 
 ### Deep learning I
-* (*tentative*) [Lecture slides](lectures/week_4.pdf)
+* [Lecture slides](lectures/week_4.pdf)
 * [Practical work](practicals/week_4.ipynb)
 
 ### Deep learning II
-* (*tentative*) Lecture slides [part 1](lectures/week_5_1.pdf) and [part 2](lectures/week_5_2.pdf)
+* Lecture slides [part 1](lectures/week_5.pdf) and [part 2](lectures/week_5_guest.pdf)
 * [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
 
 ### Support vector machines, random forests
-* (*tentative*) [Lecture slides](lectures/week_6.pdf)
+* [Lecture slides](lectures/week_6_lecture.pdf)
 * [Practical work](practicals/week_6.ipynb)
 
 ### Unsupervised machine learning
-* (*tentative*) [Lecture slides](lectures/week_7.pdf)
+* [Lecture slides](lectures/week_7_lecture.pdf)
 * *There will be no practical work for this topic.*
 
 ### Explainable AI
