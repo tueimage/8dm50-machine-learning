@@ -1,0 +1,4 @@
+Summary of application domain
+With the improvements of healthcare, people don't die from infections or viruses anymore and nowadays cancer is one of the deadliest diseases. Furthermore, in the United States of America lung cancer is the leading cause of cancer with an average five year survival of 18.1 percent mainly because symptoms are only visible at advanced stages of the disease. However, when detected at an early stage, the average five year survival is about 60 to 75 percent. Thus preventive annual check-ups to diagnose the disease early would reduce mortality and prevent more heavy treatments. On the other hand, it will generate much more data to process and analyse for radiologists. Therefore, developing deep learning models capable of assessing lung cancer risk could support radiologists’ work and offer better support for the patients. 
+
+132 words
