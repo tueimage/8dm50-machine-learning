@@ -88,7 +88,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 * *There will be no practical work for this topic.*
 
 ### Explainable AI
-* Guest lecture by Francesca Grisoni
+* [Guest lecture by Francesca Grisoni](lectures/FGrisoni_2021_XAI.pdf)
 
 # Other course information
 
