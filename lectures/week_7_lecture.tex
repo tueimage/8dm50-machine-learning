@@ -75,6 +75,10 @@ Materials:
 
 \end{frame}
 
+\begin{frame}{Mentimeter}
+Go to www.menti.com and use the code 26 68 29 06
+\end{frame}
+
 \begin{frame}
 \frametitle{Overview}
 Topics of the lecture:
@@ -211,7 +215,7 @@ $Z_2$ needs to be uncorrelated with $Z_1$. This is equivalent to constrain the d
 
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 42 56 39 2)}
+\begin{frame}{Mentimeter question (www.menti.com code 26 68 29 06)}
 When do you expect is PCA to have poor performance in feature reduction?
 \begin{itemize}
 \item When the features are highly correlated
@@ -336,7 +340,7 @@ We want to define the clusters so that similar points are in the same cluster an
 Defining $d_{i, i^\prime}=d(x_i, x_{i^\prime})$ as a measure of dissimilarity between a pair of observations $x_i$ and $x_{i^\prime}$, the total point scatter T is :
 
 \begin{equation*}
-	T = \frac{1}{2}  \sum_{i=1}^N \sum_{i^\prime=1}^N d_{i, i^\prime} = \frac{1}{2}  \sum_{k=1}^K \sum_{C(i)=k} (\sum_{C(i^\prime)=k} d_{i, i^\prime}  + \sum_{C(i) \neq k} d_{i, i^\prime})
+	T = \frac{1}{2}  \sum_{i=1}^N \sum_{i^\prime=1}^N d_{i, i^\prime} = \frac{1}{2}  \sum_{k=1}^K \sum_{C(i)=k} (\sum_{C(i^\prime)=k} d_{i, i^\prime}  + \sum_{C(i^\prime) \neq k} d_{i, i^\prime})
 \end{equation*}
 
 Where:
@@ -388,7 +392,7 @@ We need \textit{iterative greedy descent} strategies to iteratively improve clus
 \end{frame}
 
 
-\begin{frame}{Mentimeter question (www.menti.com code 42 56 39 2)}
+\begin{frame}{Mentimeter question (www.menti.com code 26 68 29 06)}
 What do you expect to happen if you apply K-means to this case?
 \begin{itemize}
 \item It will correctly identify the two classes
@@ -446,7 +450,7 @@ Number of cases of each cancer type (columns) in each cluster (rows), when using
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 42 56 39 2)}
+\begin{frame}{Mentimeter question (www.menti.com code 26 68 29 06)}
 How many clusters do we have after $N-1$ steps?
 \end{frame}
 
@@ -507,7 +511,7 @@ How do we measure dissimilarity between two points?
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Mentimeter question (www.menti.com code 42 56 39 2)}
+\begin{frame}{Mentimeter question (www.menti.com code 26 68 29 06)}
 What is the best measure of dissimilarity when observations are time series similar to the ones in the plot?
 \begin{itemize}
 \item Euclidean distance
