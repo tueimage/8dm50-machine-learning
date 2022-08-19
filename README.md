@@ -3,19 +3,16 @@
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
 
 ## Use of Canvas
-This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/17912) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
+This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/21391) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
 
 TLDR: GitHub is for content, Canvas for communication and submission of assignments.
 
 ## Schedule
 
 The course schedule is as follows:
-* **Lectures**, *time*: Wednesdays 08:45 - 10:45, *location*: Auditorium 10
-* **Guided self-study**, *time*: Wednesdays 10.45 - 12.45, *location*: Atlas -1.210
-
-If you are absent because you are ill or awaiting test results, you can view lecture recordings from the previous edition of the course with largely the same content. In addition, an online session with a teaching assistant that can help you with the practical assignments will be scheduled. Details will be provided on Canvas.
-
-TLDR: Lectures will be on-campus, there are on-online alternatives in case you have to be absent.
+* **Lectures**, *general time*: Wednesdays 08:45 - 10:45
+** There is one exception: there is *additional* lecture on September 12 (Monday) and *no* lecture on September 21 (Wednesday).
+* **Guided self-study**, *time*: Wednesdays 10.45 - 12.45
 
 ## Practical work
 
@@ -59,33 +56,28 @@ If you lack prior knowledge of the Python programming language, you can use the 
 ### Reading assignment
 * [Instructions](reading_assignment.md)
 
-### Machine learning fundamentals I
-* [Lecture slides](lectures/week_1.pdf)
-* [Practical work](practicals/week_1.ipynb)
-
-### Machine learning fundamentals II
-* [Lecture slides](lectures/week_2.pdf)
-* [Practical work](practicals/week_2.ipynb)
+### Machine learning fundamentals
+* Lecture slides: *TBA*
+* Practical work: *TBA*
 
 ### Linear models
-* [Lecture slides](lectures/week_3.pdf)
-* [Practical work](practicals/week_3.ipynb)
-
-### Deep learning I
-* [Lecture slides](lectures/week_4.pdf)
-* [Practical work](practicals/week_4.ipynb)
-
-### Deep learning II
-* Lecture slides [part 1](lectures/week_5.pdf) and [part 2](lectures/week_5_guest.pdf)
-* [Practical work](https://colab.research.google.com/drive/1zLIAaGX8Z53YD8iR2FLNl8D-CXaQBTX-) @ Google Colab
+* Lecture slides: *TBA*
+* Practical work: *TBA*
 
 ### Support vector machines, random forests
-* [Lecture slides](lectures/week_6_lecture.pdf)
-* [Practical work](practicals/week_6.ipynb)
+* Lecture slides: *TBA*
+* Practical work: *TBA*
 
-### Unsupervised machine learning
-* [Lecture slides](lectures/week_7_lecture.pdf)
-* *There will be no practical work for this topic.*
+### Deep learning I
+* Lecture slides: *TBA*
+* Practical work: *TBA*
+
+### Deep learning II
+* Lecture slides: *TBA*
+* Practical work: *TBA*
+
+### Transformer models
+* *TBA*
 
 ### Explainable AI
 * [Guest lecture by Francesca Grisoni](lectures/FGrisoni_2021_XAI.pdf)
@@ -128,10 +120,8 @@ Course instructors:
 * Federica Eduati
 
 Teaching assistants:
-* Sina Amirrajab
 * Oscar Lapuente Santana
-* Yasmina Al Khalil
-
+* Rens ter Maat
 
 ## Recommended prerequisite courses
 
