@@ -54,16 +54,16 @@ If you lack prior knowledge of the Python programming language, you can use the 
 
 ### Lectures
 
-| # | Date | Title |
-| --- | --- | --- |
-| 1 | 07/Sep | Machine learning fundamentals |
-| 2 | 12/Sep | Linear models |
-| 3 | 14/Sep | Support vector machines, random forests |
-| 4 | 28/Sep | Deep learning I |
-| 5 | 05/Oct | Deep learning II |
-| 6 | 12/Oct | Unsupervised machine learning |
-| 7 |  19/Oct | Transformers |
-| 8 | 26/Oct | Guest lecture on Explainable AI |
+| # | Date | Title | Slides |
+| --- | --- | --- | --- |
+| 1 | 07/Sep | Machine learning fundamentals | *TBA* |
+| 2 | <span style="color:red"> 12/Sep </span> | Linear models | *TBA* |
+| 3 | 14/Sep | Support vector machines, random forests | *TBA* |
+| 4 | 28/Sep | Deep learning I | *TBA* |
+| 5 | 05/Oct | Deep learning II | *TBA* |
+| 6 | 12/Oct | Unsupervised machine learning | *TBA* |
+| 7 |  19/Oct | Transformers | *TBA* |
+| 8 | 26/Oct | (*Guest lecture*) Explainable AI | *TBA* |
 
 
 #### Transformer models
