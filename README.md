@@ -11,7 +11,7 @@ TLDR: GitHub is for content, Canvas for communication and submission of assignme
 
 The course schedule is as follows:
 * **Lectures**, *general time*: Wednesdays 08:45 - 10:45
-  * There is one exception: there is *additional* lecture on September 12 (Monday) and *no* lecture on September 21 (Wednesday).
+  * There is one exception: there is **additional** lecture on September 12 (Monday) and **no** lecture on September 21 (Wednesday).
 * **Guided self-study**, *time*: Wednesdays 10.45 - 12.45
 
 ## Practical work
@@ -49,7 +49,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 
 ## Lectures and assignments
 
-**IMPORTANT: All materials tagged with (*tentative*)  are not updated from the previous edition of the course and might change for this edition. However, any changes made will not be substantial and you can still use the materials to get an early peek at the content.**
+**IMPORTANT: The course is lightly restructured from the 2021 edition. However, the materials (lectrue slides and practical work assignments) will largely be unchanged. The materials from the 2021 edition of the course are available [here](legacy/2021).
 
 * [Introduction slides](lectures/intro.pdf)
 
