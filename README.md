@@ -63,7 +63,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | 5 | 05/Oct | Deep learning II | *TBA* |
 | 6 | 12/Oct | Unsupervised machine learning | *TBA* |
 | 7 |  19/Oct | Transformers | *TBA* |
-| 8 | 26/Oct | (*Guest lecture*) Explainable AI | *TBA* |
+| 8 | 26/Oct | (*Guest lecture*) Explainable AI by Francesca Grisoni, not included in the exam 👍 | *TBA* |
 
 ### Practicals
 
@@ -76,14 +76,6 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | 5 | 05/Oct | Deep learning II | *TBA* |
 | 6 | 12/Oct | Unsupervised machine learning | *TBA* |
 | 7 |  19/Oct | *Catch up week!* :tomato:  | - |
-
-#### Transformer models
-* *TBA*
-
-### Week 8
-
-#### Explainable AI
-* [Guest lecture by Francesca Grisoni](lectures/FGrisoni_2021_XAI.pdf)
 
 # Other course information
 
