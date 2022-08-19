@@ -57,7 +57,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
 | 1 | 07/Sep | Machine learning fundamentals | *TBA* |
-| 2 | 12/Sep (**!!!**) | Linear models | *TBA* |
+| 2 | 12/Sep (:exclamation:) | Linear models | *TBA* |
 | 3 | 14/Sep | Support vector machines, random forests | *TBA* |
 | 4 | 28/Sep | Deep learning I | *TBA* |
 | 5 | 05/Oct | Deep learning II | *TBA* |
@@ -75,7 +75,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | 4 | 28/Sep | Deep learning I | *TBA* |
 | 5 | 05/Oct | Deep learning II | *TBA* |
 | 6 | 12/Oct | Unsupervised machine learning | *TBA* |
-| 7 |  19/Oct | Transformers | *Catch up week!* |
+| 7 |  19/Oct | Transformers | *Catch up week!* :tomato: |
 
 #### Transformer models
 * *TBA*
