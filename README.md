@@ -52,50 +52,10 @@ If you lack prior knowledge of the Python programming language, you can use the 
 **IMPORTANT: The course is lightly restructured from the 2021 edition. However, the materials (lectrue slides and practical work assignments) will largely be unchanged. If you want a sneak peek, the materials from the 2021 edition of the course are available [here](legacy/2021).
 
 
-### Week 1
+### Lectures
 
-* [Introduction slides](lectures/intro.pdf)
-
-#### Reading assignment
-* [Instructions](reading_assignment.md)
-
-#### Machine learning fundamentals
-* Lecture slides: *TBA*
-* Practical work: *TBA*
-
-
-### Week 2
-
-#### Linear models
-* Lecture slides: *TBA*
-* Practical work: *TBA*
-
-
-### Week 3
-
-#### Support vector machines, random forests
-* Lecture slides: *TBA*
-* Practical work: *TBA*
-
-### Week 4
-
-#### Deep learning I
-* Lecture slides: *TBA*
-* Practical work: *TBA*
-
-### Week 5
-
-#### Deep learning II
-* Lecture slides: *TBA*
-* Practical work: *TBA*
-
-### Week 6
-
-#### Unsupervised machine learning
-* Lecture slides: *TBA*
-* Practical work: *TBA*
-
-### Week 7
+| # | Date | Title |
+| --- | --- | --- |
 
 #### Transformer models
 * *TBA*
