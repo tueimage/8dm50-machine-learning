@@ -49,7 +49,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 
 ## Lectures and assignments
 
-**IMPORTANT: The course is lightly restructured from the 2021 edition. However, the materials (lectrue slides and practical work assignments) will largely be unchanged. If you want a sneak peek, the materials from the 2021 edition of the course are available [here](legacy/2021).
+**IMPORTANT: The course is lightly restructured from the 2021 edition. However, the materials (lectrue slides and practical work assignments) will largely be unchanged. Links to the updated materials will be added to the table below as the course progresses. If you want a sneak peek, the materials from the 2021 edition of the course are available [here](legacy/2021).
 
 
 ### Lectures
@@ -65,6 +65,16 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | 7 |  19/Oct | Transformers | *TBA* |
 | 8 | 26/Oct | (*Guest lecture*) Explainable AI | *TBA* |
 
+### Practicals
+
+| # | Date | Title | Slides |
+| --- | --- | --- | --- |
+| 1 | 07/Sep | Machine learning fundamentals I| *TBA* |
+| 1 | 14/Sep | Machine learning fundamentals II| *TBA* |
+| 3 | 21/Sep | Support vector machines, random forests | *TBA* |
+| 4 | 28/Sep | Deep learning I | *TBA* |
+| 5 | 05/Oct | Deep learning II | *TBA* |
+| 6 | 12/Oct | Unsupervised machine learning | *TBA* |
 
 #### Transformer models
 * *TBA*
