@@ -11,7 +11,7 @@ TLDR: GitHub is for content, Canvas for communication and submission of assignme
 
 The course schedule is as follows:
 * **Lectures**, *general time*: Wednesdays 08:45 - 10:45
-** There is one exception: there is *additional* lecture on September 12 (Monday) and *no* lecture on September 21 (Wednesday).
+  * There is one exception: there is *additional* lecture on September 12 (Monday) and *no* lecture on September 21 (Wednesday).
 * **Guided self-study**, *time*: Wednesdays 10.45 - 12.45
 
 ## Practical work
