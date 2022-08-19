@@ -75,7 +75,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | 4 | 28/Sep | Deep learning I | *TBA* |
 | 5 | 05/Oct | Deep learning II | *TBA* |
 | 6 | 12/Oct | Unsupervised machine learning | *TBA* |
-| 7 |  19/Oct | Transformers | *Catch up week!* :tomato: |
+| 7 |  19/Oct | *Catch up week!* :tomato:  | - |
 
 #### Transformer models
 * *TBA*
