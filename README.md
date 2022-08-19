@@ -49,37 +49,60 @@ If you lack prior knowledge of the Python programming language, you can use the 
 
 ## Lectures and assignments
 
-**IMPORTANT: The course is lightly restructured from the 2021 edition. However, the materials (lectrue slides and practical work assignments) will largely be unchanged. The materials from the 2021 edition of the course are available [here](legacy/2021).
+**IMPORTANT: The course is lightly restructured from the 2021 edition. However, the materials (lectrue slides and practical work assignments) will largely be unchanged. If you want a sneak peek, the materials from the 2021 edition of the course are available [here](legacy/2021).
+
+
+### Week 1
 
 * [Introduction slides](lectures/intro.pdf)
 
-### Reading assignment
+#### Reading assignment
 * [Instructions](reading_assignment.md)
 
-### Machine learning fundamentals
+#### Machine learning fundamentals
 * Lecture slides: *TBA*
 * Practical work: *TBA*
 
-### Linear models
+
+### Week 2
+
+#### Linear models
 * Lecture slides: *TBA*
 * Practical work: *TBA*
 
-### Support vector machines, random forests
+
+### Week 3
+
+#### Support vector machines, random forests
 * Lecture slides: *TBA*
 * Practical work: *TBA*
 
-### Deep learning I
+### Week 4
+
+#### Deep learning I
 * Lecture slides: *TBA*
 * Practical work: *TBA*
 
-### Deep learning II
+### Week 5
+
+#### Deep learning II
 * Lecture slides: *TBA*
 * Practical work: *TBA*
 
-### Transformer models
+### Week 6
+
+#### Unsupervised machine learning
+* Lecture slides: *TBA*
+* Practical work: *TBA*
+
+### Week 7
+
+#### Transformer models
 * *TBA*
 
-### Explainable AI
+### Week 8
+
+#### Explainable AI
 * [Guest lecture by Francesca Grisoni](lectures/FGrisoni_2021_XAI.pdf)
 
 # Other course information
