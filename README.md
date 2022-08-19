@@ -65,7 +65,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | 7 |  19/Oct | Transformers | *TBA* |
 | 8 | 26/Oct | (*Guest lecture*) Explainable AI by Francesca Grisoni, not included in the exam 👍 | *TBA* |
 
-### Practicals
+### Practical assignments
 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
