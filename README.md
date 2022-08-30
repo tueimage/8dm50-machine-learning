@@ -118,6 +118,7 @@ Course instructors:
 Teaching assistants:
 * Oscar Lapuente Santana
 * Rens ter Maat
+* Hassan Keshvarikhojasteh
 
 ## Recommended prerequisite courses
 
