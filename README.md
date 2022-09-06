@@ -56,7 +56,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
-| 1 | 07/Sep | Machine learning fundamentals | *TBA* |
+| 1 | 07/Sep | Machine learning fundamentals | [slides](lectures\week_1.pdf), [extended](week_1_extended.pdf) |
 | 2 | 12/Sep (:exclamation:) | Linear models | *TBA* |
 | 3 | 14/Sep | Support vector machines, random forests | *TBA* |
 | 4 | 28/Sep | Deep learning I | *TBA* |
@@ -70,7 +70,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
-| 1 | 07/Sep | Machine learning fundamentals I| *TBA* |
+| 1 | 07/Sep | Machine learning fundamentals I| [exercises](practicals/week_1.ipynb) |
 | 1 | 14/Sep | Machine learning fundamentals II| *TBA* |
 | 3 | 21/Sep | Support vector machines, random forests | *TBA* |
 | 4 | 28/Sep | Deep learning I | *TBA* |
