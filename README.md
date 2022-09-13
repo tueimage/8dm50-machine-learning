@@ -58,7 +58,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | --- | --- | --- | --- |
 | 1 | 07/Sep | Machine learning fundamentals | [intro](lectures/intro.pdf), [slides](lectures/week_1.pdf), [extended](lectures/week_1_extended.pdf) |
 | 2 | 12/Sep (:exclamation:) | Linear models | [slides](lectures/week_2_linear_models.pdf) |
-| 3 | 14/Sep | Support vector machines, random forests | *TBA* |
+| 3 | 14/Sep | Support vector machines, random forests | [slides](lectures/week_2_classification.pdf) | 
 | 4 | 28/Sep | Deep learning I | *TBA* |
 | 5 | 05/Oct | Deep learning II | *TBA* |
 | 6 | 12/Oct | Unsupervised machine learning | *TBA* |
