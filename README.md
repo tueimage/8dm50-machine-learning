@@ -72,10 +72,10 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | --- | --- | --- | --- |
 | 1 | 07/Sep | Machine learning fundamentals I| [exercises](practicals/week_1.ipynb) |
 | 1 | 14/Sep | Machine learning fundamentals II| *TBA* |
-| 3 | 21/Sep | Support vector machines, random forests | *TBA* |
-| 4 | 28/Sep | Deep learning I | *TBA* |
-| 5 | 05/Oct | Deep learning II | *TBA* |
-| 6 | 12/Oct | Unsupervised machine learning | *TBA* |
+| 3 | 21/Sep | Linear models | *TBA* |
+| 4 | 28/Sep | Support vector machines, random forests | *TBA* |
+| 5 | 05/Oct | Deep learning I | *TBA* |
+| 6 | 12/Oct | Deep learning II  | *TBA* |
 | 7 |  19/Oct | *Catch up week!* :tomato:  | - |
 
 # Other course information
