@@ -60,7 +60,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | 2 | 12/Sep (:exclamation:) | Linear models | [slides](lectures/week_2_linear_models.pdf) |
 | 3 | 14/Sep | Support vector machines, random forests | [slides](lectures/week_2_classification.pdf) | 
 | 4 | 28/Sep | Deep learning I | [slides](lectures/week_4.pdf)  |
-| 5 | 05/Oct | Deep learning II | [slides](lectures/week_5.pdf) [transformers intro](lectures/week_5_transformers.pdf)  |
+| 5 | 05/Oct | Deep learning II | [slides](lectures/week_5.pdf), [transformers intro](lectures/week_5_transformers.pdf)  |
 | 6 | 12/Oct | Unsupervised machine learning | *TBA* |
 | 7 |  19/Oct | Transformers | *TBA* |
 | 8 | 26/Oct | (*Guest lecture*) Explainable AI by Francesca Grisoni, not included in the exam 👍 | *TBA* |
