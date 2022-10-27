@@ -62,7 +62,7 @@ If you lack prior knowledge of the Python programming language, you can use the 
 | 4 | 28/Sep | Deep learning I | [slides](lectures/week_4.pdf)  |
 | 5 | 05/Oct | Deep learning II | [slides](lectures/week_5.pdf), [transformers intro](lectures/week_5_transformers.pdf)  |
 | 6 | 12/Oct | Unsupervised machine learning | [slides](lectures/week_6.pdf) |
-| 7 |  19/Oct | Transformers | *TBA* |
+| 7 |  19/Oct | Transformers | [slides](lectures/week_7.pdf) |
 | 8 | 26/Oct | (*Guest lecture*) Explainable AI by Francesca Grisoni, not included in the exam 👍 | *TBA* |
 | :small_red_triangle:| 02/Nov | *Exam* | [Example exam](exam.pdf) |
 
