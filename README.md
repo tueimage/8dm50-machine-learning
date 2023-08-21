@@ -48,34 +48,33 @@ If you lack prior knowledge of the Python programming language, you can use the 
 
 ## Lectures and assignments
 
-**IMPORTANT: The course is lightly restructured from the 2021 edition. However, the materials (lectrue slides and practical work assignments) will largely be unchanged. Links to the updated materials will be added to the table below as the course progresses. If you want a sneak peek, the materials from the 2021 edition of the course are available [here](legacy/2021).
-
+The course is largely unchanged from the previous edition and the materials (slides and practicals) will remain similar. In the schedule below there are tentative materials copied from the previous year so you can have a sneak peek. The materials will be updated as the course progresses.
 
 ### Lectures
 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
-| 1 | 07/Sep | Machine learning fundamentals | [intro](lectures/intro.pdf), [slides](lectures/week_1.pdf), [extended](lectures/week_1_extended.pdf) |
-| 2 | 12/Sep (:exclamation:) | Linear models | [slides](lectures/week_2_linear_models.pdf) |
-| 3 | 14/Sep | Support vector machines, random forests | [slides](lectures/week_2_classification.pdf) | 
-| 4 | 28/Sep | Deep learning I | [slides](lectures/week_4.pdf)  |
-| 5 | 05/Oct | Deep learning II | [slides](lectures/week_5.pdf), [transformers intro](lectures/week_5_transformers.pdf)  |
-| 6 | 12/Oct | Unsupervised machine learning | [slides](lectures/week_6.pdf) |
-| 7 |  19/Oct | Transformers | [slides](lectures/week_7.pdf) |
-| 8 | 26/Oct | (*Guest lecture*) Explainable AI by Francesca Grisoni, not included in the exam 👍 | [slides](lectures/FGrisoni_2022_XAI.pdf) |
-| :small_red_triangle:| 02/Nov | *Exam* | [Example exam](exam.pdf) |
+| 1 | 06/Sep | Machine learning fundamentals | [*tentative* intro ](lectures/intro.pdf), [*tentative* slides](lectures/week_1.pdf), [extended](lectures/week_1_extended.pdf) |
+| 2 | 13/Sep | Linear models | [*tentative* slides](lectures/week_2_linear_models.pdf) |
+| 3 | 20/Sep | Support vector machines, random forests | [slides](lectures/week_2_classification.pdf) | 
+| 4 | 27/Sep | Deep learning I | [*tentative* slides](lectures/week_4.pdf)  |
+| 5 | 04/Oct | Deep learning II | [*tentative* slides](lectures/week_5.pdf), [transformers intro](lectures/week_5_transformers.pdf)  |
+| 6 | 11/Oct | Unsupervised machine learning | [*tentative* slides](lectures/week_6.pdf) |
+| 7 | 18/Oct | Transformers | [*tentative* slides](lectures/week_7.pdf) |
+| 8 | 26/Oct | *Guest lecture*, *TBA*, not included in the exam 👍 | *TBA* |
+| :small_red_triangle:| 01/Nov | *Exam* | [Example exam](exam.pdf) |
 
 ### Practical assignments
 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
-| 1 | 07/Sep | Machine learning fundamentals I| [exercises](practicals/week_1.ipynb) |
-| 1 | 14/Sep | Machine learning fundamentals II|  [exercises](practicals/week_2.ipynb)  |
-| 3 | 21/Sep | Linear models |  [exercises](practicals/week_3.ipynb)  |
-| 4 | 28/Sep | Support vector machines, random forests | [exercises](practicals/week_4.ipynb) |
-| 5 | 05/Oct | Deep learning I | [exercises](practicals/week_5.ipynb) |
-| 6 | 12/Oct | Deep learning II  | [exercises in Google Colab](https://colab.research.google.com/drive/10f-TFVACLvZZaHweAVQl8WXzfnYwliF2?usp=sharing) |
-| 7 |  19/Oct | *Catch up week!* :tomato:  | - |
+| 1 | 06/Sep | Machine learning fundamentals I| [exercises](practicals/week_1.ipynb) |
+| 1 | 13/Sep | Machine learning fundamentals II|  [exercises](practicals/week_2.ipynb)  |
+| 3 | 20/Sep | Linear models |  [exercises](practicals/week_3.ipynb)  |
+| 4 | 27/Sep | Support vector machines, random forests | [exercises](practicals/week_4.ipynb) |
+| 5 | 04/Oct | Deep learning I | [exercises](practicals/week_5.ipynb) |
+| 6 | 11/Oct | Deep learning II  | [exercises in Google Colab](https://colab.research.google.com/drive/10f-TFVACLvZZaHweAVQl8WXzfnYwliF2?usp=sharing) |
+| 7 |  18/Oct | *Catch up week!* :tomato:  | - |
 
 # Other course information
 
@@ -115,8 +114,8 @@ Course instructors:
 * Federica Eduati
 
 Teaching assistants:
-* Oscar Lapuente Santana
-* Rens ter Maat
+* Glen Weber
+* Hong Liu 
 * Hassan Keshvarikhojasteh
 
 ## Recommended prerequisite courses
