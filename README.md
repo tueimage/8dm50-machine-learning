@@ -3,16 +3,15 @@
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
 
 ## Use of Canvas
-This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/21391) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
+This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/24330) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
 
-TLDR: GitHub is for content, Canvas for communication and submission of assignments.
+**TLDR**: GitHub is for content, Canvas for communication and submission of assignments.
 
 ## Schedule
 
 The course schedule is as follows:
-* **Lectures**, *general time*: Wednesdays 08:45 - 10:45
-  * There is one exception: there is **additional** lecture on September 12 (Monday) and **no** lecture on September 21 (Wednesday).
-* **Guided self-study**, *time*: Wednesdays 10.45 - 12.45
+* **Lectures**, *time*: Wednesdays 08:45 - 10:45, *location*: Atlas -1.210 
+* **Guided self-study**, *time*: Wednesdays 10.45 - 12.45, *location*: Atlas -1.210 
 
 ## Practical work
 
