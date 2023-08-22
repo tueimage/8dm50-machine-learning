@@ -26,8 +26,7 @@ The use of ChatGPT and other large language models for the practical work is all
 1) You use ChatGPT and other large language models only as aid in your work and not as primary sources of information (e.g. to do literature search), and primary modes of writing and coding (e.g. asking for answers whole to assignment questions is not allowed, however, improving the writing or coding of answers to questions is allowed).
    
 2) You write a one-page reflection report on the use of such tools answering the following questions:
-
-* What were the up- and down-sides of using ChatGPT (or similar tools) in your work?
+    * What were the up- and down-sides of using ChatGPT (or similar tools) in your work?
     * In your view, are such tools helpful or harmful when used in education?
     * Did it make you more or less productive?
     * How did you specifically use these tools (give examples)?
