@@ -21,15 +21,19 @@ The practical work will be done in groups. The groups will be formed in Canvas a
 
 ### Use of ChatGPT and other large language models
 
-The use of ChatGPT and other large language models for the practical work is allowed, provided that you write a one-page reflection report on the use of such tools answering the following questions:
+The use of ChatGPT and other large language models for the practical work is allowed, provided that:
 
-* What were the up- and down-sides of using ChatGPT (or similar tools) in your work?
-* In your view, are such tools helpful or harmful when used in education?
-* Did it make you more or less productive?
-* How did you specifically use these tools (give examples)?
-* Were these tools accurate in their answers?
+1) You use ChatGPT and other large language models only as aid in your work and not as primary sources of information (e.g. to do literature search), and primary modes of writing and coding (e.g. asking for answers whole to assignment questions is not allowed, however, improving the writing or coding of answers to questions is allowed).
+   
+2) You write a one-page reflection report on the use of such tools answering the following questions:
 
-Note that this is **mandatory** if you used ChatGPT (or similar tools) in any way for the course and it does not have any negative consequence (e.g. lead to lower grades). If you do not submit the report I will assume that you did not use such tools but if this is detected during the grading it will be considered cheating. 
+  * What were the up- and down-sides of using ChatGPT (or similar tools) in your work?
+  * In your view, are such tools helpful or harmful when used in education?
+  * Did it make you more or less productive?
+  * How did you specifically use these tools (give examples)?
+  * Were these tools accurate in their answers?
+
+  Note that this is **mandatory** if you used ChatGPT (or similar tools) in any way for the course and it does not have any negative consequence (e.g. lead to lower grades). If you do not submit the report I will assume that you did not use such tools but if this is detected during the grading it will be considered cheating. 
 
 # Materials
 
