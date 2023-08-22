@@ -31,7 +31,8 @@ The use of ChatGPT and other large language models for the practical work is all
     * Did it make you more or less productive?
     * How did you specifically use these tools (give examples)?
     * Were these tools accurate in their answers?
-    * Note that this is **mandatory** if you used ChatGPT (or similar tools) in any way for the course and it does not have any negative consequence (e.g. lead to lower grades). If you do not submit the report I will assume that you did not use such tools but if this is detected during the grading it will be considered cheating. 
+
+Note that the report is **mandatory** if you used ChatGPT (or similar tools) in any way for the course and it does not have any negative consequence (e.g. lead to lower grades). If you do not submit the report we will assume that you did not use such tools but if this is detected during the grading it will be considered cheating. 
 
 # Materials
 
