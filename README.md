@@ -23,7 +23,7 @@ The practical work will be done in groups. The groups will be formed in Canvas a
 
 The use of ChatGPT and other large language models for the practical work is allowed, provided that:
 
-1) You use ChatGPT and other large language models only as aid in your work and not as primary sources of information (e.g. to do literature search), and primary modes of writing and coding (e.g. asking for answers to entire assignment questions is not allowed, however, improving the writing or coding of answers to questions is allowed).
+1) You use ChatGPT and other large language models only as aid in your work and not as primary sources of information (e.g. to do literature search), and primary mode of writing and coding (e.g. asking for answers to entire assignment questions is not allowed, however, improving the writing or coding of answers to questions is allowed).
    
 2) You write a one-page reflection report on the use of such tools answering the following questions:
     * What were the up- and down-sides of using ChatGPT (or similar tools) in your work?
