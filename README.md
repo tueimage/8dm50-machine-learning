@@ -27,13 +27,12 @@ The use of ChatGPT and other large language models for the practical work is all
    
 2) You write a one-page reflection report on the use of such tools answering the following questions:
 
-  * What were the up- and down-sides of using ChatGPT (or similar tools) in your work?
-  * In your view, are such tools helpful or harmful when used in education?
-  * Did it make you more or less productive?
-  * How did you specifically use these tools (give examples)?
-  * Were these tools accurate in their answers?
-
-  Note that this is **mandatory** if you used ChatGPT (or similar tools) in any way for the course and it does not have any negative consequence (e.g. lead to lower grades). If you do not submit the report I will assume that you did not use such tools but if this is detected during the grading it will be considered cheating. 
+* What were the up- and down-sides of using ChatGPT (or similar tools) in your work?
+    * In your view, are such tools helpful or harmful when used in education?
+    * Did it make you more or less productive?
+    * How did you specifically use these tools (give examples)?
+    * Were these tools accurate in their answers?
+    * Note that this is **mandatory** if you used ChatGPT (or similar tools) in any way for the course and it does not have any negative consequence (e.g. lead to lower grades). If you do not submit the report I will assume that you did not use such tools but if this is detected during the grading it will be considered cheating. 
 
 # Materials
 
