@@ -81,7 +81,7 @@ The course is largely unchanged from the previous edition and the materials (sli
 
 ### Practical assignments
 
-| # | Date | Title | Slides |
+| # | Date | Title | Exercises |
 | --- | --- | --- | --- |
 | 1 | 06/Sep | Machine learning fundamentals I| [exercises](practicals/week_1.ipynb) |
 | 1 | 13/Sep | Machine learning fundamentals II|  [exercises](practicals/week_2.ipynb)  |
