@@ -46,7 +46,7 @@
 
 % Bibliography
 \usepackage[uniquename=init,giveninits=true,maxcitenames=1,style=authortitle-comp,backend=bibtex]{biblatex}
-\bibliography{./references}
+\bibliography{references}
 
 \setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
 
@@ -57,7 +57,7 @@
 \institute{Eindhoven University of Technology
 
 Department of Biomedical Engineering}
-\date{2022}
+\date{2023}
 
 
 
@@ -480,11 +480,11 @@ $$A_{m,1}x_1 + A_{m,2}x_2 + \ldots + A_{m,n}x_n = b_m$$
 
 \fi % Linear algebra
 
-\section{Gradient-based optimization}
+\section{Gradient of a function}
 
 
 \begin{frame}
-\frametitle{Gradient-based optimization}
+\frametitle{Prelude: Gradient of a function}
 Materials:
 \begin{itemize}
     \item Chapters I.4 and I.5 from \cite{deeplearning}
@@ -493,7 +493,7 @@ Materials:
 \end{frame}
 
 \begin{frame}
-\frametitle{Gradient}
+\frametitle{Gradient of a function}
     \begin{itemize}
         \item Let $f: \R^{m \times n} \mapsto \R$ be a function that takes $m \times n$ matrix $\vect{A}$ as input and returns a real number (scalar).
         \item A {\bf gradient} of $f$ with respect to $A$ is the matrix
@@ -515,7 +515,7 @@ Materials:
 \begin{frame}
 \frametitle{Gradient}
     \begin{itemize}
-        \item In the special case when $A$ is a vector we obtain the (possibly more familiar) gradient
+        \item In the special (but more common) case when $A$ is a vector we obtain the gradient
         $$ \nabla_{\vect{x}} f(\vect{x}) =
         \begin{bmatrix}
          \frac{\partial f}{\partial x_{1}}  \\
@@ -586,7 +586,6 @@ Materials:
 
 \end{frame}
 
-\iffull
 \begin{frame}
 \frametitle{Some notations}
     \begin{itemize}
@@ -599,7 +598,6 @@ Materials:
         \item Since by default vectors are assumed to be column vectors, the rows of $\vect{X}$ are the transposes $\vect{x}_i^T$.
     \end{itemize}
 \end{frame}
-\fi
 
 \begin{frame}
 \frametitle{The learning task}
