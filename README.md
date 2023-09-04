@@ -69,7 +69,7 @@ The course is largely unchanged from the previous edition and the materials (sli
 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
-| 1 | 06/Sep | Machine learning fundamentals | [*tentative* intro ](lectures/intro.pdf), [*tentative* slides](lectures/week_1.pdf), [*tentative*  extended](lectures/week_1_extended.pdf) |
+| 1 | 06/Sep | Machine learning fundamentals | [intro ](lectures/intro.pdf), [slides](lectures/week_1.pdf), [extended](lectures/week_1_extended.pdf) |
 | 2 | 13/Sep | Linear models | [*tentative* slides](lectures/week_2_linear_models.pdf) |
 | 3 | 20/Sep | Support vector machines, random forests | [*tentative* slides](lectures/week_2_classification.pdf) | 
 | 4 | 27/Sep | Deep learning I | [*tentative* slides](lectures/week_4.pdf)  |
