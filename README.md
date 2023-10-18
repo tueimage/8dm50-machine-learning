@@ -75,7 +75,7 @@ The course is largely unchanged from the previous edition and the materials (sli
 | 4 | 27/Sep | Deep learning I | [slides](lectures/week_4.pdf)  |
 | 5 | 04/Oct | Deep learning II | [slides](lectures/week_5.pdf), [transformers intro](lectures/week_5_transformers.pdf)  |
 | 6 | 11/Oct | Unsupervised machine learning | [*tentative* slides](lectures/week_6.pdf) |
-| 7 | 18/Oct | Transformers, Explainable AI| [*tentative* slides](lectures/week_7.pdf) |
+| 7 | 18/Oct | Transformers, Explainable AI| [slides](lectures/week_7.pdf), *explainable AI slides TBA*|
 | 8 | 26/Oct | *No lecture* | *TBA* |
 | :small_red_triangle:| 01/Nov | *Exam* | [Example exam](exam.pdf) |
 
