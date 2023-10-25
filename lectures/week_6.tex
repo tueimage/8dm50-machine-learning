@@ -48,7 +48,7 @@
 \institute{Eindhoven University of Technology
 
 Department of Biomedical Engineering}
-\date{2022}
+\date{2023}
  
  
 \begin{document}
@@ -76,6 +76,7 @@ Materials:
 \end{itemize}
 
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Overview}
@@ -213,6 +214,14 @@ $Z_2$ needs to be uncorrelated with $Z_1$. This is equivalent to constrain the d
 
 \end{frame}
 
+\begin{frame}{Mentimeter question (www.menti.com code 6939 9905)}
+When do you expect is PCA to have poor performance in feature reduction?
+\begin{itemize}
+\item When the features are highly correlated
+\item When the features are uncorrelated
+\item When the features are dominated by noise
+\end{itemize}
+\end{frame}
 
 
 
@@ -330,7 +339,7 @@ We want to define the clusters so that similar points are in the same cluster an
 Defining $d_{i, i^\prime}=d(x_i, x_{i^\prime})$ as a measure of dissimilarity between a pair of observations $x_i$ and $x_{i^\prime}$, the total point scatter T is :
 
 \begin{equation*}
-	T = \frac{1}{2}  \sum_{i=1}^N \sum_{i^\prime=1}^N d_{i, i^\prime} = \frac{1}{2}  \sum_{k=1}^K \sum_{C(i)=k} (\sum_{C(i^\prime)=k} d_{i, i^\prime}  + \sum_{C(i) \neq k} d_{i, i^\prime})
+	T = \frac{1}{2}  \sum_{i=1}^N \sum_{i^\prime=1}^N d_{i, i^\prime} = \frac{1}{2}  \sum_{k=1}^K \sum_{C(i)=k} (\sum_{C(i^\prime)=k} d_{i, i^\prime}  + \sum_{C(i^\prime) \neq k} d_{i, i^\prime})
 \end{equation*}
 
 Where:
@@ -382,6 +391,18 @@ We need \textit{iterative greedy descent} strategies to iteratively improve clus
 \end{frame}
 
 
+\begin{frame}{Mentimeter question (www.menti.com code 7813 7710)}
+What do you expect to happen if you apply K-means to this case?
+\begin{itemize}
+\item It will correctly identify the two classes
+\item It depends on the initialisation
+\item It will not be able to correctly identify the two classes
+\end{itemize}
+\begin{center}
+\includegraphics[height=4cm]{../figures/week_6/nonseparableclass.png}  
+\end{center}
+\end{frame}
+
 \begin{frame}{K-means problems and solutions}
 \begin{itemize}
  \item Problem: Does not guarantee the global minimum. Solution: we can check that no single switch of an observation to a different group decreases the objective function.
@@ -428,6 +449,9 @@ Number of cases of each cancer type (columns) in each cluster (rows), when using
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Mentimeter question (www.menti.com code 7813 7710)}
+How many clusters do we have after $N-1$ steps?
+\end{frame}
 
 \begin{frame}{Hierarchical clustering - Bottom-up approach }
 \begin{center}
@@ -486,6 +510,16 @@ How do we measure dissimilarity between two points?
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Mentimeter question (www.menti.com code 7813 7710)}
+What is the best measure of dissimilarity when observations are time series similar to the ones in the plot?
+\begin{itemize}
+\item Euclidean distance
+\item Correlation
+\end{itemize}
+\begin{center}
+\includegraphics[height=5cm]{../figures/week_6/question_metric_hierarchical_clustering.pdf}  
+\end{center}
+\end{frame}
 
 \begin{frame}{Hierarchical clustering - How to interpret a dendogram}
 \begin{itemize}
