@@ -63,19 +63,19 @@ If you lack prior knowledge of the Python programming language, you can use the 
 
 ## Lectures and assignments
 
-The course is largely unchanged from the previous edition and the materials (slides and practicals) will remain similar. In the schedule below there are tentative materials copied from the previous year so you can have a sneak peek. The materials will be updated as the course progresses.
+The course is largely unchanged from the previous edition and the materials (slides and practicals) will remain similar. In the schedule below there are tentative materials copied from the previous year so you can have a sneak peek. The tentative materials are indicated with ~~strikethrough~~ and will be updated as the course progresses.
 
 ### Lectures
 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
 | 1 | 04/Sep | Machine learning fundamentals | ~~[intro ](lectures/intro.pdf), [slides](lectures/week_1.pdf), [extended](lectures/week_1_extended.pdf)~~ |
-| 2 | 11/Sep | Linear models | [slides](lectures/week_2.pdf) |
-| 3 | 18/Sep | Deep learning I | [slides](lectures/week_3.pdf)  |
-| 4 | 25/Sep | Deep learning II | [slides](lectures/week_4.pdf), [transformers intro](lectures/week_4_transformers.pdf)  |
-| 5 | 02/Oct | Support vector machines, random forests | [slides](lectures/week_5.pdf) | 
-| 6 | 09/Oct | Unsupervised machine learning | [slides](lectures/week_6.pdf) |
-| 7 | 16/Oct | Transformers, Explainable AI| [slides](lectures/week_7.pdf), [explainable AI slides](lectures/FGrisoni_2023_Guest_XAI.pdf)|
+| 2 | 11/Sep | Linear models | ~~[slides](lectures/week_2.pdf)~~ |
+| 3 | 18/Sep | Deep learning I | ~~[slides](lectures/week_3.pdf)~~  |
+| 4 | 25/Sep | Deep learning II | ~~[slides](lectures/week_4.pdf), [transformers intro](lectures/week_4_transformers.pdf)~~ |
+| 5 | 02/Oct | Support vector machines, random forests | ~~[slides](lectures/week_5.pdf)~~ | 
+| 6 | 09/Oct | Unsupervised machine learning | ~~[slides](lectures/week_6.pdf)~~ |
+| 7 | 16/Oct | Transformers, Explainable AI| ~~[slides](lectures/week_7.pdf), [explainable AI slides](lectures/FGrisoni_2023_Guest_XAI.pdf)~~|
 | 8 | 23/Oct | *No lecture* | - |
 | :small_red_triangle:| 30/Oct | *Exam* | [Example exam](exam.pdf) |
 
