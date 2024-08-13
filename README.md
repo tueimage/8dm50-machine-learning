@@ -3,15 +3,15 @@
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
 
 ## Use of Canvas
-This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/24330) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
+This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/29625) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
 
 **TLDR**: GitHub is for content, Canvas for communication and submission of assignments.
 
 ## Schedule
 
 The course schedule is as follows:
-* **Lectures**, *time*: Wednesdays 08:45 - 10:45, *location*: Atlas -1.210 
-* **Guided self-study**, *time*: Wednesdays 10.45 - 12.45, *location*: Atlas -1.210 
+* **Lectures**, *time*: Wednesdays 08:45 - 10:45, *location*: Gemini-zuid 3A.06 or Auditorium 14 (check your timetable for details).
+* **Guided self-study**, *time*: Wednesdays 10.45 - 12.45, *location*: Metaforum zaal 08 or Metaforum zaal 07 (check your timetable for details).
 
 ## Practical work
 
@@ -32,7 +32,7 @@ The use of ChatGPT and other large language models for the practical work is all
     * How did you specifically use these tools (give examples)?
     * Were these tools accurate in their answers?
 
-Note that the report is **mandatory** if you used ChatGPT (or similar tools) in any way for the course and it does not have any negative consequence (e.g. lead to lower grades). If you do not submit the report we will assume that you did not use such tools but if this is detected during the grading it will be considered cheating. 
+Note that the report is **mandatory** if you used ChatGPT (or similar tools) in any way for the course and it does NOT have any negative consequence (e.g. lead to lower grades). If you do not submit the report we will assume that you did not use such tools but if this is detected during the grading it will be considered cheating. 
 
 # Materials
 
@@ -69,27 +69,27 @@ The course is largely unchanged from the previous edition and the materials (sli
 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
-| 1 | 06/Sep | Machine learning fundamentals | [intro ](lectures/intro.pdf), [slides](lectures/week_1.pdf), [extended](lectures/week_1_extended.pdf) |
-| 2 | 13/Sep | Linear models | [slides](lectures/week_2.pdf) |
-| 3 | 20/Sep | Support vector machines, random forests | [slides](lectures/week_3.pdf) | 
-| 4 | 27/Sep | Deep learning I | [slides](lectures/week_4.pdf)  |
-| 5 | 04/Oct | Deep learning II | [slides](lectures/week_5.pdf), [transformers intro](lectures/week_5_transformers.pdf)  |
-| 6 | 11/Oct | Unsupervised machine learning | [slides](lectures/week_6.pdf) |
-| 7 | 18/Oct | Transformers, Explainable AI| [slides](lectures/week_7.pdf), [explainable AI slides](lectures/FGrisoni_2023_Guest_XAI.pdf)|
-| 8 | 26/Oct | *No lecture* | - |
-| :small_red_triangle:| 01/Nov | *Exam* | [Example exam](exam.pdf) |
+| 1 | 04/Sep | Machine learning fundamentals | [intro ](lectures/intro.pdf), [slides](lectures/week_1.pdf), [extended](lectures/week_1_extended.pdf) |
+| 2 | 11/Sep | Linear models | [slides](lectures/week_2.pdf) |
+| 3 | 18/Sep | Deep learning I | [slides](lectures/week_3.pdf)  |
+| 4 | 25/Sep | Deep learning II | [slides](lectures/week_4.pdf), [transformers intro](lectures/week_4_transformers.pdf)  |
+| 5 | 02/Oct | Support vector machines, random forests | [slides](lectures/week_5.pdf) | 
+| 6 | 09/Oct | Unsupervised machine learning | [slides](lectures/week_6.pdf) |
+| 7 | 16/Oct | Transformers, Explainable AI| [slides](lectures/week_7.pdf), [explainable AI slides](lectures/FGrisoni_2023_Guest_XAI.pdf)|
+| 8 | 23/Oct | *No lecture* | - |
+| :small_red_triangle:| 30/Oct | *Exam* | [Example exam](exam.pdf) |
 
 ### Practical assignments
 
 | # | Date | Title | Exercises |
 | --- | --- | --- | --- |
 | 1 | 06/Sep | Machine learning fundamentals I| [exercises](practicals/week_1.ipynb) |
-| 1 | 13/Sep | Machine learning fundamentals II|  [exercises](practicals/week_2.ipynb)  |
-| 3 | 20/Sep | Linear models |  [exercises](practicals/week_3.ipynb)  |
-| 4 | 27/Sep | Support vector machines, random forests | [exercises](practicals/week_4.ipynb) |
-| 5 | 04/Oct | Deep learning I | [exercises](practicals/week_5.ipynb) |
-| 6 | 11/Oct | Deep learning II  | [exercises in Google Colab](https://colab.research.google.com/drive/10f-TFVACLvZZaHweAVQl8WXzfnYwliF2?usp=sharing) |
-| 7 |  18/Oct | *Catch up week!* :tomato:  | - |
+| 2 | 11/Sep | Machine learning fundamentals II|  [exercises](practicals/week_2.ipynb)  |
+| 3 | 18/Sep | Linear models |  [exercises](practicals/week_3.ipynb)  |
+| 4 | 25/Sep | Deep learning I | [exercises](practicals/week_4.ipynb) |
+| 5 | 02/Oct | Deep learning II  | [exercises in Google Colab](https://colab.research.google.com/drive/10f-TFVACLvZZaHweAVQl8WXzfnYwliF2?usp=sharing) |
+| 6 | 09/Oct | Support vector machines, random forests | [exercises](practicals/week_6.ipynb) |
+| 7 | 16/Oct | *Catch up week!* :tomato:  | - |
 
 # Other course information
 
@@ -129,9 +129,9 @@ Course instructors:
 * Federica Eduati
 
 Teaching assistants:
-* Glen Weber
 * Hong Liu 
 * Hassan Keshvarikhojasteh
+* Glen Weber
 
 ## Recommended prerequisite courses
 
