@@ -3,7 +3,7 @@ For the reading assignment you first have to select a recent journal publication
 # Paper selection
 You are free to select the paper that you will review (in consultations with the course instructors and teaching assistants). Use the following selection criteria for the paper:
 * Describes an application of Machine Learning to a Medical Imaging or Computational Biology problem
-* Recently published (after 2016)
+* Recently published (after and including 2019)
 * Published in a high-quality journal (see the reference list and examples below)
 * On a topic that you find interesting and want to learn more about
 
