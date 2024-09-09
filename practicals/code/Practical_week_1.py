@@ -46,17 +46,13 @@ def find_closests(X_train, X_test, k):
     #calculate the distances
     X_test_squared_sum = X_test_squared_sum.reshape(-1,1) 
     dists = np.sqrt(X_test_squared_sum - 2*X_multiplied + X_train_squared_sum)
-    # look at this website under'No loops' for the explaination of the formula:
-    # https://jaykmody.com/blog/distance-matrices-with-numpy/ 
 
     #determine the indices of the k nearest neighbors
-    #I am not sure if we can use the 'argpartition function'
     minimum_indices = np.argpartition(dists, kth = k-1, axis = -1)[:,:k]
     return minimum_indices
 
 def pred_Y(minimum_indices, y_train):
-    # take the data from y_train on the indices defined by minimum_indices
-    # and reshape
+    # take the data from y_train on the indices defined by minimum_indices and reshape
     nearest_neighbors_outcomes = y_train[[minimum_indices]].reshape(minimum_indices.shape)
 
     # Take the most frequent predicted outcome 
@@ -68,10 +64,10 @@ def calculate_accuracy(pred, real):
     real = real.reshape(pred.shape)
 
     # outcomes are 0 or 1 so difference between 2 outcomes is 0, 1 or -1
-    # calculate the difference squared (to remove sign)
+    # calculate the difference squared
     errors = np.sum((real-pred)**2)
 
-    # devide number of good outocomes devided by total number of outcomes
+    # devide number of good outcomes devided by total number of outcomes
     accuracy = (real.size-errors)/real.size
     return accuracy
     
@@ -94,8 +90,7 @@ k-NN regression
 """
 
 def regression_Y(minimum_indices, y_train):
-    # take the data from y_train on the indices defined by minimum_indices
-    # and reshape
+    # take the data from y_train on the indices defined by minimum_indices and reshape
     nearest_neighbors_outcomes = y_train[[minimum_indices]].reshape(minimum_indices.shape)
 
     # Calculate the mean of the nearest neighbor outcomes
@@ -108,6 +103,7 @@ def calculate_regr_std(pred, real):
     
     # calculate the difference squared
     errors = sum((real-pred)**2)
+    
     # calculate the standard deviation
     std = (errors/real.size)**0.5
     return std
@@ -119,8 +115,11 @@ def knnRegressor(X_train, X_test, y_train, y_test, k):
 
     # find k nearest neighbours
     minimum_indices = find_closests(X_train, X_test, k)
+    
     # predict the outcomes
     pred = regression_Y(minimum_indices, y_train)
+    
     # calculate standard deviation
     std = calculate_regr_std(pred, y_test)
+    
     return std
