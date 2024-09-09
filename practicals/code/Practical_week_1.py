@@ -5,16 +5,6 @@ Created on Wed Sep  4 12:12:26 2024
 @author: 20201969
 """
 import numpy as np
-from sklearn.datasets import load_diabetes, load_breast_cancer
-
-diabetes = load_diabetes()
-
-breast_cancer = load_breast_cancer()
-
-
-# the actual implementation is in linear_regression.py,
-# here we will just use it to fit a model
-from linear_regression import *
 
 def lsq(X, y):
     """
@@ -33,24 +23,11 @@ def lsq(X, y):
 
     return beta
 
-# load the dataset
-# same as before, but now we use all features
-X_train = diabetes.data[:300, :]
-y_train = diabetes.target[:300, np.newaxis]
-X_test = diabetes.data[300:, :]
-y_lest = diabetes.target[300:, np.newaxis]
-
-beta = lsq(X_train, y_train)
-
-# print the parameters
-print(beta)
-
 """
 k-NN classification
 """
 
 from scipy import stats as st
-import matplotlib.pyplot as plt
 
 def normalize(dataset):
     x_min= np.min(dataset)
@@ -112,31 +89,6 @@ def knnClassifier(X_train, X_test, y_train, y_test, k):
     acc = calculate_accuracy(pred, y_test)
     return acc
     
-#Same code as before but then breast cancer data
-X_train = breast_cancer.data[:300]
-y_train = breast_cancer.target[:300, np.newaxis]
-X_test = breast_cancer.data[300:]
-y_test = breast_cancer.target[300:, np.newaxis]
-print(X_train.shape)
-print(y_train.shape)
-print(X_test.shape)
-print(y_test.shape)
-
-# determine accuracy for different values of k
-acc_list = []
-for k in range(1,100):
-    acc_list.append(knnClassifier(X_train, X_test, y_train, y_test, k))
-
-# plot accuracy of knn classifier for different values of k
-xpoints = np.arange(1, 100)
-ypoints = np.array(acc_list)
-
-plt.plot(xpoints, ypoints)
-plt.title('Accuracy of K-nn classifier for different values of k')
-plt.xlabel('Value of k') 
-plt.ylabel('Accuracy') 
-plt.show()
-
 """
 k-NN regression
 """
@@ -172,52 +124,3 @@ def knnRegressor(X_train, X_test, y_train, y_test, k):
     # calculate standard deviation
     std = calculate_regr_std(pred, y_test)
     return std
-
-# prepare the data
-X_train = diabetes.data[:300, np.newaxis, 3]
-y_train = diabetes.target[:300, np.newaxis]
-X_test = diabetes.data[300:, np.newaxis, 3]
-y_test = diabetes.target[300:, np.newaxis]
-print(X_train.shape)
-print(y_train.shape)
-print(X_test.shape)
-print(y_test.shape)
-
-# determine standard deviation for different values of k
-std_list = []
-for k in range(1,100):
-    std_list.append(knnRegressor(X_train, X_test, y_train, y_test, k))
-
-xpoints = np.arange(1, 100)
-ypoints = np.array(std_list)
-
-plt.plot(xpoints, ypoints)
-plt.title('Standard deviation of K-nn classifier for different values of k')
-plt.xlabel('Value of k') 
-plt.ylabel('Standard deviation') 
-plt.show()
-
-"""
-Class-conditional probability
-"""
-
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Gather data
-X = breast_cancer.data
-Y = breast_cancer.target[:, np.newaxis]
-
-# Divide Data into malignent and benign
-y_bool = np.array(list(map(bool,Y)))
-malignant = X[~y_bool]
-benign = X[y_bool]
-
-# Create grid for the pltos
-fig, axes = plt.subplots(10, 3, figsize=(20, 50))
-
-# Create plots for each feature
-for feature in range(X.shape[1]):
-    sns.kdeplot(ax=axes[feature//3, feature%3], data=malignant[:, np.newaxis, feature], label="Malignent", fill=True)
-    sns.kdeplot(ax=axes[feature//3, feature%3], x=benign[:, feature], label="Benign", fill=True).set(title=f'feature {feature+1}')
-    axes[feature//3, feature%3].legend()
