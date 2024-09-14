@@ -2,7 +2,6 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from scipy.stats import mode
 
-
 def normalize_features(X_train, X_test):
     """
     Normalize the features using StandardScaler (z-score normalization).
