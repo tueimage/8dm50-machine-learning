@@ -1,6 +1,5 @@
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import mean_squared_error
 
 def normalize_features(X_train, X_test):
     """
@@ -22,6 +21,15 @@ def euclidean_distance(point_1, point_2):
     :return: Euclidean distance between the two points
     """
     return np.sqrt(np.sum((point_1 - point_2) ** 2, axis=1))
+
+def mse_calc(y_true, y_predicted):
+    """
+    Mean squared error
+    :param y_true: True target values
+    :param y_pred: Predicted target values
+    :return: Mean squared error
+    """
+    return np.mean((y_true - y_predicted) ** 2)
 
 def knn_regression_predict(X_train, y_train, X_test_sample, k):
     """
