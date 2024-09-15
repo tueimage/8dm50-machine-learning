@@ -14,6 +14,7 @@ def class_conditional_prob(X, y, feature_idx):
     means = []
     stds = []
     
+    # for each class, compute the mean and standard deviation of the feature
     for c in classes:
         X_c = X[y == c, feature_idx]
         means.append(np.mean(X_c))
