@@ -18,14 +18,29 @@ def lsq(X, y):
     return beta
 
 def predict(X, beta):
-    
-	# Add a column of ones to calculate the intercept 
-	ones = np.ones((len(X), 1))
+    """
+    Prediction of the target variable using the estimated coefficients
+    :param X: Input data matrix
+    :param beta: Estimated coefficients
+    :return: Predicted target variable
+    """
+    # Add a column of ones to calculate the intercept 
+    ones = np.ones((len(X), 1))
 
     # Append column
-	X_with_ones = np.concatenate((ones, X), axis=1)
+    X_with_ones = np.concatenate((ones, X), axis=1)
     
-	return np.dot(X_with_ones, beta)
+    return np.dot(X_with_ones, beta)
+
+def mse_calc(y_true, y_predicted):
+    """
+    Mean squared error
+    :param y_true: True target values
+    :param y_pred: Predicted target values
+    :return: Mean squared error
+    """
+    return np.mean((y_true - y_predicted) ** 2)
+
 
 def wlsq(X, y, w):
     """
