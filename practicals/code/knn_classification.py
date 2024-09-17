@@ -41,8 +41,11 @@ def knn_predict(X_train, y_train, X_test_sample, k):
     # Get labels of the k-nearest neighbors
     labels = y_train[indices]
 
-    # Return the most common label (mode) among the neighbors
-    return mode(labels).mode[0]
+    # Use mode to find the most common label among the neighbors
+    most_common = mode(labels, keepdims=True)
+    
+    # Return the most common label
+    return most_common.mode[0]
 
 def knn_classification(X_train, y_train, X_test, k):
     """
