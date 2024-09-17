@@ -1,6 +1,9 @@
 from scipy.stats import norm
 import numpy as np
 
+# This function computes the class-conditional probabilities by calculating the mean and standard deviation for a specified feature in the dataset,
+# based on the class labels "Benign" and "Malignant". For each class, it extracts the feature values and then returns the corresponding means and standard deviations.
+
 def class_conditional_prob(X, y, feature_idx):
     """
     Compute class-conditional probabilities
