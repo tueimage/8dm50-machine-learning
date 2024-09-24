@@ -75,6 +75,12 @@ def polynomial_regression_analysis(X,y,number_of_degrees, plot_name):
     plt.show()
 
 def knn_classfier(k, X, y):
+    """
+    Perform k-Nearest Neighbors classification
+    k: number of nearest neighbors
+    X: input data
+    y: target values
+    """
     knn = neighbors.KNeighborsClassifier(n_neighbors=k)
     scaler = StandardScaler()
     model_knn = Pipeline([
