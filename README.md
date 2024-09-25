@@ -72,7 +72,7 @@ The course is largely unchanged from the previous edition and the materials (sli
 | 1 | 04/Sep | Machine learning fundamentals | [intro ](lectures/intro.pdf), [slides](lectures/week_1.pdf), [extended](lectures/week_1_extended.pdf) |
 | 2 | 11/Sep | Linear models | [slides](lectures/week_2.pdf) |
 | 3 | 18/Sep | Deep learning I | [slides](lectures/week_3.pdf)  |
-| 4 | 25/Sep | Deep learning II | ~~[slides](lectures/week_4.pdf), [transformers intro](lectures/week_4_transformers.pdf)~~ |
+| 4 | 25/Sep | Deep learning II | [slides](lectures/week_4.pdf)|
 | 5 | 02/Oct | Support vector machines, random forests | ~~[slides](lectures/week_5.pdf)~~ | 
 | 6 | 09/Oct | Unsupervised machine learning | ~~[slides](lectures/week_6.pdf)~~ |
 | 7 | 16/Oct | Transformers, Explainable AI| ~~[slides](lectures/week_7.pdf), [explainable AI slides](lectures/FGrisoni_2023_Guest_XAI.pdf)~~|
