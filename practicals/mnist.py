@@ -3,40 +3,39 @@ import matplotlib.pyplot as plt
 from keras.datasets import mnist
 from keras.utils import to_categorical
 
-# load the MNIST the dataset
+# Load the MNIST dataset
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-# scale the image intensities to the 0-1 range
+# Scale the image intensities to the 0-1 range
 x_train = (x_train / 255.0).astype(np.float32)
 x_test = (x_test / 255.0).astype(np.float32)
 
-# convert the data to channel-last
+# Convert the data to channel-last format (28, 28, 1)
 x_train = np.expand_dims(x_train, axis=-1)
 x_test = np.expand_dims(x_test, axis=-1)
 
-# convert the labels to one-hot encoded
+# Convert the labels to one-hot encoded format
 y_train = to_categorical(y_train, num_classes=10)
 y_test = to_categorical(y_test, num_classes=10)
 
+# Function to plot a grid of images
 def plot_images(images, dim=(10, 10), figsize=(10, 10), title=''):
-    
     plt.figure(figsize=figsize)
-    
     for i in range(images.shape[0]):
         plt.subplot(dim[0], dim[1], i+1)
         plt.imshow(images[i], interpolation='nearest', cmap='gray_r')
         plt.axis('off')
-    
     plt.tight_layout()
     plt.suptitle(title)
     plt.show()
-    
+
+# Plot 100 random images from the training set
 plot_images(x_train[np.random.randint(0, x_train.shape[0], size=100)].reshape(100, 28, 28))
 
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Dropout, Dense, Flatten
 
-# Original model
+# Define the original model
 original_model = Sequential()
 original_model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))
 original_model.add(Conv2D(64, (3, 3), activation='relu'))
@@ -47,9 +46,10 @@ original_model.add(Dense(128, activation='relu'))
 original_model.add(Dropout(0.5))
 original_model.add(Dense(10, activation='softmax'))
 
+# Print the summary of the original model
 original_model.summary()
 
-# Fully convolutional model
+# Define the fully convolutional model
 model = Sequential()
 model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))
 model.add(Conv2D(64, (3, 3), activation='relu'))
@@ -57,17 +57,22 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.25))
 
 # Replace Flatten and Dense layers with Conv2D layers
-model.add(Conv2D(128, (7, 7), activation='relu'))  # This layer replaces Flatten and first Dense layer
+model.add(Conv2D(128, (3, 3), activation='relu'))  # This layer replaces Flatten and first Dense layer
 model.add(Dropout(0.5))
-model.add(Flatten())  # Add Flatten layer to reshape the output
-model.add(Dense(10, activation='softmax'))  # This layer replaces the second Dense layer
+model.add(Conv2D(10, (1, 1), activation='relu'))  # This layer replaces the second Dense layer
+model.add(Flatten())  # Flatten the output to match the shape for Dense layer
+model.add(Dense(10, activation='softmax'))  # Final Dense layer for classification
 
+# Print the summary of the fully convolutional model
 model.summary()
 
 from keras.losses import categorical_crossentropy
 from keras.optimizers import Adam
 
+# Compile the original model
 original_model.compile(loss=categorical_crossentropy, optimizer=Adam(), metrics=['accuracy'])
+
+# Compile the fully convolutional model
 model.compile(loss=categorical_crossentropy, optimizer=Adam(), metrics=['accuracy'])
 
 # Train the original model
