@@ -87,7 +87,7 @@ The course is largely unchanged from the previous edition and the materials (sli
 | 2 | 11/Sep | Machine learning fundamentals II|  [exercises](practicals/week_2.ipynb)  |
 | 3 | 18/Sep | Linear models |  [exercises](practicals/week_3.ipynb)  |
 | 4 | 25/Sep | Deep learning I | [exercises](practicals/week_4.ipynb) |
-| 5 | 02/Oct | Deep learning II  | [exercises in Google Colab](https://colab.research.google.com/drive/10f-TFVACLvZZaHweAVQl8WXzfnYwliF2?usp=sharing) |
+| 5 | 02/Oct | Deep learning II  | [updated exercises in Google Colab](https://colab.research.google.com/drive/1O-tHiagXjYTXB5Aic92FR9zawJzmZZx9?usp=sharing) |
 | 6 | 09/Oct | Support vector machines, random forests | [exercises](practicals/week_6.ipynb) |
 | 7 | 16/Oct | *Catch up week!* :tomato:  | - |
 
