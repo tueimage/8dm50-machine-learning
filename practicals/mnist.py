@@ -41,6 +41,7 @@ original_model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)
 original_model.add(Conv2D(64, (3, 3), activation='relu'))
 original_model.add(MaxPooling2D(pool_size=(2, 2)))
 original_model.add(Dropout(0.25))
+
 original_model.add(Flatten())
 original_model.add(Dense(128, activation='relu'))
 original_model.add(Dropout(0.5))
@@ -50,6 +51,7 @@ original_model.add(Dense(10, activation='softmax'))
 original_model.summary()
 
 # Define the fully convolutional model
+
 model = Sequential()
 model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))
 model.add(Conv2D(64, (3, 3), activation='relu'))
@@ -57,11 +59,18 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.25))
 
 # Replace Flatten and Dense layers with Conv2D layers
+model.add(Conv2D(128, (12, 12), activation='relu'))  # This layer replaces Flatten and first Dense layer
+model.add(Dropout(0.5))
+model.add(Conv2D(10, (1,1), activation='softmax'))  # This layer replaces the second Dense layer
+model.add(Flatten())
+"""
 model.add(Conv2D(128, (3, 3), activation='relu'))  # This layer replaces Flatten and first Dense layer
 model.add(Dropout(0.5))
 model.add(Conv2D(10, (1, 1), activation='relu'))  # This layer replaces the second Dense layer
 model.add(Flatten())  # Flatten the output to match the shape for Dense layer
 model.add(Dense(10, activation='softmax'))  # Final Dense layer for classification
+"""
+
 
 # Print the summary of the fully convolutional model
 model.summary()
