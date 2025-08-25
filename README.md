@@ -3,15 +3,15 @@
 The course covers a number of machine learning methods and concepts, including state-of-the-art deep learning methods, with example applications in the medical imaging and computational biology domains.
 
 ## Use of Canvas
-This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/29625) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section.
+This GitHub page contains all the general information about the course and the study materials. The [Canvas page of the course](https://canvas.tue.nl/courses/31358) will be used only for sharing of course information that cannot be made public (e.g. Microsoft Teams links), submission of the practical work and posting questions to the instructors and teaching assistants (in the Discussion section). The students are highly encouraged to use the Discussion section in Canvas. All general questions (e.g. issues with setting up the programming environment, error messages etc., general methodology questions) should be posted in the Discussion section. **Such questions asked by email will not be answered.**
 
-**TLDR**: GitHub is for content, Canvas for communication and submission of assignments.
+**TLDR**: GitHub is for content, Canvas for communication and submission of assignments. Do not ask questions by email unless absolutely necessary. 
 
 ## Schedule
 
 The course schedule is as follows:
-* **Lectures**, *time*: Wednesdays 08:45 - 10:45, *location*: Gemini-zuid 3A.06 or Auditorium 14 (check your timetable for details).
-* **Guided self-study**, *time*: Wednesdays 10.45 - 12.45, *location*: Metaforum zaal 08 or Metaforum zaal 07 (check your timetable for details).
+* **Lectures**, *time*: Wednesdays 08:45 - 10:45, *location*: Neuron -1.354 (always check your timetable for changes).
+* **Guided self-study**, *time*: Wednesdays 10.45 - 12.45, *location*: Atlas 4.215 (always check your timetable for changes).
 
 ## Practical work
 
@@ -23,7 +23,7 @@ The practical work will be done in groups. The groups will be formed in Canvas a
 
 The use of ChatGPT and other large language models for the practical work is allowed, provided that:
 
-1) You use ChatGPT and other large language models only as aid in your work and not as primary sources of information (e.g. to do literature search), and primary mode of writing and coding (e.g. asking for answers to entire assignment questions is not allowed, however, improving the writing or coding of answers to questions is allowed).
+1) You use ChatGPT and other large language models only as aid in your work and **NOT** as primary sources of information (e.g. to do literature search), and primary mode of writing and coding (e.g. asking for answers to entire assignment questions is not allowed, however, improving the writing or coding of answers to questions is allowed).
    
 2) You write a one-page reflection report on the use of such tools answering the following questions:
     * What were the up- and down-sides of using ChatGPT (or similar tools) in your work?
@@ -51,7 +51,7 @@ Additional reading materials such as journal articles are listed within the lect
 
 **IMPORTANT: It is essential that you correctly set up the Python working environment by the end of the first week of the course so there are no delays in the work on the practicals.**
 
-The practical assignments for this course will be done in Python. Please carefully follow [the instructions available here](software.md) on setting up the working environment and (optionally) a Git workflow for your group.
+The practical assignments for this course will be done in Python. Please carefully follow [the instructions available here](software.md) on setting up the working environment and (optionally) a way of working with Git for your group.
 
 ## Python quiz
 
@@ -69,27 +69,26 @@ The course is largely unchanged from the previous edition and the materials (sli
 
 | # | Date | Title | Slides |
 | --- | --- | --- | --- |
-| 1 | 04/Sep | Machine learning fundamentals | [intro ](lectures/intro.pdf), [slides](lectures/week_1.pdf), [extended](lectures/week_1_extended.pdf) |
-| 2 | 11/Sep | Linear models | [slides](lectures/week_2.pdf) |
-| 3 | 18/Sep | Deep learning I | [slides](lectures/week_3.pdf)  |
-| 4 | 25/Sep | Deep learning II | [slides](lectures/week_4.pdf)|
-| 5 | 02/Oct | Support vector machines, random forests | [slides](lectures/week_5.pdf) | 
-| 6 | 09/Oct | Unsupervised machine learning | [slides](lectures/week_6.pdf) |
-| 7 | 16/Oct | Transformers, ~~Explainable AI~~| [slides](lectures/week_7.pdf), ~~[explainable AI slides](lectures/FGrisoni_2023_Guest_XAI.pdf)~~|
-| 8 | 23/Oct | Explainable AI (guest lecture) | [explainable AI slides](lectures/FGrisoni_2023_Guest_XAI.pdf) |
-| :small_red_triangle:| 30/Oct | *Exam* | [Example exam](exam.pdf) |
+| 1 | 03/Sep | Machine learning fundamentals | ~~[intro](lectures/intro.pdf)~~, ~~[slides](lectures/week_1.pdf)~~, ~~[extended](lectures/week_1_extended.pdf)~~ |
+| 2 | 10/Sep | Linear models | ~~[slides](lectures/week_2.pdf)~~ |
+| 3 | 17/Sep | Deep learning I | ~~[slides](lectures/week_3.pdf)~~  |
+| 4 | 24/Sep | Deep learning II | ~~[slides](lectures/week_4.pdf)~~|
+| 5 | 01/Oct | Support vector machines, random forests | ~~[slides](lectures/week_5.pdf)~~ | 
+| 6 | 08/Oct | Unsupervised machine learning | ~~[slides](lectures/week_6.pdf)~~ |
+| 7 | 15/Oct | Transformers, Explainable AI| ~~[slides](lectures/week_7.pdf)~~, ~~[explainable AI slides](lectures/FGrisoni_2023_Guest_XAI.pdf)~~|
+| :small_red_triangle:| 29/Oct | *Exam* | [Example exam](exam.pdf) |
 
 ### Practical assignments
 
 | # | Date | Title | Exercises |
 | --- | --- | --- | --- |
-| 1 | 06/Sep | Machine learning fundamentals I| [exercises](practicals/week_1.ipynb) |
-| 2 | 11/Sep | Machine learning fundamentals II|  [exercises](practicals/week_2.ipynb)  |
-| 3 | 18/Sep | Linear models |  [exercises](practicals/week_3.ipynb)  |
-| 4 | 25/Sep | Deep learning I | [exercises](practicals/week_4.ipynb) |
-| 5 | 02/Oct | Deep learning II  | [updated exercises in Google Colab](https://colab.research.google.com/drive/1O-tHiagXjYTXB5Aic92FR9zawJzmZZx9?usp=sharing) |
-| 6 | 09/Oct | Support vector machines, random forests | [exercises](practicals/week_6.ipynb) |
-| 7 | 16/Oct | *Catch up week!* :tomato:  | - |
+| 1 | 03/Sep | Machine learning fundamentals I| [exercises](practicals/week_1.ipynb) |
+| 2 | 10/Sep | Machine learning fundamentals II|  [exercises](practicals/week_2.ipynb)  |
+| 3 | 17/Sep | Linear models |  [exercises](practicals/week_3.ipynb)  |
+| 4 | 24/Sep | Deep learning I | [exercises](practicals/week_4.ipynb) |
+| 5 | 01/Oct | Deep learning II  | [exercises in **Google Colab**](https://colab.research.google.com/drive/1O-tHiagXjYTXB5Aic92FR9zawJzmZZx9?usp=sharing) |
+| 6 | 08/Oct | Support vector machines, random forests | [exercises](practicals/week_6.ipynb) |
+| 7 | 15/Oct | *Catch up week!* :tomato:  | - |
 
 # Other course information
 
@@ -129,14 +128,12 @@ Course instructors:
 * Federica Eduati
 
 Teaching assistants:
-* Hong Liu 
-* Hassan Keshvarikhojasteh
+* Ruben Lucassen
 * Glen Weber
 
 ## Recommended prerequisite courses
 
 8DB00 Image acquisition and Processing, and 8DC00 Medical Image Analysis.
-
 
 
 *This page is carefully filled with all necessary information about the course. When unexpected differences occur between this page and Osiris, the information provided in Osiris is leading.*
