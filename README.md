@@ -74,7 +74,7 @@ The course is largely unchanged from the previous edition and the materials (sli
 | 3 | 17/Sep | Deep learning I | [slides](lectures/week_3.pdf)  |
 | 4 | 24/Sep | Deep learning II | [slides](lectures/week_4.pdf)|
 | 5 | 01/Oct | Support vector machines, random forests | [slides](lectures/week_5.pdf) | 
-| 6 | 08/Oct | Unsupervised machine learning | ~~[slides](lectures/week_6.pdf)~~ |
+| 6 | 08/Oct | Unsupervised machine learning | [slides](lectures/week_6.pdf) |
 | 7 | 15/Oct | Transformers, Explainable AI| ~~[slides](lectures/week_7.pdf)~~, ~~[explainable AI slides](lectures/FGrisoni_2023_Guest_XAI.pdf)~~|
 | :small_red_triangle:| 29/Oct | *Exam* | [Example exam](exam.pdf) |
 
